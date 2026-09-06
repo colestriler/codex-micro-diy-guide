@@ -3,6 +3,7 @@ import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import "./parts-sheet.css";
 import "./guide-layout.css";
+import "./assembly-lessons.css";
 
 const font = DM_Sans({ subsets: ["latin"], variable: "--font-sans" });
 

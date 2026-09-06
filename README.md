@@ -18,6 +18,7 @@ This is that guide: a way to explore the parts, watch how they fit together, dow
 
 - An interactive 3D model. Click a part for its print files or a purchase link for bought components.
 - An eleven-stage assembly animation, including the bits hidden inside the case.
+- Ten clickable assembly lessons with focused CAD views, before/after and replay controls, wiring diagrams, and explanations of how and why each step works.
 - Printable STL files, editable STEP files, and parametric CAD source.
 - A compact parts checklist that saves your selections in your browser, plus filament choices, wiring, assembly instructions, and starter firmware.
 - One continuous page with a table of contents in build order.
@@ -56,6 +57,7 @@ The live site is hosted on Vercel. Pushing to `main` automatically builds and de
 - `app/` and `components/`: the single-page Next.js app.
 - `data/parts.json`: part descriptions, quantities, specifications, purchase links, and print files.
 - `data/instructions.json`: the checked-in assembly, printing, compatibility, and software instructions.
+- `data/assembly-lessons.json`: the ten lessons, their part lists and resources, and which CAD components each focused view shows.
 - `viewer-src/`: the Three.js assembly player, actual CAD meshes, and model-to-catalog mappings.
 - `public/downloads/`: the complete CAD, wiring, firmware, original offline guide, and build package.
 

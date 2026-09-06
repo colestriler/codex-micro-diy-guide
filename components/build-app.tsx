@@ -1,12 +1,13 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import catalog from "@/data/parts.json";
 import instructions from "@/data/instructions.json";
 import files from "@/data/files.json";
 import PartsTable from "@/components/parts-table";
 import TableOfContents from "@/components/table-of-contents";
+import AssemblyLessons from "@/components/assembly-lessons";
 
 type Part = (typeof catalog)[number];
 const categories = ["All parts", "Printed", "Electronics", "Hardware", "Materials", "Native"];
@@ -18,6 +19,10 @@ export default function BuildApp() {
   const [viewerStatus, setViewerStatus] = useState("loading");
   const frame = useRef<HTMLIFrameElement>(null);
   const dialog = useRef<HTMLDialogElement>(null);
+  const selectLessonPart = useCallback((id: string) => {
+    const selected = byId.get(id);
+    if (selected) setPart(selected);
+  }, []);
 
   useEffect(() => {
     const receive = (event: MessageEvent) => {
@@ -89,11 +94,13 @@ export default function BuildApp() {
 
       <section id="assembly" className="build-section" aria-labelledby="heading-assembly">
           <SectionHeading number="04" id="heading-assembly" title="Assembly" />
-          <div className="section-toolbar"><p>Watch the pieces come together, then follow the steps below.</p><a href="/downloads/docs/wiring.svg" target="_blank" rel="noreferrer">Open wiring diagram ↗</a></div>
+          <div className="section-toolbar"><p>Explore the whole assembly, or <a href="#assembly-lessons">learn one step at a time ↓</a>.</p><a href="/downloads/docs/wiring.svg" target="_blank" rel="noreferrer">Open wiring diagram ↗</a></div>
           <div className="model-section" aria-label="Interactive assembly model">
             <div className="model-caption"><span>Click a part for print files or buying links.</span><span className="model-status">{viewerStatus === "ready" ? "3D model ready" : viewerStatus === "unavailable" ? "Use the parts checklist" : "Loading 3D model…"}</span></div>
             <iframe ref={frame} src="/viewer/index.html" title="Interactive Micro assembly — click parts to inspect them" className="assembly-viewer" onLoad={() => frame.current?.contentWindow?.postMessage({ type: "micro:ping" }, window.location.origin)} />
           </div>
+          <AssemblyLessons onSelect={selectLessonPart} />
+          <details className="assembly-donor"><summary>Using genuine donor electronics?</summary><Instruction content={instructions.nativeAssembly} /></details>
           <Instruction content={instructions.assembly} />
       </section>
 

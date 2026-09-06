@@ -1,0 +1,99 @@
+[
+  {
+    "id": "fit-samples", "title": "Print the fit samples", "summary": "Learn how print tolerances affect a real fit.", "visual": "fit",
+    "caption": "Fit-test schematic, not to scale. These samples are test pieces and stay out of the finished keyboard.",
+    "parts": ["switch-coupon", "stem-coupon", "mx-switch", "insert"],
+    "how": ["Print the switch-fit coupon (file 10) and stem/insert coupon (file 11), using the materials and settings you intend to use for the finished parts.", "Try a real MX switch in the 14.0, 14.1 and 14.2 mm apertures. Choose the fit that clips in securely without forcing or cracking the plastic.", "Test the MX stem socket and one specified M3 insert in the second coupon. If the fit is wrong, adjust the CAD parameters, regenerate and repeat before printing the full set."],
+    "why": "A printer does not reproduce every hole at its exact CAD size. Material, extrusion and cooling affect the fit. A small coupon lets you calibrate the mating surfaces using little filament, before committing to the whole case.",
+    "check": "The switch clips in and stays seated; the keycap socket grips without splitting; the cooled insert stays straight and does not spin.",
+    "links": [{"label": "Download switch-fit STL", "url": "/downloads/stl/10_switch_fit_coupon.stl"}, {"label": "Download stem/insert STL", "url": "/downloads/stl/11_stem_insert_coupon.stl"}, {"label": "CAD parameters", "url": "/downloads/cad/parameters.json"}]
+  },
+  {
+    "id": "printed-body", "title": "Print and finish the body", "summary": "Prepare the surfaces that hold everything in place.", "visual": "cad",
+    "model": {"from": 0, "to": 0, "parts": ["case", "plate", "foot", "cup*"], "context": [], "view": "iso", "hideHardware": true, "labels": [{"entry": "case", "text": "Clear case · open side up"}, {"entry": "plate", "text": "White plate · print face down"}, {"entry": "cup2", "text": "Black baffle · open side up"}, {"entry": "foot", "text": "White foot · bottom down"}]},
+    "caption": "Separated CAD parts for this step. Print orientations are listed on the labels; this view shows their assembly relationship.",
+    "parts": ["case", "plate", "foot", "baffle"],
+    "how": ["Print the clear case open side up, the white plate face down, the white foot bottom down, and six black baffles open side up. Use the calibrated fit settings from step 1.", "Remove supports and burrs gently. Preserve the switch-retaining edges and the eight thin optical windows around the case.", "Test a USB plug in the 15 × 8 mm rear tunnel. Dry-fit the plate on its ledge and inspect the screw holes before adding hardware."],
+    "why": "The plate sets the alignment of every control, while the case supports it and exposes the lights. Cleaning the mating surfaces now prevents a burr from tilting the plate or stopping a switch from latching. The thin windows let the perimeter lights show through.",
+    "check": "The plate rests flat without force, the USB plug has clearance, and the optical windows are intact.",
+    "links": [{"label": "Printing settings and materials", "url": "#printing"}]
+  },
+  {
+    "id": "inserts", "title": "Install the inserts", "summary": "Give the plastic durable metal screw threads.", "visual": "cad",
+    "model": {"from": 0, "to": 1, "parts": ["case", "insert*", "bottominsert*"], "context": ["case"], "view": "iso", "labels": [{"entry": "insert0", "text": "4 top inserts · enter from above"}, {"entry": "bottominsert-25", "text": "2 foot inserts · enter from below"}]},
+    "caption": "Four inserts enter the corner posts from above; two enter the foot mounts from underneath. Rotate to Underside to inspect those seats.",
+    "parts": ["case", "insert", "stem-coupon"],
+    "how": ["Practice on the insert coupon first. Use the specified M3 heat-set inserts with 4 mm bodies and the insert maker’s installation guidance.", "With the case empty, heat-set four inserts into the tops of the corner posts. Turn the case over for the two underside foot mounts. Keep each insert square to its seat.", "Let the inserts cool completely before threading in screws. Keep the iron away from the thin light windows."],
+    "why": "The brass insert provides a reusable metal thread. Heat softens the surrounding plastic so it forms around the insert’s outer texture; cooling locks it in place. A tilted or loose insert can pull a screw sideways and stress the case.",
+    "check": "All six inserts are straight and stable after cooling. A screw starts by hand without forcing it.",
+    "links": []
+  },
+  {
+    "id": "switches-controls", "title": "Fit switches and controls", "summary": "Build the mechanical controls on the loose plate.", "visual": "cad",
+    "model": {"from": 2, "to": 4, "parts": ["plate", "switch*", "encoder", "nut", "cradle", "joystick"], "context": ["plate"], "view": "iso", "labels": [{"entry": "switch31", "text": "Two switches under the wide key"}, {"entry": "encoder", "text": "Encoder enters from below"}, {"entry": "joystick", "text": "Slide joystick + printed cradle"}]},
+    "caption": "The case is hidden so you can inspect the plate. The switch row closest to you includes both halves of the wide Voice key.",
+    "parts": ["plate", "mx-switch", "encoder", "encoder-nut", "joystick", "cradle"],
+    "how": ["Work with the plate outside the case. Clip in all 13 normal MX switches from above, including both switches underneath the wide Voice cap.", "Mount the encoder from below, with its washer and M7 nut above the plate. Tighten gently and trial the printed dial; it needs clearance to turn and press.", "Solder flexible leads to the slide joystick before seating it in the cradle. Confirm the supplier’s pad orientation, test movement, and trim only the cradle plastic if necessary. Keep the joystick’s retention frame intact."],
+    "why": "The plate keeps the controls aligned and absorbs the force of pressing keys. Doing this as a separate subassembly gives you access to both sides. The wide cap uses two switches for support, so leaving one out changes both its feel and alignment.",
+    "check": "Every switch latches, the dial rotates and clicks, and the joystick travels freely without its leads pulling on it.",
+    "links": [{"label": "Joystick orientation reference", "url": "https://www.sparkfun.com/thumb-slide-joystick.html"}]
+  },
+  {
+    "id": "key-matrix", "title": "Wire the key matrix", "summary": "See how 13 switches share eight signal pins.", "visual": "matrix",
+    "caption": "Top view, USB at the rear. The wiring is mirrored left-to-right when you flip the plate over to solder. The enlarged circuit shows one switch only.",
+    "parts": ["mx-switch", "diode", "wire", "controller"],
+    "how": ["Label rows R1–R4 and columns C1–C4 while looking down at the plate with USB at the rear. Keep those labels when you flip the plate over.", "Connect one terminal of each switch to its column. Connect its other terminal to the unbanded end of a diode; connect the banded end to the row. Fit one diode per switch, including both wide-key switches.", "Run rows to D2–D5 and columns to D6–D9. Insulate crossing wires and exposed joints. The encoder, joystick and touch pad have their own connections and are not matrix switches."],
+    "why": "The controller scans combinations of four rows and four columns to identify a pressed switch using eight pins. Each diode makes the connection one-way, preventing unintended paths through other pressed keys. The firmware combines the two wide-key positions into one Voice action.",
+    "check": "All 13 diode bands face their rows. There is no continuity between unrelated row/column wires when no key is pressed.",
+    "links": [{"label": "Full connection map", "url": "/downloads/docs/wiring.svg"}, {"label": "Learn about matrix scanning", "url": "https://learn.adafruit.com/key-pad-matrix-scanning-in-circuitpython/overview"}]
+  },
+  {
+    "id": "light-chain", "title": "Build the light chain", "summary": "Give each key its own light and control its direction.", "visual": "cad",
+    "model": {"from": 4, "to": 5, "parts": ["case", "plate", "cup*", "perimeter*"], "context": ["case", "plate"], "view": "bottom", "labels": [{"entry": "cup2", "text": "LEDs 0–5 · one board per baffle"}, {"entry": "perimeter1", "text": "LEDs 6–13 · face the case windows"}]},
+    "caption": "Replay shows the six pre-seated LED/baffle pairs moving under the plate. The eight wall LEDs are shown in their outward-facing positions. Use the connection map for wiring.",
+    "parts": ["baffle", "rgbw-led", "wire", "tape"],
+    "how": ["Place pixels 0–5 in the six black baffles with their LEDs facing up toward the agent keys. Insulate the rear pads so they cannot touch the switch pins. Wire before securing the baffles beneath the plate.", "Place pixels 6–13 in the eight inner-wall pockets, facing outward through the thin case windows.", "Connect DOUT on each pixel to DIN on the next, in that order. Share the power and ground buses. Use the level shifter, resistors and capacitors shown in the full connection map; do not connect MOSI straight to the pixel chain."],
+    "why": "Each pixel consumes its own color data and passes the remaining data along the chain, so physical order determines which key lights up. Opaque baffles keep one key’s light from spilling into the next. Translucent caps spread the light across the key surface.",
+    "check": "Six boards point up, eight point outward, every DOUT feeds the next DIN, and no solder pad touches a switch pin.",
+    "links": [{"label": "Full connection map", "url": "/downloads/docs/wiring.svg"}, {"label": "NeoPixel connection principles", "url": "https://learn.adafruit.com/adafruit-neopixel-uberguide/basic-connections"}]
+  },
+  {
+    "id": "touch-indicators", "title": "Add touch and indicators", "summary": "Use a hidden electrode to sense a finger.", "visual": "cad",
+    "model": {"from": 3, "to": 4, "parts": ["plate", "touch", "indicators"], "context": ["plate", "touch"], "view": "bottom", "labels": [{"entry": "touch", "text": "Copper disk under the thin cap skin"}, {"entry": "indicators", "text": "Three separate status indicators"}]},
+    "caption": "The plate and touch cap are translucent in this teaching view so you can see the copper electrode. Print the touch cap in black PETG.",
+    "parts": ["touch-cap", "copper", "indicator", "passives"],
+    "how": ["Cut a 13 mm copper disk. Solder a flexible lead before placing it against the inside of the touch cap’s thin top skin; this keeps soldering heat away from the printed part.", "Fit the cap from below and secure it by its flange. Connect the electrode to D10, with a 1 MΩ resistor from D10 to ground.", "Fit three 3 mm indicator LEDs. Connect SCK, MISO and A3 through one 1 kΩ resistor each to the corresponding LED anode; join their cathodes to ground."],
+    "why": "Your finger changes the capacitance near the copper electrode, letting the controller detect touch through the thin plastic. The three separate indicators communicate the selected layer. Each indicator needs its own resistor to limit current.",
+    "check": "The electrode rests against the cap’s inner skin, its lead stays insulated, and each indicator has its own resistor and correct polarity.",
+    "links": [{"label": "Touch and indicator connections", "url": "/downloads/docs/wiring.svg"}]
+  },
+  {
+    "id": "controller", "title": "Mount the controller", "summary": "Position the brain and leave room for its wiring.", "visual": "cad",
+    "model": {"from": 1, "to": 2, "parts": ["case", "controller", "support"], "context": ["case"], "view": "iso", "labels": [{"entry": "controller", "text": "KB2040 · USB faces the rear tunnel"}, {"entry": "support", "text": "25 × 20 mm support circuit bay"}]},
+    "caption": "The case is translucent to expose the controller rails and front circuit bay. Electronics are simplified reference shapes; use the actual board to check fit.",
+    "parts": ["controller", "perfboard", "level-shifter", "passives", "tape"],
+    "how": ["Seat the KB2040 between the rear guide rails, with USB facing the cable tunnel. Use approximately 1.6 mm insulating foam tape beneath it.", "Solder leads directly to the board pads, keeping the assembly low. Tall pin headers consume the space needed by the plate and switches.", "Build and insulate the level-shifter/passive circuit on perfboard no larger than 25 × 20 mm, then secure it in the front bay. Follow the full wiring map for every connection; the block in the model only represents its envelope."],
+    "why": "The KB2040 reads the controls, drives the light data and talks to the computer over USB. The support circuit adapts its light-data signal. Insulation prevents accidental contact, and low wiring leaves enough vertical clearance for the plate to close.",
+    "check": "The plug reaches the USB socket, the boards are secure and insulated, and the plate can approach its ledge without contacting tall components.",
+    "links": [{"label": "KB2040 pinout reference", "url": "https://learn.adafruit.com/adafruit-kb2040/pinouts"}, {"label": "Full connection map", "url": "/downloads/docs/wiring.svg"}]
+  },
+  {
+    "id": "bench-test", "title": "Power and program on the bench", "summary": "Prove the electronics work while you can still reach them.", "visual": "power",
+    "caption": "Power-domain schematic, not a physical wire layout. Keep the plate open and use the detailed connection map for pin-level wiring.",
+    "parts": ["controller", "usb", "level-shifter", "passives"],
+    "how": ["With USB disconnected, inspect polarity, diode direction and every power connection. Check with a multimeter for an unintended power-to-ground short. Keep the KB2040 fuse-bypass jumper open.", "Use fused RAW for the light circuit and 3V for the joystick, with all grounds joined. Keep the supplied 15% LED brightness limit. Connect a USB data cable only after the unpowered checks pass.", "Install CircuitPython and the included firmware files using the Firmware & colors section. Test all 13 switches, both wide-key halves, encoder/button, joystick axes, touch, three indicators and all 14 pixels before closing the case."],
+    "why": "An open assembly makes a reversed diode, broken connection or incorrectly ordered pixel easier to find and repair. Separate power domains keep the joystick’s analog signals within the controller’s 3.3 V range. A data-capable cable carries both USB power and the keyboard connection.",
+    "check": "Every input and light passes the final-check list while the plate is accessible. The custom firmware provides the documented DIY behavior; native Codex integration still requires compatible genuine electronics.",
+    "links": [{"label": "Firmware setup", "url": "#software"}, {"label": "Input and light checks", "url": "#checks"}, {"label": "KB2040 power pins", "url": "https://learn.adafruit.com/adafruit-kb2040/pinouts"}]
+  },
+  {
+    "id": "close-case", "title": "Close the case and fit the controls", "summary": "Bring the tested subassemblies together without strain.", "visual": "cad",
+    "model": {"from": 6, "to": 10, "parts": ["*"], "context": ["case"], "view": "iso", "labels": [{"entry": "screw0", "text": "Four M3 × 8 plate screws"}, {"entry": "wide", "text": "Wide cap · align both stems"}, {"entry": "foot", "text": "Foot + optional weights + rubber"}]},
+    "caption": "Replay follows the plate, screws, caps and foot. Curved wires only illustrate service slack; they do not represent individual electrical connections.",
+    "parts": ["screw", "foot-screw", "clear-cap", "white-cap", "wide-cap", "knob", "foot", "washer", "rubber", "decals"],
+    "how": ["Disconnect USB. Lower the tested plate assembly onto the case ledge, guiding the wire slack away from switch pins, baffles and screw posts. Stop if it meets resistance; never pull it down with the screws.", "Fasten the plate gently and evenly with four M3 × 8 mm screws. Fit six clear agent caps, five white single caps, the white wide cap over both stems, and the dial. Add the legends after confirming free movement.", "Optionally tape four steel washers (24 mm outside diameter, at most 2 mm thick) into the foot pockets. Attach the foot with two low-profile M3 × 8 mm screws and add adhesive rubber pads. Reconnect USB and repeat the functional checks."],
+    "why": "Service slack lets the plate lift for future repairs without pulling on solder joints. Even fastening keeps the plate flat. The foot adds stability, optional weights reduce sliding, and rubber protects the desk. Rechecking after closure catches a wire or control that moved during assembly.",
+    "check": "No wire is pinched, every key returns freely, the dial still clicks, the joystick moves, and the finished device passes the same tests it passed while open.",
+    "links": [{"label": "Printable key legends", "url": "/downloads/docs/key-legends.svg"}, {"label": "Final checks", "url": "#checks"}]
+  }
+]

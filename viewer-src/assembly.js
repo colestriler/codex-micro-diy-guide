@@ -1,6 +1,8 @@
 (() => {
 'use strict';
 const $ = id => document.getElementById(id);
+const lessonMode=new URLSearchParams(window.location.search).get('mode')==='lesson';
+if(lessonMode)document.body.classList.add('lesson-mode');
 let viewerFinished=false;
 window.addEventListener('message',event=>{if(event.source===window.parent&&event.origin===window.location.origin&&event.data?.type==='micro:ping')window.parent.postMessage({type:viewerFinished?'micro:ready':'micro:error'},window.location.origin);});
 function tagged(object,partKey){object.traverse(m=>{if(m.isMesh)m.userData.partKey=partKey;});return object;}
@@ -119,6 +121,67 @@ function wirePaths(offset){if(Math.abs(offset-oldWireOffset)<.3)return;oldWireOf
 let progress=11,displayStage=-1,playing=false,animation=null,holdUntil=0,lastTime=0;
 let theta=.78,elevation=.48,zoom=1,span=95,target=new THREE.Vector3(0,15,18),selectedId=null;
 let annotationNodes=[];
+let activeLesson=null,lessonRevision=0;
+const matches=(id,patterns)=>patterns.some(pattern=>pattern.endsWith('*')?id.startsWith(pattern.slice(0,-1)):id===pattern);
+
+function applyLesson(id){
+ if(!lessonMode)return;
+ const lesson=LESSON_MODELS.find(item=>item.id===id);
+ if(!lesson)return;
+ stop();animation=null;clearSelection();activeLesson=lesson;progress=lesson.to;zoom=1;theta=.78;
+ elevation=lesson.view==='bottom'?-.62:lesson.view==='top'?1.565:.58;
+ $('xray').checked=true;
+ document.querySelectorAll('[data-view]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.view===lesson.view)));
+ labels.replaceChildren();$('lesson-key').replaceChildren();annotationNodes=lesson.labels.map((label,index)=>{
+  const el=document.createElement('div');el.className='annotation';el.textContent=index+1;el.title=label.text;labels.append(el);
+  const item=document.createElement('li');const number=document.createElement('span');number.textContent=index+1;item.append(number,document.createTextNode(label.text));$('lesson-key').append(item);
+  return{id:label.entry,el};
+ });
+ $('lesson-replay').hidden=lesson.from===lesson.to;
+ $('lesson-start').hidden=lesson.from===lesson.to;
+ $('lesson-result').hidden=lesson.from===lesson.to;
+ $('lesson-phase').textContent=lesson.from===lesson.to?'Inspect the printed parts':'Result of this step';
+ document.body.dataset.lesson=id;
+ renderer.domElement.setAttribute('aria-label',lesson.title+'. Only the parts involved in this step are shown. Drag to rotate, or use the view buttons.');
+ lessonRevision++;
+ window.parent.postMessage({type:'micro:lesson-applied',id},window.location.origin);
+}
+
+function paintLesson(){
+ if(!activeLesson)return;
+ for(const e of entries){
+  const visible=matches(e.id,activeLesson.parts)&&(e.id!=='usb'||progress>10);
+  const context=matches(e.id,activeLesson.context);
+  e.obj.traverse(m=>{
+   if(!m.isMesh||m.userData.isLegend)return;
+   // Tagged child meshes represent bought hardware inside a printed part.
+   m.visible=!(activeLesson.hideHardware&&m.userData.partKey!==MODEL_PARTS[e.id]);
+   const ghost=context&&$('xray').checked&&m.userData.partKey!=='copper';
+   m.material.transparent=ghost;m.material.opacity=ghost?.19:1;m.material.depthWrite=!ghost;
+  });
+  e.obj.visible=visible;
+ }
+ loom.visible=activeLesson.id==='close-case'&&progress>=5.98;
+ document.body.dataset.visibleParts=entries.filter(e=>e.obj.visible).map(e=>e.id).join(',');
+ document.body.dataset.progress=progress.toFixed(2);
+ const phase=animation?'Assembling this step…':activeLesson.from===activeLesson.to?'Inspect the printed parts':progress===activeLesson.from?'Before this step':progress===activeLesson.to?'Result of this step':'Paused';
+ if($('lesson-phase').textContent!==phase)$('lesson-phase').textContent=phase;
+}
+
+window.addEventListener('message',event=>{
+ if(event.origin!==window.location.origin||event.source!==window.parent||event.data?.type!=='micro:lesson')return;
+ applyLesson(event.data.id);
+});
+$('lesson-replay').addEventListener('click',()=>{
+ if(!activeLesson)return;
+ stop();clearSelection();progress=activeLesson.from;
+ animation={from:activeLesson.from,to:activeLesson.to,start:performance.now(),duration:matchMedia('(prefers-reduced-motion: reduce)').matches?0:Math.min(6500,2400*(activeLesson.to-activeLesson.from))};
+ lessonRevision++;
+});
+for(const [button,key] of [['lesson-start','from'],['lesson-result','to']])$(button).addEventListener('click',()=>{
+ if(!activeLesson)return;
+ stop();animation=null;progress=activeLesson[key];clearSelection();lessonRevision++;
+});
 const stageFocus=[['wide','cup2','case','foot'],['insert0','bottominsert-25'],['controller','perimeter1','support'],['switch31','plate'],['joystick','encoder','touch'],['cup2'],[],['plate'],['screw0'],['wide','knob'],['foot','footscrew-25'],['usb']];
 const shortNames={wide:'Wide cap · 2 stems',cup0:'RGBW board + cup',cup2:'Black light baffle',case:'Printed shell',foot:'Round foot',insert0:'M3 heat-set insert','bottominsert-25':'Insert from below',controller:'KB2040 · USB rear',perimeter1:'Perimeter light',support:'Support circuit',switch31:'Two switches for wide cap',plate:'Switch plate',joystick:'Slide joystick',encoder:'Encoder from below',touch:'Touch electrode',screw0:'M3 × 8 screw',knob:'D-shaft knob','footscrew-25':'Low-profile screw',usb:'USB data cable'};
 function stageText(n){if(n===displayStage)return;displayStage=n;const s=stages[n];$('step-counter').textContent=(n===0?'OVERVIEW':'STAGE')+' · '+String(n).padStart(2,'0')+' / 11';$('step-title').textContent=s[0];$('step-desc').textContent=s[1];$('part-list').replaceChildren(...s[2].map(([label,count])=>{const li=document.createElement('li');li.textContent=label;const b=document.createElement('span');b.textContent=count;li.append(b);return li;}));$('step-jump').value=n;$('view-state').textContent=n===0?'Exploded overview':n===11?'Assembled prototype':'Assembly stage '+String(n).padStart(2,'0');labels.replaceChildren();annotationNodes=stageFocus[n].map(id=>{const el=document.createElement('div');el.className='annotation';el.textContent=shortNames[id]||byId.get(id).name;labels.append(el);return{id,el};});$('prev').disabled=n===0&&!animation;$('next').disabled=n===11&&!animation;}
@@ -153,7 +216,7 @@ let lastVisual='',settleFrames=45;
 function tick(now){const dt=now-lastTime;lastTime=now;
  if(playing&&!animation&&now>=holdUntil){if(progress>=10.99)stop();else{const next=Math.min(11,Math.floor(progress+.03)+1);animation={from:progress,to:next,start:now,duration:1400/Number($('speed').value)};stageText(next);}}
  if(animation){const f=animation.duration===0?1:Math.min(1,(now-animation.start)/animation.duration);progress=animation.from+(animation.to-animation.from)*smooth(f);if(f>=1){progress=animation.to;animation=null;holdUntil=now+2700/Number($('speed').value);$('prev').disabled=progress===0;$('next').disabled=progress===11;if(!playing)$('play').textContent=progress>=10.99?'Replay assembly':'Play assembly';}}
- $('progress').value=progress;const visual=[progress,theta,elevation,zoom,width,height,$('xray').checked,selectedId].join('|');if(visual!==lastVisual){lastVisual=visual;settleFrames=40;}if(settleFrames>0){paintParts(progress);root.updateMatrixWorld(true);frameCamera();positionLabels();renderer.render(scene,camera);settleFrames--;}requestAnimationFrame(tick);
+ $('progress').value=progress;const visual=[progress,theta,elevation,zoom,width,height,$('xray').checked,selectedId,lessonRevision].join('|');if(visual!==lastVisual){lastVisual=visual;settleFrames=40;}if(settleFrames>0){paintParts(progress);paintLesson();root.updateMatrixWorld(true);frameCamera();positionLabels();renderer.render(scene,camera);settleFrames--;}requestAnimationFrame(tick);
 }
-stageText(11);paintParts(11);viewerFinished=true;requestAnimationFrame(tick);window.parent.postMessage({type:'micro:ready'},window.location.origin);
+stageText(11);paintParts(11);if(lessonMode)applyLesson(LESSON_MODELS[0].id);viewerFinished=true;requestAnimationFrame(tick);window.parent.postMessage({type:'micro:ready'},window.location.origin);
 })();
