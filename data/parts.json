@@ -22,7 +22,7 @@
         "url": "/downloads/step/01_case.step"
       }
     ],
-    "note": "Print this part in clear PETG. The purchase link is for filament, not a finished part."
+    "note": "Print this part in clear PETG."
   },
   {
     "id": "plate",
@@ -47,7 +47,7 @@
         "url": "/downloads/step/02_switch_plate.step"
       }
     ],
-    "note": "Print this part in white PETG. The purchase link is for filament, not a finished part."
+    "note": "Print this part in white PETG."
   },
   {
     "id": "foot",
@@ -72,7 +72,7 @@
         "url": "/downloads/step/03_round_foot.step"
       }
     ],
-    "note": "Print this part in white PETG. The purchase link is for filament, not a finished part."
+    "note": "Print this part in white PETG."
   },
   {
     "id": "cradle",
@@ -97,7 +97,7 @@
         "url": "/downloads/step/04_joystick_cradle.step"
       }
     ],
-    "note": "Print this part in black PETG. The purchase link is for filament, not a finished part."
+    "note": "Print this part in black PETG."
   },
   {
     "id": "touch-cap",
@@ -122,7 +122,7 @@
         "url": "/downloads/step/05_touch_cap.step"
       }
     ],
-    "note": "Print this part in black PETG. The purchase link is for filament, not a finished part."
+    "note": "Print this part in black PETG."
   },
   {
     "id": "knob",
@@ -147,7 +147,7 @@
         "url": "/downloads/step/06_encoder_knob.step"
       }
     ],
-    "note": "Print this part in white PETG. The purchase link is for filament, not a finished part."
+    "note": "Print this part in white PETG."
   },
   {
     "id": "baffle",
@@ -172,7 +172,7 @@
         "url": "/downloads/step/07_led_baffle.step"
       }
     ],
-    "note": "Print this part in black PETG. The purchase link is for filament, not a finished part."
+    "note": "Print this part in black PETG."
   },
   {
     "id": "clear-cap",
@@ -201,7 +201,7 @@
         "url": "/downloads/step/08_keycap_1u.step"
       }
     ],
-    "note": "Print this part in clear PETG. The purchase link is for filament, not a finished part."
+    "note": "Print this part in clear PETG."
   },
   {
     "id": "white-cap",
@@ -230,7 +230,7 @@
         "url": "/downloads/step/08_keycap_1u.step"
       }
     ],
-    "note": "Print this part in white PETG. The purchase link is for filament, not a finished part."
+    "note": "Print this part in white PETG."
   },
   {
     "id": "wide-cap",
@@ -255,7 +255,7 @@
         "url": "/downloads/step/09_keycap_2u_dual_stem.step"
       }
     ],
-    "note": "Print this part in white PETG. The purchase link is for filament, not a finished part."
+    "note": "Print this part in white PETG."
   },
   {
     "id": "switch-coupon",
@@ -280,7 +280,7 @@
         "url": "/downloads/step/10_switch_fit_coupon.step"
       }
     ],
-    "note": "Print this part in white PETG. The purchase link is for filament, not a finished part."
+    "note": "Print this part in white PETG."
   },
   {
     "id": "stem-coupon",
@@ -305,7 +305,7 @@
         "url": "/downloads/step/11_stem_insert_coupon.step"
       }
     ],
-    "note": "Print this part in clear PETG. The purchase link is for filament, not a finished part."
+    "note": "Print this part in clear PETG."
   },
   {
     "id": "controller",

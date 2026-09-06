@@ -1,3 +1,5 @@
+[![CAD render of the DIY Codex Micro keypad](public/downloads/docs/cad-preview.png)](https://codex-micro-guide.vercel.app)
+
 # I wanted the OpenAI keyboard. It was sold out.
 
 I wanted to buy the [OpenAI × Work Louder Codex Micro](https://openai.com/supply/co-lab/work-louder/). Small keyboard, little dial, glowing keys. Very much my kind of thing.
@@ -12,11 +14,11 @@ This is that guide: a way to explore the parts, watch how they fit together, dow
 
 ## What's here
 
-- An interactive 3D model. Click a part to see its name, what it does, and where to buy it.
+- An interactive 3D model. Click a part for its print files or a purchase link for bought components.
 - An eleven-stage assembly animation, including the bits hidden inside the case.
 - Printable STL files, editable STEP files, and parametric CAD source.
-- A parts list, filament choices, wiring diagram, assembly instructions, and starter firmware.
-- A small Next.js app that keeps it all on one page.
+- A compact parts checklist that saves your selections in your browser, plus filament choices, wiring, assembly instructions, and starter firmware.
+- One continuous page with a table of contents in build order.
 
 ## Where the build stands
 
