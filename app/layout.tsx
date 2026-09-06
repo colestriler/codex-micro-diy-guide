@@ -8,7 +8,7 @@ import "./assembly-lessons.css";
 const font = DM_Sans({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
-  title: "Micro — a DIY build guide",
+  title: "Codex Micro — a DIY build guide",
   description: "Explore the parts, play the assembly, and download the CAD for a printable Codex-inspired keypad. An independent hardware prototype.",
 };
 
