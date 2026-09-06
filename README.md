@@ -8,6 +8,8 @@ I have a 3D printer. So I decided to put together a guide to making my own versi
 
 This is that guide: a way to explore the parts, watch how they fit together, download the CAD, and work through the build. Credit for the original device goes to OpenAI and Work Louder. This project is a tutorial for a DIY recreation of their Codex Micro.
 
+**[Open the interactive build guide →](https://codex-micro-guide.vercel.app)**
+
 ## What's here
 
 - An interactive 3D model. Click a part to see its name, what it does, and where to buy it.
@@ -42,6 +44,8 @@ npm start
 ```
 
 `npm run build` regenerates the viewer and checks the catalog, model mappings, geometry buffers, and download links before building Next.js.
+
+The live site is hosted on Vercel. Pushing to `main` automatically builds and deploys the site.
 
 ## Project map
 
