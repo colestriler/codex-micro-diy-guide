@@ -1,4 +1,4 @@
-[![Concept render of the DIY Codex Micro keypad with numbered agent keys and labeled controls](public/images/keypad-concept.png)](https://codex-micro-guide.vercel.app)
+[![Concept render of the DIY Codex Micro keypad with numbered agent keys and labeled controls](public/images/keypad-concept.png)](https://codexmicro.diy)
 
 *AI-generated concept render of the DIY prototype, with functional key labels.*
 
@@ -12,7 +12,7 @@ I have a 3D printer. So I decided to put together a guide to making my own versi
 
 This is that guide: a way to explore the parts, watch how they fit together, download the CAD, and work through the build. Credit for the original device goes to OpenAI and Work Louder. This project is a tutorial for a DIY recreation of their Codex Micro.
 
-**[Open the interactive build guide →](https://codex-micro-guide.vercel.app)**
+**[Open the interactive build guide →](https://codexmicro.diy)**
 
 ## What's here
 
