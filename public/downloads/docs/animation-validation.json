@@ -1,0 +1,19 @@
+{
+  "geometry": "9 printed-part meshes tessellated directly from individual STEP files",
+  "browser_checks": {
+    "webgl_initial_render": "passed",
+    "full_playback_0_to_11": "passed",
+    "stage_jump_11_to_5": "passed",
+    "perspective_and_underside": "passed",
+    "case_and_foot_transparency": "passed",
+    "click_part_identification": "passed",
+    "390px_layout_visual_review": "passed",
+    "embedded_guide_player": "passed"
+  },
+  "limitations": [
+    "Purchased components are simplified reference shapes",
+    "Animation paths are not collision-tested",
+    "Cable curves are not an electrical connection map",
+    "No physical assembly has been tested"
+  ]
+}

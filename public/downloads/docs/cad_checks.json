@@ -1,0 +1,10 @@
+{
+  "case_valid": true,
+  "plate_valid": true,
+  "printed_parts": 11,
+  "switches": 13,
+  "agent_leds": 6,
+  "perimeter_leds": 8,
+  "case_plate_intersection_mm3": 0,
+  "controller_case_intersection_mm3": 0
+}

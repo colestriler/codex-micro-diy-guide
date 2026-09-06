@@ -1,0 +1,755 @@
+[
+  {
+    "id": "case",
+    "name": "Outer case",
+    "category": "Printed",
+    "quantity": "1",
+    "description": "Holds the electronics and supports the switch plate. Eight thin windows around its perimeter let the LEDs shine through.",
+    "spec": "110 \u00d7 110 \u00d7 25 mm; print open side up. Frosted clear PETG is suitable.",
+    "links": [
+      {
+        "label": "Buy clear PETG",
+        "url": "https://shop.polymaker.com/products/petg"
+      }
+    ],
+    "files": [
+      {
+        "label": "STL",
+        "url": "/downloads/stl/01_case.stl"
+      },
+      {
+        "label": "STEP",
+        "url": "/downloads/step/01_case.step"
+      }
+    ],
+    "note": "Print this part in clear PETG. The purchase link is for filament, not a finished part."
+  },
+  {
+    "id": "plate",
+    "name": "Switch plate",
+    "category": "Printed",
+    "quantity": "1",
+    "description": "Clips the switches in place and locates the dial, joystick, touch input and three indicator lights. It drops onto the case ledge.",
+    "spec": "94 \u00d7 94 \u00d7 3 mm; 1.6 mm retaining lands. Print visible face down.",
+    "links": [
+      {
+        "label": "Buy white PETG",
+        "url": "https://shop.polymaker.com/products/petg"
+      }
+    ],
+    "files": [
+      {
+        "label": "STL",
+        "url": "/downloads/stl/02_switch_plate.stl"
+      },
+      {
+        "label": "STEP",
+        "url": "/downloads/step/02_switch_plate.step"
+      }
+    ],
+    "note": "Print this part in white PETG. The purchase link is for filament, not a finished part."
+  },
+  {
+    "id": "foot",
+    "name": "Round foot",
+    "category": "Printed",
+    "quantity": "1",
+    "description": "Supports the case on the desk. Its underside has recessed screw seats and its top has pockets for optional steel weights.",
+    "spec": "84 mm diameter \u00d7 5 mm tall. Add adhesive rubber below.",
+    "links": [
+      {
+        "label": "Buy white PETG",
+        "url": "https://shop.polymaker.com/products/petg"
+      }
+    ],
+    "files": [
+      {
+        "label": "STL",
+        "url": "/downloads/stl/03_round_foot.stl"
+      },
+      {
+        "label": "STEP",
+        "url": "/downloads/step/03_round_foot.step"
+      }
+    ],
+    "note": "Print this part in white PETG. The purchase link is for filament, not a finished part."
+  },
+  {
+    "id": "cradle",
+    "name": "Joystick cradle",
+    "category": "Printed",
+    "quantity": "1",
+    "description": "Holds the slide joystick in its recess on the top-right of the plate. The opening underneath routes its leads into the case.",
+    "spec": "19.8 mm pocket. Measure the actual joystick and trial-fit before bonding.",
+    "links": [
+      {
+        "label": "Buy black PETG",
+        "url": "https://shop.polymaker.com/products/petg"
+      }
+    ],
+    "files": [
+      {
+        "label": "STL",
+        "url": "/downloads/stl/04_joystick_cradle.stl"
+      },
+      {
+        "label": "STEP",
+        "url": "/downloads/step/04_joystick_cradle.step"
+      }
+    ],
+    "note": "Print this part in black PETG. The purchase link is for filament, not a finished part."
+  },
+  {
+    "id": "touch-cap",
+    "name": "Touch cap",
+    "category": "Printed",
+    "quantity": "1",
+    "description": "The fixed cap you touch to change input banks. A copper disk immediately underneath its thin top surface acts as the sensor.",
+    "spec": "0.8 mm sensing skin; 13 mm copper disk underneath. This is not a push button.",
+    "links": [
+      {
+        "label": "Buy black PETG",
+        "url": "https://shop.polymaker.com/products/petg"
+      }
+    ],
+    "files": [
+      {
+        "label": "STL",
+        "url": "/downloads/stl/05_touch_cap.stl"
+      },
+      {
+        "label": "STEP",
+        "url": "/downloads/step/05_touch_cap.step"
+      }
+    ],
+    "note": "Print this part in black PETG. The purchase link is for filament, not a finished part."
+  },
+  {
+    "id": "knob",
+    "name": "Dial knob",
+    "category": "Printed",
+    "quantity": "1",
+    "description": "Fits over the rotary encoder\u2019s D-shaped shaft, making it easy to turn and press.",
+    "spec": "6.2 mm nominal D socket. Test fit and allow clearance for the encoder click.",
+    "links": [
+      {
+        "label": "Buy white PETG",
+        "url": "https://shop.polymaker.com/products/petg"
+      }
+    ],
+    "files": [
+      {
+        "label": "STL",
+        "url": "/downloads/stl/06_encoder_knob.stl"
+      },
+      {
+        "label": "STEP",
+        "url": "/downloads/step/06_encoder_knob.step"
+      }
+    ],
+    "note": "Print this part in white PETG. The purchase link is for filament, not a finished part."
+  },
+  {
+    "id": "baffle",
+    "name": "Light baffle",
+    "category": "Printed",
+    "quantity": "6",
+    "description": "A small cup below each agent switch. It holds one RGBW board and blocks light from spilling into neighboring keys.",
+    "spec": "Print cavity up. Insulate the LED pads; keep switch pins clear.",
+    "links": [
+      {
+        "label": "Buy black PETG",
+        "url": "https://shop.polymaker.com/products/petg"
+      }
+    ],
+    "files": [
+      {
+        "label": "STL",
+        "url": "/downloads/stl/07_led_baffle.stl"
+      },
+      {
+        "label": "STEP",
+        "url": "/downloads/step/07_led_baffle.step"
+      }
+    ],
+    "note": "Print this part in black PETG. The purchase link is for filament, not a finished part."
+  },
+  {
+    "id": "clear-cap",
+    "name": "Translucent agent keycap",
+    "category": "Printed",
+    "quantity": "6",
+    "description": "Lets each agent\u2019s status light show through while providing a normal mechanical key surface.",
+    "spec": "Standard MX cross socket. Print a stem-fit coupon first; purchased caps are an option.",
+    "links": [
+      {
+        "label": "Buy clear PETG",
+        "url": "https://shop.polymaker.com/products/petg"
+      },
+      {
+        "label": "Buy molded translucent caps",
+        "url": "https://www.adafruit.com/product/4956"
+      }
+    ],
+    "files": [
+      {
+        "label": "STL",
+        "url": "/downloads/stl/08_keycap_1u.stl"
+      },
+      {
+        "label": "STEP",
+        "url": "/downloads/step/08_keycap_1u.step"
+      }
+    ],
+    "note": "Print this part in clear PETG. The purchase link is for filament, not a finished part."
+  },
+  {
+    "id": "white-cap",
+    "name": "White command keycap",
+    "category": "Printed",
+    "quantity": "5",
+    "description": "Covers the individual command switches. The supplied legend sheet adds labels for Fast, approve, decline, new chat and send.",
+    "spec": "Same 1U CAD as the agent cap; use white filament.",
+    "links": [
+      {
+        "label": "Buy white PETG",
+        "url": "https://shop.polymaker.com/products/petg"
+      },
+      {
+        "label": "Buy molded white caps",
+        "url": "https://www.adafruit.com/product/4998"
+      }
+    ],
+    "files": [
+      {
+        "label": "STL",
+        "url": "/downloads/stl/08_keycap_1u.stl"
+      },
+      {
+        "label": "STEP",
+        "url": "/downloads/step/08_keycap_1u.step"
+      }
+    ],
+    "note": "Print this part in white PETG. The purchase link is for filament, not a finished part."
+  },
+  {
+    "id": "wide-cap",
+    "name": "Wide microphone keycap",
+    "category": "Printed",
+    "quantity": "1",
+    "description": "Presses two independent switches together. The firmware combines those switch events into one logical key.",
+    "spec": "Two MX sockets, 19.05 mm apart. A conventional centered 2U cap will not fit.",
+    "links": [
+      {
+        "label": "Buy white PETG",
+        "url": "https://shop.polymaker.com/products/petg"
+      }
+    ],
+    "files": [
+      {
+        "label": "STL",
+        "url": "/downloads/stl/09_keycap_2u_dual_stem.stl"
+      },
+      {
+        "label": "STEP",
+        "url": "/downloads/step/09_keycap_2u_dual_stem.step"
+      }
+    ],
+    "note": "Print this part in white PETG. The purchase link is for filament, not a finished part."
+  },
+  {
+    "id": "switch-coupon",
+    "name": "Switch-fit coupon",
+    "category": "Printed",
+    "quantity": "1 test piece",
+    "description": "Tests three hole sizes before you spend time printing the full switch plate.",
+    "spec": "14.0, 14.1 and 14.2 mm openings. Pick a snug clip fit without forcing.",
+    "links": [
+      {
+        "label": "Buy white PETG",
+        "url": "https://shop.polymaker.com/products/petg"
+      }
+    ],
+    "files": [
+      {
+        "label": "STL",
+        "url": "/downloads/stl/10_switch_fit_coupon.stl"
+      },
+      {
+        "label": "STEP",
+        "url": "/downloads/step/10_switch_fit_coupon.step"
+      }
+    ],
+    "note": "Print this part in white PETG. The purchase link is for filament, not a finished part."
+  },
+  {
+    "id": "stem-coupon",
+    "name": "Stem and insert coupon",
+    "category": "Printed",
+    "quantity": "1 test piece",
+    "description": "Tests keycap cross sockets and the heat-set insert hole before printing final parts.",
+    "spec": "Three stem allowances and a 3.9 mm insert pilot. Also print in the cap material when testing stems.",
+    "links": [
+      {
+        "label": "Buy clear PETG",
+        "url": "https://shop.polymaker.com/products/petg"
+      }
+    ],
+    "files": [
+      {
+        "label": "STL",
+        "url": "/downloads/stl/11_stem_insert_coupon.stl"
+      },
+      {
+        "label": "STEP",
+        "url": "/downloads/step/11_stem_insert_coupon.step"
+      }
+    ],
+    "note": "Print this part in clear PETG. The purchase link is for filament, not a finished part."
+  },
+  {
+    "id": "controller",
+    "name": "Adafruit KB2040",
+    "category": "Electronics",
+    "quantity": "1",
+    "description": "The USB-C microcontroller reads every control and drives the LEDs. It runs the supplied CircuitPython prototype firmware.",
+    "spec": "35 \u00d7 17.8 \u00d7 4.9 mm envelope. USB only; no Bluetooth.",
+    "links": [
+      {
+        "label": "Buy KB2040 \u00b7 Adafruit",
+        "url": "https://www.adafruit.com/product/5302"
+      }
+    ],
+    "files": [],
+    "note": "Generic USB macros and manual RGBW control are implemented. Native Codex integration is not."
+  },
+  {
+    "id": "mx-switch",
+    "name": "Gateron North Pole Yellow 2.0",
+    "category": "Electronics",
+    "quantity": "13",
+    "description": "Mechanical key switches. Transparent upper and lower housings let the agent LEDs shine through. Two switches sit under the wide cap.",
+    "spec": "Normal MX, 5-pin type; not Choc or Hall-effect. Seller pack: 35.",
+    "links": [
+      {
+        "label": "Buy switches \u00b7 Gateron",
+        "url": "https://www.gateron.com/products/gateron-new-north-pole-yellow-20-switch-set"
+      }
+    ],
+    "files": [],
+    "note": null
+  },
+  {
+    "id": "joystick",
+    "name": "Thumb slide joystick",
+    "category": "Electronics",
+    "quantity": "1",
+    "description": "A flat analog joystick that reads horizontal and vertical movement. The prototype firmware converts this into arrow-key actions.",
+    "spec": "SparkFun COM-09426 / PSP1000 style. Power from 3.3 V; check pad orientation.",
+    "links": [
+      {
+        "label": "Buy joystick \u00b7 SparkFun",
+        "url": "https://www.sparkfun.com/thumb-slide-joystick.html"
+      }
+    ],
+    "files": [],
+    "note": "Supplier geometry is not fully dimensioned. Test the printed cradle against the actual part."
+  },
+  {
+    "id": "encoder",
+    "name": "Rotary encoder with push switch",
+    "category": "Electronics",
+    "quantity": "1",
+    "description": "Reads dial rotation and clicks. The prototype maps these to scrolling and Enter.",
+    "spec": "Adafruit 377; 6 mm D shaft, M7 panel bushing. Nut and washer included.",
+    "links": [
+      {
+        "label": "Buy encoder \u00b7 Adafruit",
+        "url": "https://www.adafruit.com/product/377"
+      }
+    ],
+    "files": [],
+    "note": null
+  },
+  {
+    "id": "encoder-nut",
+    "name": "Encoder nut and washer",
+    "category": "Hardware",
+    "quantity": "1 set",
+    "description": "Clamps the rotary encoder to the switch plate without relying on its electrical pins.",
+    "spec": "Included with the specified encoder. Tighten gently against plastic.",
+    "links": [
+      {
+        "label": "Buy encoder + mounting hardware",
+        "url": "https://www.adafruit.com/product/377"
+      }
+    ],
+    "files": [],
+    "note": null
+  },
+  {
+    "id": "rgbw-led",
+    "name": "Mini RGBW NeoPixel board",
+    "category": "Electronics",
+    "quantity": "14",
+    "description": "Individually addressable light boards: six illuminate agent keys and eight face outward through the case.",
+    "spec": "Adafruit 4776; 9.1 \u00d7 9.1 \u00d7 3.1 mm. Buy two packs of ten. GRBW firmware order.",
+    "links": [
+      {
+        "label": "Buy RGBW boards \u00b7 Adafruit",
+        "url": "https://www.adafruit.com/product/4776"
+      }
+    ],
+    "files": [],
+    "note": "Power from fused RAW/5 V through a shared ground. Firmware limits brightness to 15%."
+  },
+  {
+    "id": "level-shifter",
+    "name": "74AHCT125 level shifter",
+    "category": "Electronics",
+    "quantity": "1",
+    "description": "Converts the controller\u2019s 3.3 V LED data signal into a reliable 5 V signal for the pixel chain.",
+    "spec": "DIP package, 5 V supply. Follow the wiring diagram for unused gates and enable pins.",
+    "links": [
+      {
+        "label": "Buy level shifter \u00b7 Adafruit",
+        "url": "https://www.adafruit.com/product/1787"
+      }
+    ],
+    "files": [],
+    "note": null
+  },
+  {
+    "id": "diode",
+    "name": "1N4148 signal diode",
+    "category": "Electronics",
+    "quantity": "13",
+    "description": "One per switch prevents false key events when multiple keys are pressed together.",
+    "spec": "Band faces the matrix row. Buy two packs of ten.",
+    "links": [
+      {
+        "label": "Buy diodes \u00b7 Adafruit",
+        "url": "https://www.adafruit.com/product/1641"
+      }
+    ],
+    "files": [],
+    "note": null
+  },
+  {
+    "id": "wire",
+    "name": "Silicone hookup wire",
+    "category": "Electronics",
+    "quantity": "As needed",
+    "description": "Connects the switch matrix, controls, controller and light chain. Leave enough slack to lift the plate for service.",
+    "spec": "28 AWG for signals; use 24\u201326 AWG for the power trunk. Insulate crossings.",
+    "links": [
+      {
+        "label": "Buy 28 AWG ribbon \u00b7 Adafruit",
+        "url": "https://www.adafruit.com/product/3890"
+      },
+      {
+        "label": "Find power wire",
+        "url": "https://www.adafruit.com/search?q=26awg%20silicone%20wire"
+      }
+    ],
+    "files": [],
+    "note": null
+  },
+  {
+    "id": "copper",
+    "name": "Copper touch electrode",
+    "category": "Electronics",
+    "quantity": "1 disk",
+    "description": "Senses a finger through the thin plastic touch cap. Solder its lead before attaching it beneath the cap.",
+    "spec": "13 mm copper disk; D10 with a 1 M\u03a9 resistor to ground.",
+    "links": [
+      {
+        "label": "Buy copper foil",
+        "url": "https://www.adafruit.com/search?q=copper%20tape"
+      }
+    ],
+    "files": [],
+    "note": null
+  },
+  {
+    "id": "indicator",
+    "name": "3 mm indicator LED",
+    "category": "Electronics",
+    "quantity": "3",
+    "description": "Shows which of the three prototype macro banks is selected. Each needs its own series resistor.",
+    "spec": "3 mm LED; 1 k\u03a9 resistor per LED.",
+    "links": [
+      {
+        "label": "Find 3 mm LEDs",
+        "url": "https://www.adafruit.com/search?q=3mm%20led"
+      }
+    ],
+    "files": [],
+    "note": null
+  },
+  {
+    "id": "passives",
+    "name": "Resistors and capacitors",
+    "category": "Electronics",
+    "quantity": "1 small set",
+    "description": "Limit current, stabilize the LED supply, and make the touch and data connections work correctly.",
+    "spec": "330 \u03a9 \u00d71; 1 M\u03a9 \u00d71; 1 k\u03a9 \u00d73; 100 nF \u00d71; 100 \u00b5F \u226510 V \u00d71.",
+    "links": [
+      {
+        "label": "Shop component catalog",
+        "url": "https://www.adafruit.com/category/34"
+      }
+    ],
+    "files": [],
+    "note": "Select the listed values. This is a catalog link, not a preassembled kit."
+  },
+  {
+    "id": "perfboard",
+    "name": "Small prototype circuit board",
+    "category": "Electronics",
+    "quantity": "1",
+    "description": "Supports the level shifter and small passive components in the front bay of the case.",
+    "spec": "Trim to at most 25 \u00d7 20 mm. Insulate the underside.",
+    "links": [
+      {
+        "label": "Find perfboard",
+        "url": "https://www.adafruit.com/search?q=perfboard"
+      }
+    ],
+    "files": [],
+    "note": null
+  },
+  {
+    "id": "insert",
+    "name": "M3 heat-set insert",
+    "category": "Hardware",
+    "quantity": "6",
+    "description": "Provides a metal thread in the printed plastic: four for the plate and two for the foot.",
+    "spec": "4.2 mm outside diameter \u00d7 4 mm long. Starting pilot: 3.9 mm. Test coupon first.",
+    "links": [
+      {
+        "label": "Buy inserts \u00b7 Adafruit",
+        "url": "https://www.adafruit.com/product/4255"
+      }
+    ],
+    "files": [],
+    "note": null
+  },
+  {
+    "id": "screw",
+    "name": "M3 \u00d7 8 mm plate screw",
+    "category": "Hardware",
+    "quantity": "4",
+    "description": "Fastens the switch plate to the four corner inserts in the case.",
+    "spec": "M3 \u00d7 8 mm socket-head screw. Do not overtighten.",
+    "links": [
+      {
+        "label": "Find M3 \u00d7 8 screws",
+        "url": "https://www.mcmaster.com/products/screws/thread-size~m3/length~8-mm/"
+      }
+    ],
+    "files": [],
+    "note": null
+  },
+  {
+    "id": "foot-screw",
+    "name": "Low-profile M3 \u00d7 8 mm screw",
+    "category": "Hardware",
+    "quantity": "2",
+    "description": "Attaches the foot from underneath while keeping the head recessed.",
+    "spec": "Head at most 6 mm wide and 1.7 mm tall. Choose low-profile heads.",
+    "links": [
+      {
+        "label": "Find low-profile M3 screws",
+        "url": "https://www.mcmaster.com/products/screws/thread-size~m3/length~8-mm/"
+      }
+    ],
+    "files": [],
+    "note": null
+  },
+  {
+    "id": "washer",
+    "name": "Steel weight washer",
+    "category": "Hardware",
+    "quantity": "4 optional",
+    "description": "Adds a little weight so the keypad feels steadier on the desk. Tape the washers into the round foot\u2019s top pockets.",
+    "spec": "M8 fender washer, 24 mm outside diameter, at most 2 mm thick.",
+    "links": [
+      {
+        "label": "Find steel washers",
+        "url": "https://www.mcmaster.com/products/washers/for-screw-size~m8/"
+      }
+    ],
+    "files": [],
+    "note": null
+  },
+  {
+    "id": "rubber",
+    "name": "Adhesive rubber feet",
+    "category": "Hardware",
+    "quantity": "4 pads or a strip",
+    "description": "Keeps the keypad from sliding and protects the desk. Attach beneath the printed foot.",
+    "spec": "1\u20132 mm thick adhesive rubber. No TPU printing is required.",
+    "links": [
+      {
+        "label": "Shop rubber foot material",
+        "url": "https://www.mcmaster.com/products/rubber/"
+      }
+    ],
+    "files": [],
+    "note": null
+  },
+  {
+    "id": "usb",
+    "name": "USB-C data cable",
+    "category": "Hardware",
+    "quantity": "1",
+    "description": "Powers the controller and LEDs and carries keyboard, mouse and serial data to the computer.",
+    "spec": "Must support data. Connector overmold must fit the 15 \u00d7 8 mm case tunnel.",
+    "links": [
+      {
+        "label": "Find a USB-C data cable",
+        "url": "https://www.adafruit.com/search?q=USB%20C%20cable"
+      }
+    ],
+    "files": [],
+    "note": null
+  },
+  {
+    "id": "tape",
+    "name": "Insulation and mounting tape",
+    "category": "Hardware",
+    "quantity": "As needed",
+    "description": "Insulates solder joints and secures the controller, light boards and optional weights.",
+    "spec": "Polyimide tape plus thin removable foam tape. About 1.6 mm below the controller.",
+    "links": [
+      {
+        "label": "Find polyimide tape",
+        "url": "https://www.adafruit.com/search?q=polyimide%20tape"
+      }
+    ],
+    "files": [],
+    "note": null
+  },
+  {
+    "id": "decals",
+    "name": "Clear key-label decal paper",
+    "category": "Hardware",
+    "quantity": "Part of one sheet",
+    "description": "Adds the command symbols to your blank white printed keycaps. Use the supplied SVG legend sheet.",
+    "spec": "Optional. Match inkjet or laser paper to your printer; follow its sealing instructions.",
+    "links": [
+      {
+        "label": "Buy clear inkjet decal paper",
+        "url": "https://www.hayespaper.com/products/inkjet-printer-waterslide-decal-paper"
+      }
+    ],
+    "files": [
+      {
+        "label": "Legend SVG",
+        "url": "/downloads/docs/key-legends.svg"
+      }
+    ],
+    "note": null
+  },
+  {
+    "id": "petg-clear",
+    "name": "Clear PETG",
+    "category": "Materials",
+    "quantity": "About 150 g",
+    "description": "Filament for the case and six agent keycaps. These are material allowances, not slicer estimates.",
+    "spec": "0.4 mm nozzle starting point; 0.20 mm layers, finer for caps. Verify your printer\u2019s filament diameter.",
+    "links": [
+      {
+        "label": "Buy PETG \u00b7 choose Clear",
+        "url": "https://shop.polymaker.com/products/petg"
+      }
+    ],
+    "files": [],
+    "note": "Choose colorless clear PETG for light transmission. Frosted is fine; optical clarity is not required."
+  },
+  {
+    "id": "petg-white",
+    "name": "White PETG",
+    "category": "Materials",
+    "quantity": "About 100 g",
+    "description": "Filament for the plate, command caps, knob and foot. These are material allowances, not slicer estimates.",
+    "spec": "0.4 mm nozzle starting point; 0.20 mm layers, finer for caps. Verify your printer\u2019s filament diameter.",
+    "links": [
+      {
+        "label": "Buy PETG \u00b7 choose White",
+        "url": "https://shop.polymaker.com/products/petg"
+      }
+    ],
+    "files": [],
+    "note": null
+  },
+  {
+    "id": "petg-black",
+    "name": "Black PETG",
+    "category": "Materials",
+    "quantity": "About 50 g",
+    "description": "Filament for the light baffles, touch cap and joystick cradle. These are material allowances, not slicer estimates.",
+    "spec": "0.4 mm nozzle starting point; 0.20 mm layers, finer for caps. Verify your printer\u2019s filament diameter.",
+    "links": [
+      {
+        "label": "Buy PETG \u00b7 choose Black",
+        "url": "https://shop.polymaker.com/products/petg"
+      }
+    ],
+    "files": [],
+    "note": null
+  },
+  {
+    "id": "creator-micro",
+    "name": "Creator Micro 2 Pro",
+    "category": "Native",
+    "quantity": "1 donor option",
+    "description": "A genuine supported device is the documented route to native Codex controls, live task colors and Bluetooth. Keep its controller and firmware.",
+    "spec": "The supplied custom case is not a verified donor fit. Measure the board and revise mounts before printing.",
+    "links": [
+      {
+        "label": "View Creator Micro 2 \u00b7 Work Louder",
+        "url": "https://worklouder.cc/creator-micro-2"
+      },
+      {
+        "label": "Read official compatibility guide",
+        "url": "https://learn.chatgpt.com/docs/features/codex-micro"
+      }
+    ],
+    "files": [],
+    "note": "Alternative to a genuine Codex Micro, not an additional purchase. Check seller availability."
+  },
+  {
+    "id": "codex-micro",
+    "name": "Genuine Codex Micro",
+    "category": "Native",
+    "quantity": "1 alternative",
+    "description": "The original OpenAI \u00d7 Work Louder device. It has the native integration, factory light diffuser, battery and mechanical assembly.",
+    "spec": "Alternative to Creator Micro 2 Pro. It was listed out of stock during the original research.",
+    "links": [
+      {
+        "label": "View Codex Micro \u00b7 OpenAI",
+        "url": "https://openai.com/supply/co-lab/work-louder/"
+      }
+    ],
+    "files": [],
+    "note": null
+  },
+  {
+    "id": "pure-caps",
+    "name": "Frosted MX Pure caps",
+    "category": "Native",
+    "quantity": "6 \u00d7 1U",
+    "description": "Optional frosted caps for a genuine Creator Micro 2 so the six agent lights remain visible.",
+    "spec": "Keep genuine electronics and diffuser. Check the seller\u2019s compatibility and shipping status.",
+    "links": [
+      {
+        "label": "View MX Pure \u00b7 Work Louder",
+        "url": "https://worklouder.cc/wrk-mx-pure"
+      }
+    ],
+    "files": [],
+    "note": null
+  }
+]

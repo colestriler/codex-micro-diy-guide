@@ -1,0 +1,25 @@
+measurement,unit,value,how_to_measure
+PCB width,mm,,Calipers across bare PCB
+PCB depth,mm,,Calipers across bare PCB
+PCB thickness,mm,,Calipers at clear board edge
+Hole 1 X from PCB center,mm,,Top view right is positive
+Hole 1 Y from PCB center,mm,,Top view rear is positive
+Hole 2 X from PCB center,mm,,Top view right is positive
+Hole 2 Y from PCB center,mm,,Top view rear is positive
+Hole 3 X from PCB center,mm,,Top view right is positive
+Hole 3 Y from PCB center,mm,,Top view rear is positive
+Hole 4 X from PCB center,mm,,Top view right is positive
+Hole 4 Y from PCB center,mm,,Top view rear is positive
+Mount hole diameter,mm,,Pin gauge or calipers
+Tallest underside component,mm,,Include connectors and cable bends
+USB port center X from PCB center,mm,,At port opening
+USB port height above PCB,mm,,At port center
+Rear button location,mm,,X/Y/Z of center
+Battery envelope,mm,,Length width thickness; do not compress cell
+Antenna location and keepout,mm,,Photo with ruler plus board markings
+Touch electrode location,mm,,X/Y and gap to exterior surface
+Perimeter LED locations,mm,,Top and underside photos with ruler
+Optical diffuser/lightpipe envelope,mm,,Reuse the original if possible
+Original switch plate seat height,mm,,From PCB top surface
+Case outer width and depth,mm,,Reference for exterior reconstruction
+Original keycap stem locations,mm,,Confirm the two sockets under wide key

@@ -1,0 +1,148 @@
+{
+  "stl_checks": [
+    {
+      "file": "01_case.stl",
+      "watertight": true,
+      "single_solid": true,
+      "size_mm": [
+        110.0,
+        110.0,
+        25.0
+      ]
+    },
+    {
+      "file": "02_switch_plate.stl",
+      "watertight": true,
+      "single_solid": true,
+      "size_mm": [
+        94.0,
+        94.0,
+        3.0
+      ]
+    },
+    {
+      "file": "03_round_foot.stl",
+      "watertight": true,
+      "single_solid": true,
+      "size_mm": [
+        84.0,
+        83.98,
+        5.0
+      ]
+    },
+    {
+      "file": "04_joystick_cradle.stl",
+      "watertight": true,
+      "single_solid": true,
+      "size_mm": [
+        21.6,
+        21.6,
+        3.6
+      ]
+    },
+    {
+      "file": "05_touch_cap.stl",
+      "watertight": true,
+      "single_solid": true,
+      "size_mm": [
+        18.8,
+        18.8,
+        4.05
+      ]
+    },
+    {
+      "file": "06_encoder_knob.stl",
+      "watertight": true,
+      "single_solid": true,
+      "size_mm": [
+        17.8,
+        17.8,
+        13.5
+      ]
+    },
+    {
+      "file": "07_led_baffle.stl",
+      "watertight": true,
+      "single_solid": true,
+      "size_mm": [
+        18.7,
+        18.7,
+        11.5
+      ]
+    },
+    {
+      "file": "08_keycap_1u.stl",
+      "watertight": true,
+      "single_solid": true,
+      "size_mm": [
+        18.0,
+        18.0,
+        6.6
+      ]
+    },
+    {
+      "file": "09_keycap_2u_dual_stem.stl",
+      "watertight": true,
+      "single_solid": true,
+      "size_mm": [
+        37.05,
+        18.0,
+        6.6
+      ]
+    },
+    {
+      "file": "10_switch_fit_coupon.stl",
+      "watertight": true,
+      "single_solid": true,
+      "size_mm": [
+        66.0,
+        24.0,
+        3.0
+      ]
+    },
+    {
+      "file": "11_stem_insert_coupon.stl",
+      "watertight": true,
+      "single_solid": true,
+      "size_mm": [
+        62.0,
+        18.0,
+        7.0
+      ]
+    }
+  ],
+  "step_valid": true,
+  "assembly_pair_checks": [
+    {
+      "a": "01_case",
+      "b": "02_switch_plate",
+      "intersection_mm3": 0
+    },
+    {
+      "a": "01_case",
+      "b": "03_round_foot",
+      "intersection_mm3": 0
+    },
+    {
+      "a": "02_switch_plate",
+      "b": "04_joystick_cradle",
+      "intersection_mm3": 0
+    },
+    {
+      "a": "02_switch_plate",
+      "b": "05_touch_cap",
+      "intersection_mm3": 0
+    },
+    {
+      "a": "02_switch_plate",
+      "b": "06_encoder_knob",
+      "intersection_mm3": 0
+    }
+  ],
+  "input_state_tests": "passed",
+  "firmware_syntax": "passed",
+  "physical_print_test": "NOT PERFORMED",
+  "hardware_electrical_test": "NOT PERFORMED",
+  "native_codex_integration": "NOT IMPLEMENTED",
+  "oem_donor_fit": "NOT VERIFIED"
+}

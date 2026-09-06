@@ -1,0 +1,112 @@
+{
+  "01_case": {
+    "qty": 1,
+    "bounds_mm": [
+      110.005,
+      110.005,
+      25.005
+    ],
+    "volume_mm3": 84205.82,
+    "notes": "Open side up; supports in USB tunnel only if your slicer needs them."
+  },
+  "02_switch_plate": {
+    "qty": 1,
+    "bounds_mm": [
+      94.002,
+      94.002,
+      3.003
+    ],
+    "volume_mm3": 15698.87,
+    "notes": "Visible face DOWN. 1.6 mm switch clip lands, 3 mm structural plate."
+  },
+  "03_round_foot": {
+    "qty": 1,
+    "bounds_mm": [
+      84.017,
+      84.0,
+      5.017
+    ],
+    "volume_mm3": 22975.72,
+    "notes": "Flat bottom DOWN. Washer pockets face up; secure washers with tape before assembly."
+  },
+  "04_joystick_cradle": {
+    "qty": 1,
+    "bounds_mm": [
+      21.601,
+      21.601,
+      3.601
+    ],
+    "volume_mm3": 829.15,
+    "notes": "Pocket 19.8 mm. Vendor does not publish a controlled drawing; fit-check actual joystick."
+  },
+  "05_touch_cap": {
+    "qty": 1,
+    "bounds_mm": [
+      18.804,
+      18.8,
+      4.053
+    ],
+    "volume_mm3": 396.97,
+    "notes": "Visible face DOWN. Bond 13 mm copper disk immediately beneath the 0.8 mm top skin."
+  },
+  "06_encoder_knob": {
+    "qty": 1,
+    "bounds_mm": [
+      17.804,
+      17.8,
+      13.502
+    ],
+    "volume_mm3": 2473.2,
+    "notes": "Socket DOWN; short bridging above nut pocket. Trial fit the D socket before pressing fully. Adhesive optional after testing."
+  },
+  "07_led_baffle": {
+    "qty": 6,
+    "bounds_mm": [
+      18.7,
+      18.7,
+      11.5
+    ],
+    "volume_mm3": 1174.15,
+    "notes": "Black filament, cavity UP. LED PCB on floor, insulated pads underneath. Six identical cups."
+  },
+  "08_keycap_1u": {
+    "qty": 11,
+    "bounds_mm": [
+      18.001,
+      18.001,
+      6.684
+    ],
+    "volume_mm3": 976.74,
+    "notes": "Prototype cap: 6 translucent and 5 white. Support only cavity roofs, keep sockets clear. Bought MX caps feel better."
+  },
+  "09_keycap_2u_dual_stem": {
+    "qty": 1,
+    "bounds_mm": [
+      37.051,
+      18.001,
+      6.601
+    ],
+    "volume_mm3": 1982.24,
+    "notes": "Two MX stems spaced 19.05 mm; uses two switches, NOT a conventional centered 2U stabilizer."
+  },
+  "10_switch_fit_coupon": {
+    "qty": 1,
+    "bounds_mm": [
+      66.0,
+      24.0,
+      3.0
+    ],
+    "volume_mm3": 2614.77,
+    "notes": "Left/middle/right from top: 14.0 / 14.1 / 14.2 mm. Choose snug clip fit before full print."
+  },
+  "11_stem_insert_coupon": {
+    "qty": 1,
+    "bounds_mm": [
+      62.0,
+      18.0,
+      7.0
+    ],
+    "volume_mm3": 7645.49,
+    "notes": "Cross fits -0.05 / nominal / +0.05, then 3.9 mm insert pocket. Sockets UP for inspection."
+  }
+}

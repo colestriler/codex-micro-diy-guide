@@ -1,0 +1,24 @@
+route,item,quantity_to_buy,quantity_used,estimated_USD,url,notes
+native,Creator Micro 2 Pro,1,1,check seller,https://worklouder.cc/creator-micro-2,Officially supported; Pro required to also match Bluetooth; availability unconfirmed
+native,Codex Micro alternative,1,1,230.00,https://openai.com/supply/co-lab/work-louder/,Alternative to Creator Micro 2; page was out of stock; do not buy both
+native,Frosted MX Pure keycaps,1 set,6 1U,check seller,https://worklouder.cc/wrk-mx-pure,For visible agent colors; product page says pre-order
+custom,Adafruit KB2040,1,1,8.95,https://www.adafruit.com/product/5302,USB-C RP2040 board; no Bluetooth
+custom,Gateron New North Pole Yellow 2.0,1 pack of 35,13,19.04,https://www.gateron.com/products/gateron-new-north-pole-yellow-20-switch-set,Transparent top AND bottom; normal MX type; no Choc or Hall switches
+custom,SparkFun COM-09426 thumb slide joystick,1,1,5.95,https://www.sparkfun.com/thumb-slide-joystick.html,PSP1000 style; measure body and test 19.8 mm cradle before bonding
+custom,Adafruit rotary encoder 377,1,1,4.50,https://www.adafruit.com/product/377,6 mm D shaft M7 panel bushing; nut and washer; included knob is fallback
+custom,Adafruit RGBW mini NeoPixels 4776,2 packs of 10,14,9.90,https://www.adafruit.com/product/4776,6 agent lights plus 8 perimeter; must use GRBW firmware
+custom,74AHCT125 DIP level shifter,1,1,check seller,https://www.adafruit.com/product/1787,5 V supply; translates 3.3 V data to pixels
+custom,1N4148 diodes,2 packs of 10,13,check seller,https://www.adafruit.com/product/1641,One per physical switch; band toward matrix row
+custom,28 AWG silicone ribbon,1 m 10 conductors,as needed,check seller,https://www.adafruit.com/product/3890,Signals and short LED wiring; use 24-26 AWG for power trunk
+custom,Translucent MX caps optional,1 pack of 10,6,4.95,https://www.adafruit.com/product/4956,Replaces printed translucent 1U caps
+custom,White MX caps optional,1 pack of 10,5,check seller,https://www.adafruit.com/product/4998,Replaces printed white 1U caps; wide cap still custom
+custom,M3 x 4 mm heat-set inserts OD4.2,1 pack of 50,6,5.95,https://www.adafruit.com/product/4255,Prototype pilot diameter 3.9 mm; print coupon first
+custom,M3 x 8 mm screws,1 small pack,6,estimate 3-6,https://www.mcmaster.com/products/screws/thread-size~m3/length~8-mm/,Four top socket caps; two foot low-profile heads max6 mm diameter max1.7 mm high
+custom,Passives and prototype board,1 small assortment,see guide,estimate 8-15,https://www.adafruit.com/category/34,330 ohm x1; 1M ohm x1; 1k ohm x3; 100nF x1; 100uF 10V x1; three 3mm LEDs; perfboard max25x20mm
+custom,Copper foil and insulation,1 small roll each,as needed,estimate 8-12,https://www.adafruit.com/search?q=copper%20tape,13mm copper touch disk; polyimide tape; thin foam tape
+custom,USB-C DATA cable,1,1,estimate 5-10,https://www.adafruit.com/search?q=USB%20C%20cable,Connector overmold must fit 15x8mm rear tunnel
+custom,Rubber foot material and optional weights,1 strip and 4 washers,as needed,estimate 4-8,https://www.mcmaster.com/products/rubber/,Adhesive rubber 1-2mm; optional M8 fender washers OD24 max thickness2mm
+materials,Clear or natural PETG 1.75mm,1 spool,approx150g allowance,estimate 20-30,https://shop.polymaker.com/products/petg,Choose Clear; case and six agent caps; buy spool not refill if no empty spool
+materials,White PETG 1.75mm,1 spool,approx100g allowance,estimate 20-30,https://shop.polymaker.com/products/petg,Plate white command caps knob and foot; clear plate optional
+materials,Black PETG 1.75mm,1 small spool,approx50g allowance,estimate 15-25,https://shop.polymaker.com/products/petg,Light baffles touch cap and joystick cradle; existing black PLA can serve for baffles
+custom,Clear waterslide decal paper optional,1 pack of 20 sheets,part of 1 sheet,15.99 + sealer,https://www.hayespaper.com/products/inkjet-printer-waterslide-decal-paper,Optional printed legends; inkjet version requires inkjet printer and suitable sealer; print shop alternative

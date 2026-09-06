@@ -1,0 +1,30 @@
+{
+  "revision": "A",
+  "case_width": 110.0,
+  "case_depth": 110.0,
+  "case_height": 25.0,
+  "case_corner_radius": 12.0,
+  "floor_thickness": 2.4,
+  "plate_width": 94.0,
+  "plate_thickness": 3.0,
+  "plate_gap_per_side": 0.25,
+  "key_pitch": 19.05,
+  "switch_cutout": 14.1,
+  "switch_clip_thickness": 1.6,
+  "insert_hole_diameter": 3.9,
+  "insert_depth": 4.3,
+  "case_screw_xy": 43.0,
+  "joystick_center": [
+    30.0,
+    30.0
+  ],
+  "joystick_pocket": 19.8,
+  "encoder_hole_diameter": 7.2,
+  "knob_shaft_diameter": 6.2,
+  "knob_shaft_flat_x": 1.7,
+  "mx_stem_cross_length": 4.15,
+  "mx_stem_cross_width": 1.35,
+  "keycap_width": 18.0,
+  "foot_diameter": 84.0,
+  "foot_height": 5.0
+}

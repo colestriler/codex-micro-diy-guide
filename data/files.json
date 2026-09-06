@@ -1,0 +1,123 @@
+[
+  {
+    "name": "01 case",
+    "id": "01_case",
+    "quantity": 1,
+    "note": "Open side up; supports in USB tunnel only if your slicer needs them.",
+    "size": [
+      110.005,
+      110.005,
+      25.005
+    ]
+  },
+  {
+    "name": "02 switch plate",
+    "id": "02_switch_plate",
+    "quantity": 1,
+    "note": "Visible face DOWN. 1.6 mm switch clip lands, 3 mm structural plate.",
+    "size": [
+      94.002,
+      94.002,
+      3.003
+    ]
+  },
+  {
+    "name": "03 round foot",
+    "id": "03_round_foot",
+    "quantity": 1,
+    "note": "Flat bottom DOWN. Washer pockets face up; secure washers with tape before assembly.",
+    "size": [
+      84.017,
+      84.0,
+      5.017
+    ]
+  },
+  {
+    "name": "04 joystick cradle",
+    "id": "04_joystick_cradle",
+    "quantity": 1,
+    "note": "Pocket 19.8 mm. Vendor does not publish a controlled drawing; fit-check actual joystick.",
+    "size": [
+      21.601,
+      21.601,
+      3.601
+    ]
+  },
+  {
+    "name": "05 touch cap",
+    "id": "05_touch_cap",
+    "quantity": 1,
+    "note": "Visible face DOWN. Bond 13 mm copper disk immediately beneath the 0.8 mm top skin.",
+    "size": [
+      18.804,
+      18.8,
+      4.053
+    ]
+  },
+  {
+    "name": "06 encoder knob",
+    "id": "06_encoder_knob",
+    "quantity": 1,
+    "note": "Socket DOWN; short bridging above nut pocket. Trial fit the D socket before pressing fully. Adhesive optional after testing.",
+    "size": [
+      17.804,
+      17.8,
+      13.502
+    ]
+  },
+  {
+    "name": "07 led baffle",
+    "id": "07_led_baffle",
+    "quantity": 6,
+    "note": "Black filament, cavity UP. LED PCB on floor, insulated pads underneath. Six identical cups.",
+    "size": [
+      18.7,
+      18.7,
+      11.5
+    ]
+  },
+  {
+    "name": "08 keycap 1u",
+    "id": "08_keycap_1u",
+    "quantity": 11,
+    "note": "Prototype cap: 6 translucent and 5 white. Support only cavity roofs, keep sockets clear. Bought MX caps feel better.",
+    "size": [
+      18.001,
+      18.001,
+      6.684
+    ]
+  },
+  {
+    "name": "09 keycap 2u dual stem",
+    "id": "09_keycap_2u_dual_stem",
+    "quantity": 1,
+    "note": "Two MX stems spaced 19.05 mm; uses two switches, NOT a conventional centered 2U stabilizer.",
+    "size": [
+      37.051,
+      18.001,
+      6.601
+    ]
+  },
+  {
+    "name": "10 switch fit coupon",
+    "id": "10_switch_fit_coupon",
+    "quantity": 1,
+    "note": "Left/middle/right from top: 14.0 / 14.1 / 14.2 mm. Choose snug clip fit before full print.",
+    "size": [
+      66.0,
+      24.0,
+      3.0
+    ]
+  },
+  {
+    "name": "11 stem insert coupon",
+    "id": "11_stem_insert_coupon",
+    "quantity": 1,
+    "note": "Cross fits -0.05 / nominal / +0.05, then 3.9 mm insert pocket. Sockets UP for inspection.",
+    "size": [
+      62.0,
+      18.0,
+      7.0
+    ]
+  }
+]

@@ -1,0 +1,5 @@
+cadquery==2.8.0
+trimesh==5.1.0
+matplotlib==3.11.1
+pillow==12.3.0
+pyserial>=3.5,<4
