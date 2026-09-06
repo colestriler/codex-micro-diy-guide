@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import catalog from "@/data/parts.json";
 import instructions from "@/data/instructions.json";
 import files from "@/data/files.json";
@@ -50,15 +51,19 @@ export default function BuildApp() {
     <main id="top">
       <header className="site-header">
         <a className="wordmark" href="#top">micro<span> / build guide</span></a>
-        <div className="header-links"><a href="https://github.com/colestriler/codex-micro-guide" target="_blank" rel="noreferrer">GitHub ↗</a><a href="/downloads/build-files.zip" download>Download files ↓</a></div>
+        <div className="header-links"><a className="github-link" href="https://github.com/colestriler/codex-micro-guide" target="_blank" rel="noreferrer"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M6.766 11.328c-2.063-.25-3.516-1.734-3.516-3.656 0-.781.281-1.625.75-2.188-.203-.515-.172-1.609.063-2.062.625-.078 1.468.25 1.968.703.594-.187 1.219-.281 1.985-.281.765 0 1.39.094 1.953.265.484-.437 1.344-.765 1.969-.687.218.422.25 1.515.046 2.047.5.593.766 1.39.766 2.203 0 1.922-1.453 3.375-3.547 3.64.531.344.89 1.094.89 1.954v1.625c0 .468.391.734.86.547C13.781 14.359 16 11.53 16 8.03 16 3.61 12.406 0 7.984 0 3.563 0 0 3.61 0 8.031a7.88 7.88 0 0 0 5.172 7.422c.422.156.828-.125.828-.547v-1.25c-.219.094-.5.156-.75.156-1.031 0-1.64-.562-2.078-1.609-.172-.422-.36-.672-.719-.719-.187-.015-.25-.093-.25-.187 0-.188.313-.328.625-.328.453 0 .844.281 1.25.86.313.452.64.655 1.031.655s.641-.14 1-.5c.266-.265.47-.5.657-.656"/></svg><span>GitHub</span><span aria-hidden="true">↗</span></a><a href="/downloads/build-files.zip" download>Download files ↓</a></div>
       </header>
 
       <div className="guide-layout">
       <TableOfContents />
       <div className="guide-content">
-      <section className="intro">
-        <div><h1>A small keypad. Every part explained.</h1><p>Explore the model, watch the assembly, and build your own.</p></div>
-        <span className="revision">DIY prototype · Rev A</span>
+      <section className="overview" id="overview" aria-labelledby="heading-overview">
+        <p className="overview-eyebrow">A DIY build guide</p>
+        <h1 id="heading-overview">Build your own Codex Micro.</h1>
+        <p className="overview-context">I wanted the <a href="https://openai.com/supply/co-lab/work-louder/" target="_blank" rel="noreferrer">OpenAI × Work Louder keypad</a>, but it was unavailable. So I put together a guide to making my own version, with the files and steps for anyone who wants to do the same.</p>
+        <p className="overview-context">Print the enclosure, gather the electronics, and see how every piece fits. This is an independent DIY recreation; the original design belongs to OpenAI and Work Louder.</p>
+        <div className="overview-links"><a href="#before-you-start">Start the guide ↓</a><a href="#assembly">Explore the assembly ↗</a></div>
+        <figure className="overview-image"><Image src="/images/keypad-concept.png" alt="Concept render of the DIY Codex Micro: translucent case, six numbered illuminated agent keys, and labeled Fast, Approve, Decline, New Chat, Voice, and Send keys." width={1536} height={1024} sizes="(max-width: 760px) 100vw, (max-width: 1360px) 80vw, 1086px" preload /><figcaption>Concept render · DIY prototype with functional key labels. Use the CAD and fit checks for dimensions.</figcaption></figure>
       </section>
 
       <section id="before-you-start" className="build-section" aria-labelledby="heading-start">
@@ -69,16 +74,16 @@ export default function BuildApp() {
 
       <section id="parts" className="build-section" aria-labelledby="heading-parts">
           <SectionHeading number="02" id="heading-parts" title="Parts checklist" />
-          <div className="section-toolbar"><p>Check off what you have. Click a part name for details.</p><label className="filter-label"><span className="sr-only">Filter parts</span><select aria-label="Filter parts" value={category} onChange={e => setCategory(e.target.value)}>{categories.map(c => <option key={c}>{c}</option>)}</select></label></div>
+          <div className="section-toolbar"><p>Check off what you have. Open print files or go straight to the supplier.</p><label className="filter-label"><span className="sr-only">Filter parts</span><select aria-label="Filter parts" value={category} onChange={e => setCategory(e.target.value)}>{categories.map(c => <option key={c}>{c}</option>)}</select></label></div>
           <PartsTable parts={shown} onSelect={selectPart} />
           <p className="section-footnote">Choose either custom electronics or a genuine donor route. Supplier availability and prices can change. Generic hardware links require selecting the stated dimensions.</p>
       </section>
 
       <section id="printing" className="build-section" aria-labelledby="heading-printing">
           <SectionHeading number="03" id="heading-printing" title="3D printing" />
-          <div className="section-toolbar"><p>Clear PETG for the light, white for the controls, black to block light spill.</p></div>
-          <div className="material-row">{["petg-clear", "petg-white", "petg-black"].map(id => { const material = byId.get(id)!; return <button key={id} className="material" onClick={() => selectPart(material)}><span className={`filament-swatch swatch-${id}`} aria-hidden="true"/><b>{material.name}</b><span>{material.quantity}</span><small>Details & purchase ↗</small></button>; })}</div>
-          <div className="print-summary"><h3>Does it need to be see-through?</h3><p>Yes, the shell and six agent caps need to transmit light. Colorless, frosted PETG works well; optical clarity is not required. Opaque filament will block the status lights.</p><p>Start with a 0.4 mm nozzle and 0.20 mm layers. Use finer layers for keycaps, four walls, and the filament maker’s temperature profile. Confirm your printer’s filament diameter before ordering.</p></div>
+          <div className="section-toolbar"><p>These materials have different jobs. Use the material listed beside each printed part.</p></div>
+          <div className="material-row">{[{ id: "petg-clear", purpose: "Case + illuminated agent keys" }, { id: "petg-white", purpose: "Command keys, dial, plate + foot" }, { id: "petg-black", purpose: "Light baffles, touch cap + cradle" }].map(({ id, purpose }) => { const material = byId.get(id)!; return <a key={id} className="material" href={material.links[0].url} target="_blank" rel="noopener noreferrer"><span className={`filament-swatch swatch-${id}`} aria-hidden="true"/><b>{material.name}</b><span>{purpose}</span><span>{material.quantity}</span><small>Buy filament ↗</small></a>; })}</div>
+          <div className="print-summary"><h3>Which parts need to be see-through?</h3><p>Use translucent PETG for the case and six illuminated agent caps. Frosted is fine; optical clarity is not required. The command caps, dial, plate, and foot use white PETG for the original appearance. The baffles, joystick cradle, and touch cap use black PETG; opaque baffles keep each key’s status light separate.</p><p>Start with a 0.4 mm nozzle and 0.20 mm layers. Use finer layers for keycaps, four walls, and the filament maker’s temperature profile. Confirm your printer’s filament diameter before ordering.</p></div>
           <Instruction content={instructions.plastic} />
       </section>
 

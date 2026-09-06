@@ -6,11 +6,16 @@ const read = async path => JSON.parse(await readFile(resolve(root, path), "utf8"
 const parts = await read("data/parts.json");
 const mappings = await read("viewer-src/part-map.json");
 const files = await read("data/files.json");
+const labels = await read("data/key-labels.json");
+assert.equal(labels.length, 12, "Expected twelve labeled keycaps");
+assert.equal(new Set(labels.map(label => label.entry)).size, 12, "Duplicate key label");
+for (const label of labels) assert(mappings[label.entry] && label.label, `Unknown key label: ${label.entry}`);
 const ids = new Set(parts.map(part => part.id));
 assert.equal(ids.size, parts.length, "Duplicate part id");
 for (const [mesh, part] of Object.entries(mappings)) assert(ids.has(part), `Unknown part mapping: ${mesh} → ${part}`);
 for (const part of parts) {
   assert(part.name && part.description && part.spec && part.links.length, `Incomplete part: ${part.id}`);
+  if (part.category === "Printed") assert(["Clear PETG", "White PETG", "Black PETG"].includes(part.material), `Missing print material: ${part.id}`);
   for (const link of part.links) assert.equal(new URL(link.url).protocol, "https:", `Unsafe purchase link: ${part.id}`);
   for (const file of part.files) await access(resolve(root, "public" + file.url));
 }

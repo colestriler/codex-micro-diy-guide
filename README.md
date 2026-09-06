@@ -1,4 +1,6 @@
-[![CAD render of the DIY Codex Micro keypad](public/downloads/docs/cad-preview.png)](https://codex-micro-guide.vercel.app)
+[![Concept render of the DIY Codex Micro keypad with numbered agent keys and labeled controls](public/images/keypad-concept.png)](https://codex-micro-guide.vercel.app)
+
+*AI-generated concept render of the DIY prototype, with functional key labels.*
 
 # I wanted the OpenAI keyboard. It was sold out.
 
@@ -66,5 +68,7 @@ The CAD source and its Python dependencies live in `public/downloads/cad/` and `
 - Original device: [OpenAI × Work Louder](https://openai.com/supply/co-lab/work-louder/).
 - Native setup and behavior: [OpenAI's Codex Micro guide](https://learn.chatgpt.com/docs/features/codex-micro).
 - 3D rendering: Three.js, with its MIT license included in `viewer-src/THREE-LICENSE.txt`.
+- Hero image: generated from the project's CAD using the built-in image-generation tool. [Image prompt](docs/hero-image-prompt.md).
+- GitHub icon: [Primer Octicons](https://github.com/primer/octicons), with its MIT license in `public/licenses/octicons.txt`.
 
 An independent DIY tutorial, not an official OpenAI or Work Louder product. Seller links are ordinary product and catalog links; availability can change.

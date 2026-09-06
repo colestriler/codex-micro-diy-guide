@@ -1,6 +1,16 @@
 main { max-width: 1360px; }
 .guide-layout { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 48px; }
 .guide-content { min-width: 0; }
+.overview { padding: 39px 0 36px; scroll-margin-top: 24px; }
+.overview-eyebrow { margin: 0 0 12px; color: var(--muted); font-size: 10px; text-transform: uppercase; letter-spacing: 1.3px; }
+.overview h1 { font-size: 36px; line-height: 1.2; letter-spacing: -1.3px; font-weight: 550; margin: 0 0 18px; }
+.overview-context { max-width: 760px; font-size: 14px; line-height: 1.7; color: #697160; margin: 0 0 10px; }
+.overview-context a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+.overview-links { display: flex; gap: 24px; margin: 20px 0 25px; font-size: 12px; }
+.overview-links a:first-child { color: #52663f; }
+.overview-image { margin: 0; }
+.overview-image img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 8px; background: #f4f0e9; }
+.overview-image figcaption { margin-top: 9px; color: var(--muted); font-size: 10px; }
 .guide-sidebar { padding-top: 44px; }
 .guide-sidebar nav { position: sticky; top: 30px; max-height: calc(100dvh - 60px); overflow-y: auto; }
 .toc-label { margin: 0 0 19px 13px; font-size: 10px; text-transform: uppercase; letter-spacing: 1.3px; color: var(--muted); }
@@ -28,6 +38,9 @@ main { max-width: 1360px; }
 }
 
 @media (max-width: 760px) {
+  .overview { padding-top: 26px; }
+  .overview h1 { font-size: 29px; letter-spacing: -.8px; }
+  .overview-context { font-size: 13px; }
   .guide-layout { display: block; }
   .guide-sidebar { padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
   .guide-sidebar nav { position: static; max-height: none; overflow: visible; }

@@ -1,22 +1,68 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="120mm" height="65mm" viewBox="0 0 120 65">
-<title>DIY Micro key legends — print at 100 percent</title>
-<desc>Original functional symbols for six white command caps, not exact manufacturer artwork. Icons are about 6 mm wide. Cut close to each icon, excluding labels and scale bar.</desc>
-<g font-family="sans-serif" fill="#111">
-<text x="7" y="7" font-size="3">DIY MICRO / COMMAND KEY LEGENDS</text>
-<text x="7" y="12" font-size="2.3">Print at 100%. Measure the 20 mm bar before making decals.</text>
-<text x="7" y="17" font-size="2.1">Cut close to black icons. Labels and scale marks are not decals.</text>
-</g>
-<g fill="none" stroke="#111" stroke-width=".45" stroke-linecap="round" stroke-linejoin="round">
-<path d="M18 25l-5 6h3l-1 4 6-7h-4z"/>
-<g transform="translate(35 30)"><circle r="3.2"/><path d="M-1.6 0l1.1 1.3 2-2.7"/></g>
-<g transform="translate(53 30)"><circle r="3.2"/><path d="M-1.2-1.2l2.4 2.4M1.2-1.2l-2.4 2.4"/></g>
-<g transform="translate(71 30)"><path d="M-3 0h2l4-3M.7-3H3v2.3M-1 0l4 3M.7 3H3V.7"/></g>
-<g transform="translate(89 30)"><rect x="-1.25" y="-3.1" width="2.5" height="4.8" rx="1.25"/><path d="M-2.5 0v.5a2.5 2.5 0 0 0 5 0V0M0 3v1.2M-1.4 4.2h2.8"/></g>
-<g transform="translate(107 30)"><rect x="-3.7" y="-3" width="7.4" height="6" rx="1.8"/><path d="M-2-.9l1 1-1 1M.5 1.1h1.8"/></g>
-<path d="M8 49h20M8 47.5v3M28 47.5v3" stroke-width=".25"/>
-</g>
-<g font-family="sans-serif" font-size="2" text-anchor="middle" fill="#555">
-<text x="17" y="40">Fast</text><text x="35" y="40">Approve</text><text x="53" y="40">Decline</text><text x="71" y="40">New chat</text><text x="89" y="40">Voice / 2U</text><text x="107" y="40">Send</text><text x="18" y="54">20 mm</text>
-</g>
-<text x="7" y="61" font-family="sans-serif" font-size="2.1" fill="#555">Printed CAD caps are blank. These symbols approximate the functional labels.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="180mm" height="95mm" viewBox="0 0 180 95">
+  <title>DIY Micro numbered key labels and command legends</title>
+  <desc>Functional DIY labels matching the interactive model. Printed CAD caps are blank; apply these as decals. Not manufacturer artwork.</desc>
+  <g font-family="Arial,sans-serif" fill="#333"><text x="5" y="7" font-size="3">DIY MICRO / KEY LABELS</text><text x="5" y="13" font-size="2.4">Print at 100% on clear decal paper. Cut close to the black legends; discard gray outlines.</text></g>
+  <g transform="translate(14 30)">
+    <rect x="-9" y="-9" width="18" height="18" rx="3" fill="none" stroke="#ccc" stroke-width=".2" stroke-dasharray="1 1"/>
+
+    <text y="1.4" font-size="3.6" text-anchor="middle" font-family="Arial,sans-serif" fill="#111">01</text>
+  </g>
+<g transform="translate(40 30)">
+    <rect x="-9" y="-9" width="18" height="18" rx="3" fill="none" stroke="#ccc" stroke-width=".2" stroke-dasharray="1 1"/>
+
+    <text y="1.4" font-size="3.6" text-anchor="middle" font-family="Arial,sans-serif" fill="#111">02</text>
+  </g>
+<g transform="translate(66 30)">
+    <rect x="-9" y="-9" width="18" height="18" rx="3" fill="none" stroke="#ccc" stroke-width=".2" stroke-dasharray="1 1"/>
+
+    <text y="1.4" font-size="3.6" text-anchor="middle" font-family="Arial,sans-serif" fill="#111">03</text>
+  </g>
+<g transform="translate(92 30)">
+    <rect x="-9" y="-9" width="18" height="18" rx="3" fill="none" stroke="#ccc" stroke-width=".2" stroke-dasharray="1 1"/>
+
+    <text y="1.4" font-size="3.6" text-anchor="middle" font-family="Arial,sans-serif" fill="#111">04</text>
+  </g>
+<g transform="translate(127 30)">
+    <rect x="-9" y="-9" width="18" height="18" rx="3" fill="none" stroke="#ccc" stroke-width=".2" stroke-dasharray="1 1"/>
+
+    <text y="1.4" font-size="3.6" text-anchor="middle" font-family="Arial,sans-serif" fill="#111">05</text>
+  </g>
+<g transform="translate(158 30)">
+    <rect x="-9" y="-9" width="18" height="18" rx="3" fill="none" stroke="#ccc" stroke-width=".2" stroke-dasharray="1 1"/>
+
+    <text y="1.4" font-size="3.6" text-anchor="middle" font-family="Arial,sans-serif" fill="#111">06</text>
+  </g>
+<g transform="translate(14 60)">
+    <rect x="-9" y="-9" width="18" height="18" rx="3" fill="none" stroke="#ccc" stroke-width=".2" stroke-dasharray="1 1"/>
+    <path d="M1.8-3.2-2.4.7H-.5L-1.3 3.2 2.5-.8H.5Z" transform="translate(0 -2) scale(.75)" fill="none" stroke="#111" stroke-width=".45" stroke-linecap="round" stroke-linejoin="round"/>
+    <text y="4.5" font-size="1.9" text-anchor="middle" font-family="Arial,sans-serif" fill="#111">FAST</text>
+  </g>
+<g transform="translate(40 60)">
+    <rect x="-9" y="-9" width="18" height="18" rx="3" fill="none" stroke="#ccc" stroke-width=".2" stroke-dasharray="1 1"/>
+    <path d="M-2.6 0-.8 1.8 2.8-1.8" transform="translate(0 -2) scale(.75)" fill="none" stroke="#111" stroke-width=".45" stroke-linecap="round" stroke-linejoin="round"/>
+    <text y="4.5" font-size="1.9" text-anchor="middle" font-family="Arial,sans-serif" fill="#111">APPROVE</text>
+  </g>
+<g transform="translate(66 60)">
+    <rect x="-9" y="-9" width="18" height="18" rx="3" fill="none" stroke="#ccc" stroke-width=".2" stroke-dasharray="1 1"/>
+    <path d="M-2-2 2 2M2-2-2 2" transform="translate(0 -2) scale(.75)" fill="none" stroke="#111" stroke-width=".45" stroke-linecap="round" stroke-linejoin="round"/>
+    <text y="4.5" font-size="1.9" text-anchor="middle" font-family="Arial,sans-serif" fill="#111">DECLINE</text>
+  </g>
+<g transform="translate(92 60)">
+    <rect x="-9" y="-9" width="18" height="18" rx="3" fill="none" stroke="#ccc" stroke-width=".2" stroke-dasharray="1 1"/>
+    <path d="M-2 2V-2M-2 0 2-2M-3-2h2M1-2h2M-3 2h2" transform="translate(0 -2) scale(.75)" fill="none" stroke="#111" stroke-width=".45" stroke-linecap="round" stroke-linejoin="round"/>
+    <text y="4.5" font-size="1.9" text-anchor="middle" font-family="Arial,sans-serif" fill="#111">NEW CHAT</text>
+  </g>
+<g transform="translate(127 60)">
+    <rect x="-18.525" y="-9" width="37.05" height="18" rx="3" fill="none" stroke="#ccc" stroke-width=".2" stroke-dasharray="1 1"/>
+    <path d="M-1.2-2a1.2 1.2 0 0 1 2.4 0V.5a1.2 1.2 0 0 1-2.4 0ZM-2.4 0V.5a2.4 2.4 0 0 0 4.8 0V0M0 2.9V4M-1.4 4h2.8" transform="translate(0 -2) scale(.75)" fill="none" stroke="#111" stroke-width=".45" stroke-linecap="round" stroke-linejoin="round"/>
+    <text y="4.5" font-size="1.9" text-anchor="middle" font-family="Arial,sans-serif" fill="#111">VOICE</text>
+  </g>
+<g transform="translate(158 60)">
+    <rect x="-9" y="-9" width="18" height="18" rx="3" fill="none" stroke="#ccc" stroke-width=".2" stroke-dasharray="1 1"/>
+    <path d="M-3-2-1 0-3 2M0 2h3" transform="translate(0 -2) scale(.75)" fill="none" stroke="#111" stroke-width=".45" stroke-linecap="round" stroke-linejoin="round"/>
+    <text y="4.5" font-size="1.9" text-anchor="middle" font-family="Arial,sans-serif" fill="#111">SEND</text>
+  </g>
+  <path d="M6 82h20M6 80v4M26 80v4" fill="none" stroke="#111" stroke-width=".25"/>
+  <text x="31" y="83" font-family="Arial,sans-serif" font-size="2.4" fill="#333">20 mm — verify with a ruler before applying</text>
+  <text x="5" y="91" font-family="Arial,sans-serif" font-size="2.2" fill="#666">Concept labels describe intended controls. Custom firmware still needs native Codex integration.</text>
 </svg>

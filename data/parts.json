@@ -22,7 +22,8 @@
         "url": "/downloads/step/01_case.step"
       }
     ],
-    "note": "Print this part in clear PETG."
+    "note": "Print this part in clear PETG.",
+    "material": "Clear PETG"
   },
   {
     "id": "plate",
@@ -47,7 +48,8 @@
         "url": "/downloads/step/02_switch_plate.step"
       }
     ],
-    "note": "Print this part in white PETG."
+    "note": "Print this part in white PETG.",
+    "material": "White PETG"
   },
   {
     "id": "foot",
@@ -72,7 +74,8 @@
         "url": "/downloads/step/03_round_foot.step"
       }
     ],
-    "note": "Print this part in white PETG."
+    "note": "Print this part in white PETG.",
+    "material": "White PETG"
   },
   {
     "id": "cradle",
@@ -97,7 +100,8 @@
         "url": "/downloads/step/04_joystick_cradle.step"
       }
     ],
-    "note": "Print this part in black PETG."
+    "note": "Print this part in black PETG.",
+    "material": "Black PETG"
   },
   {
     "id": "touch-cap",
@@ -122,7 +126,8 @@
         "url": "/downloads/step/05_touch_cap.step"
       }
     ],
-    "note": "Print this part in black PETG."
+    "note": "Print this part in black PETG.",
+    "material": "Black PETG"
   },
   {
     "id": "knob",
@@ -147,7 +152,8 @@
         "url": "/downloads/step/06_encoder_knob.step"
       }
     ],
-    "note": "Print this part in white PETG."
+    "note": "Print this part in white PETG.",
+    "material": "White PETG"
   },
   {
     "id": "baffle",
@@ -172,7 +178,8 @@
         "url": "/downloads/step/07_led_baffle.step"
       }
     ],
-    "note": "Print this part in black PETG."
+    "note": "Print this part in black PETG.",
+    "material": "Black PETG"
   },
   {
     "id": "clear-cap",
@@ -201,7 +208,8 @@
         "url": "/downloads/step/08_keycap_1u.step"
       }
     ],
-    "note": "Print this part in clear PETG."
+    "note": "Print this part in clear PETG.",
+    "material": "Clear PETG"
   },
   {
     "id": "white-cap",
@@ -230,7 +238,8 @@
         "url": "/downloads/step/08_keycap_1u.step"
       }
     ],
-    "note": "Print this part in white PETG."
+    "note": "Print this part in white PETG.",
+    "material": "White PETG"
   },
   {
     "id": "wide-cap",
@@ -255,7 +264,8 @@
         "url": "/downloads/step/09_keycap_2u_dual_stem.step"
       }
     ],
-    "note": "Print this part in white PETG."
+    "note": "Print this part in white PETG.",
+    "material": "White PETG"
   },
   {
     "id": "switch-coupon",
@@ -280,7 +290,8 @@
         "url": "/downloads/step/10_switch_fit_coupon.step"
       }
     ],
-    "note": "Print this part in white PETG."
+    "note": "Print this part in white PETG.",
+    "material": "White PETG"
   },
   {
     "id": "stem-coupon",
@@ -305,7 +316,8 @@
         "url": "/downloads/step/11_stem_insert_coupon.step"
       }
     ],
-    "note": "Print this part in clear PETG."
+    "note": "Print this part in clear PETG.",
+    "material": "Clear PETG"
   },
   {
     "id": "controller",

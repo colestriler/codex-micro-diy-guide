@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 
 export const sections = [
+  { id: "overview", title: "Overview" },
   { id: "before-you-start", title: "Before you start" },
   { id: "parts", title: "Parts checklist" },
   { id: "printing", title: "3D printing" },
@@ -37,5 +38,5 @@ export default function TableOfContents() {
     };
   }, []);
 
-  return <aside className="guide-sidebar"><nav aria-label="Table of contents"><p className="toc-label">Build guide</p><ol>{sections.map((section, index) => <li key={section.id}><a href={`#${section.id}`} aria-current={active === section.id ? "location" : undefined}><span aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>{section.title}</a></li>)}</ol><a className="toc-top" href="#top">Back to top ↑</a></nav></aside>;
+  return <aside className="guide-sidebar"><nav aria-label="Table of contents"><p className="toc-label">Build guide</p><ol>{sections.map((section, index) => <li key={section.id}><a href={`#${section.id}`} aria-current={active === section.id ? "location" : undefined}><span aria-hidden="true">{String(index).padStart(2, "0")}</span>{section.title}</a></li>)}</ol><a className="toc-top" href="#top">Back to top ↑</a></nav></aside>;
 }
