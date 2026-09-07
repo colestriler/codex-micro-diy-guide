@@ -2,7 +2,9 @@
 
 *AI-generated concept render of the DIY prototype, with functional key labels.*
 
-# I wanted the OpenAI keyboard. It was sold out.
+# I wanted the OpenAI keyboard, but it was sold out.
+
+So I decided to make one. 
 
 I wanted to buy the [OpenAI × Work Louder Codex Micro](https://openai.com/supply/co-lab/work-louder/). Small keyboard, little dial, glowing keys. Very much my kind of thing.
 
