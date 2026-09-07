@@ -8,8 +8,6 @@ So I decided to make one.
 
 I wanted to buy the [OpenAI × Work Louder Codex Micro](https://openai.com/supply/co-lab/work-louder/). Small keyboard, little dial, glowing keys. Very much my kind of thing.
 
-One problem: it wasn't available.
-
 I have a 3D printer. So I decided to put together a guide to making my own version—and share the files for anyone who wants to do the same.
 
 This is that guide: a way to explore the parts, watch how they fit together, download the CAD, and work through the build. Credit for the original device goes to OpenAI and Work Louder. This project is a tutorial for a DIY recreation of their Codex Micro.
