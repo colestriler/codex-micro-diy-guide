@@ -4,7 +4,7 @@
 
 # I wanted the OpenAI keyboard, but it was sold out.
 
-So I decided to make one. 
+So I decided to build one. 
 
 I wanted to buy the [OpenAI × Work Louder Codex Micro](https://openai.com/supply/co-lab/work-louder/). Small keyboard, little dial, glowing keys. Very much my kind of thing.
 
