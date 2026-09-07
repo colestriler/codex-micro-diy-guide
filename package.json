@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --hostname 127.0.0.1 --port 3007",
-    "prebuild": "node scripts/build-viewer.mjs && node scripts/build-labels.mjs && node scripts/check-content.mjs",
+    "prebuild": "node scripts/build-viewer.mjs && node scripts/build-labels.mjs && node scripts/check-content.mjs && node scripts/check-wiring.mjs",
     "build": "next build",
     "start": "next start --hostname 127.0.0.1 --port 3007",
     "typecheck": "tsc --noEmit",

@@ -1,0 +1,818 @@
+{
+  "kbPins": [
+    {
+      "id": "D−",
+      "x": 180.0,
+      "y": 220
+    },
+    {
+      "id": "RAW",
+      "x": 231.5,
+      "y": 220
+    },
+    {
+      "id": "G",
+      "x": 283.0,
+      "y": 220
+    },
+    {
+      "id": "RST",
+      "x": 334.5,
+      "y": 220
+    },
+    {
+      "id": "3V",
+      "x": 386.0,
+      "y": 220
+    },
+    {
+      "id": "A3",
+      "x": 437.5,
+      "y": 220
+    },
+    {
+      "id": "A2",
+      "x": 489.0,
+      "y": 220
+    },
+    {
+      "id": "A1",
+      "x": 540.5,
+      "y": 220
+    },
+    {
+      "id": "A0",
+      "x": 592.0,
+      "y": 220
+    },
+    {
+      "id": "CLK",
+      "x": 643.5,
+      "y": 220
+    },
+    {
+      "id": "MI",
+      "x": 695.0,
+      "y": 220
+    },
+    {
+      "id": "MO",
+      "x": 746.5,
+      "y": 220
+    },
+    {
+      "id": "D10",
+      "x": 798.0,
+      "y": 220
+    },
+    {
+      "id": "D+",
+      "x": 180.0,
+      "y": 530
+    },
+    {
+      "id": "TX",
+      "x": 231.5,
+      "y": 530
+    },
+    {
+      "id": "RX",
+      "x": 283.0,
+      "y": 530
+    },
+    {
+      "id": "GND",
+      "x": 334.5,
+      "y": 530
+    },
+    {
+      "id": "GND2",
+      "x": 386.0,
+      "y": 530
+    },
+    {
+      "id": "D2",
+      "x": 437.5,
+      "y": 530
+    },
+    {
+      "id": "D3",
+      "x": 489.0,
+      "y": 530
+    },
+    {
+      "id": "D4",
+      "x": 540.5,
+      "y": 530
+    },
+    {
+      "id": "D5",
+      "x": 592.0,
+      "y": 530
+    },
+    {
+      "id": "D6",
+      "x": 643.5,
+      "y": 530
+    },
+    {
+      "id": "D7",
+      "x": 695.0,
+      "y": 530
+    },
+    {
+      "id": "D8",
+      "x": 746.5,
+      "y": 530
+    },
+    {
+      "id": "D9",
+      "x": 798.0,
+      "y": 530
+    }
+  ],
+  "matrix": {
+    "rows": [
+      "D2",
+      "D3",
+      "D4",
+      "D5"
+    ],
+    "columns": [
+      "D6",
+      "D7",
+      "D8",
+      "D9"
+    ],
+    "keys": [
+      {
+        "id": "agent01",
+        "label": "Agent 01",
+        "row": 0,
+        "column": 1
+      },
+      {
+        "id": "agent02",
+        "label": "Agent 02",
+        "row": 0,
+        "column": 2
+      },
+      {
+        "id": "agent03",
+        "label": "Agent 03",
+        "row": 1,
+        "column": 0
+      },
+      {
+        "id": "agent04",
+        "label": "Agent 04",
+        "row": 1,
+        "column": 1
+      },
+      {
+        "id": "agent05",
+        "label": "Agent 05",
+        "row": 1,
+        "column": 2
+      },
+      {
+        "id": "agent06",
+        "label": "Agent 06",
+        "row": 1,
+        "column": 3
+      },
+      {
+        "id": "fast",
+        "label": "Fast",
+        "row": 2,
+        "column": 0
+      },
+      {
+        "id": "approve",
+        "label": "Approve",
+        "row": 2,
+        "column": 1
+      },
+      {
+        "id": "decline",
+        "label": "Decline",
+        "row": 2,
+        "column": 2
+      },
+      {
+        "id": "newchat",
+        "label": "New Chat",
+        "row": 2,
+        "column": 3
+      },
+      {
+        "id": "voiceleft",
+        "label": "Voice · left",
+        "row": 3,
+        "column": 1
+      },
+      {
+        "id": "voiceright",
+        "label": "Voice · right",
+        "row": 3,
+        "column": 2
+      },
+      {
+        "id": "send",
+        "label": "Send",
+        "row": 3,
+        "column": 3
+      }
+    ]
+  },
+  "pixelCount": 14,
+  "chapters": [
+    {
+      "id": "power",
+      "title": "Power & LED driver",
+      "short": "Power",
+      "intro": "Build this small circuit on the protoboard before connecting the lights.",
+      "orientation": "KB2040: component side, USB left. IC: top view, notch up.",
+      "steps": [
+        {
+          "id": "ground",
+          "title": "Make a common ground",
+          "from_": "KB2040 G",
+          "to": "IC pins 1 + 7; LED GND rail",
+          "how": "Solder a ground wire from G to the ground bus on your small protoboard. Join IC pin 7 and pin 1 to this bus; carry it to the LEDs. Use 26 AWG for the shared power and ground runs.",
+          "why": "All the parts need the same voltage reference. Pin 7 powers the chip; grounding pin 1 enables its first output.",
+          "check": "With USB unplugged, confirm continuity from G to pins 1 and 7. The red and black rails must not be shorted.",
+          "color": "#42494c",
+          "kbPins": [
+            "G"
+          ],
+          "icPins": [
+            1,
+            7
+          ]
+        },
+        {
+          "id": "raw",
+          "title": "Connect fused LED power",
+          "from_": "KB2040 RAW",
+          "to": "IC pin 14; LED +5V rail",
+          "how": "Wire RAW to the positive bus, IC pin 14 and the first LED’s 5V pad. Leave the USB-to-RAW fuse-bypass jumper on the back of the KB2040 open.",
+          "why": "RAW supplies the LED circuit from USB. The KB2040’s 3V output is reserved for the joystick here.",
+          "check": "Check pin 14 against the notch and dot. Keep the firmware’s 15% LED brightness limit.",
+          "color": "#c44f38",
+          "kbPins": [
+            "RAW"
+          ],
+          "icPins": [
+            14
+          ]
+        },
+        {
+          "id": "shift",
+          "title": "Feed the level shifter",
+          "from_": "KB2040 MO (MOSI)",
+          "to": "IC pin 2 · 1A",
+          "how": "Run a short signal wire from the pad marked MO to pin 2 of the SN74AHCT125N. MO is board.MOSI in the firmware.",
+          "why": "The controller sends 3.3V data. This chip raises that signal to the LED supply voltage.",
+          "check": "Confirm MO goes to pin 2, not pin 3. The chip is shown from above, with the notch at the top.",
+          "color": "#267e79",
+          "kbPins": [
+            "MO"
+          ],
+          "icPins": [
+            2
+          ]
+        },
+        {
+          "id": "output",
+          "title": "Add the data resistor",
+          "from_": "IC pin 3 · 1Y",
+          "to": "330Ω resistor → first LED DIN",
+          "how": "Connect pin 3 through one 330Ω resistor to DIN on pixel 0. Put the resistor near that first pixel; insulate its exposed leads. Either resistor direction works.",
+          "why": "The resistor damps sharp edges on the data wire. It goes in series with data, not across power.",
+          "check": "Trace pin 3 → resistor → DIN. Do not connect it to DOUT.",
+          "color": "#267e79",
+          "kbPins": [],
+          "icPins": [
+            3
+          ]
+        },
+        {
+          "id": "bypass",
+          "title": "Place the 100nF capacitor",
+          "from_": "IC pin 14 · VCC",
+          "to": "100nF ceramic → IC pin 7 · GND",
+          "how": "Solder the ceramic capacitor across the chip’s power and ground, with the shortest practical leads. It has no positive or negative side.",
+          "why": "This small capacitor supplies fast current pulses locally, helping keep the chip’s supply steady.",
+          "check": "Confirm the capacitor is 100nF (0.1µF, often marked 104). It is separate from the larger 100µF capacitor.",
+          "color": "#c44f38",
+          "kbPins": [],
+          "icPins": [
+            14,
+            7
+          ]
+        },
+        {
+          "id": "bulk",
+          "title": "Place the 100µF capacitor",
+          "from_": "LED +5V rail",
+          "to": "100µF positive; striped negative → GND",
+          "how": "Connect the long positive lead to the LED supply and the negative lead beside the stripe to ground. Keep it close to the start of the LED chain.",
+          "why": "This larger capacitor cushions changes in LED power demand. Its polarity matters.",
+          "check": "Read the negative stripe on the can before soldering. Use the ordered 25V part, or a rating of at least 10V.",
+          "color": "#c44f38",
+          "kbPins": [],
+          "icPins": []
+        },
+        {
+          "id": "unused",
+          "title": "Set the unused chip pins",
+          "from_": "IC pins 4, 10, 13 → RAW",
+          "to": "IC pins 5, 9, 12 → GND",
+          "how": "Tie the three unused enable pins (4, 10, 13) high to RAW and their input pins (5, 9, 12) to ground. Leave outputs 6, 8 and 11 unconnected.",
+          "why": "A chip input should not float. These ties hold the spare channels in a defined, disabled state.",
+          "check": "Account for all 14 legs. Outputs 6, 8 and 11 are deliberately left unwired; do not join them together.",
+          "color": "#42494c",
+          "kbPins": [],
+          "icPins": [
+            4,
+            5,
+            6,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matrix",
+      "title": "Switch matrix",
+      "short": "Keys",
+      "intro": "Choose a key to see its complete column → switch → diode → row connection. Splice keys on the same row or column into that shared wire.",
+      "orientation": "Key positions: viewed from above, USB at the back. Switch photo: metal legs visible.",
+      "steps": [
+        {
+          "id": "agent01",
+          "title": "Agent 01",
+          "from_": "D7 · column 2",
+          "to": "Switch → diode → D2 · row 1",
+          "how": "Solder D7’s column wire to either metal switch leg. Join the other leg to the unbanded end of its own 1N4148 diode. Join the banded end to the D2 row wire. Insulate every exposed crossing.",
+          "why": "Pressing this switch closes one row/column path. The diode makes that path one-way so simultaneous key presses can be distinguished.",
+          "check": "Before connecting the matrix to the controller, hold this key: diode mode should conduct with red on the column and black on the row, but not the reverse. Release it: the path should open.",
+          "color": "#5963b8",
+          "kbPins": [
+            "D7",
+            "D2"
+          ],
+          "icPins": []
+        },
+        {
+          "id": "agent02",
+          "title": "Agent 02",
+          "from_": "D8 · column 3",
+          "to": "Switch → diode → D2 · row 1",
+          "how": "Solder D8’s column wire to either metal switch leg. Join the other leg to the unbanded end of its own 1N4148 diode. Join the banded end to the D2 row wire. Insulate every exposed crossing.",
+          "why": "Pressing this switch closes one row/column path. The diode makes that path one-way so simultaneous key presses can be distinguished.",
+          "check": "Before connecting the matrix to the controller, hold this key: diode mode should conduct with red on the column and black on the row, but not the reverse. Release it: the path should open.",
+          "color": "#5963b8",
+          "kbPins": [
+            "D8",
+            "D2"
+          ],
+          "icPins": []
+        },
+        {
+          "id": "agent03",
+          "title": "Agent 03",
+          "from_": "D6 · column 1",
+          "to": "Switch → diode → D3 · row 2",
+          "how": "Solder D6’s column wire to either metal switch leg. Join the other leg to the unbanded end of its own 1N4148 diode. Join the banded end to the D3 row wire. Insulate every exposed crossing.",
+          "why": "Pressing this switch closes one row/column path. The diode makes that path one-way so simultaneous key presses can be distinguished.",
+          "check": "Before connecting the matrix to the controller, hold this key: diode mode should conduct with red on the column and black on the row, but not the reverse. Release it: the path should open.",
+          "color": "#5963b8",
+          "kbPins": [
+            "D6",
+            "D3"
+          ],
+          "icPins": []
+        },
+        {
+          "id": "agent04",
+          "title": "Agent 04",
+          "from_": "D7 · column 2",
+          "to": "Switch → diode → D3 · row 2",
+          "how": "Solder D7’s column wire to either metal switch leg. Join the other leg to the unbanded end of its own 1N4148 diode. Join the banded end to the D3 row wire. Insulate every exposed crossing.",
+          "why": "Pressing this switch closes one row/column path. The diode makes that path one-way so simultaneous key presses can be distinguished.",
+          "check": "Before connecting the matrix to the controller, hold this key: diode mode should conduct with red on the column and black on the row, but not the reverse. Release it: the path should open.",
+          "color": "#5963b8",
+          "kbPins": [
+            "D7",
+            "D3"
+          ],
+          "icPins": []
+        },
+        {
+          "id": "agent05",
+          "title": "Agent 05",
+          "from_": "D8 · column 3",
+          "to": "Switch → diode → D3 · row 2",
+          "how": "Solder D8’s column wire to either metal switch leg. Join the other leg to the unbanded end of its own 1N4148 diode. Join the banded end to the D3 row wire. Insulate every exposed crossing.",
+          "why": "Pressing this switch closes one row/column path. The diode makes that path one-way so simultaneous key presses can be distinguished.",
+          "check": "Before connecting the matrix to the controller, hold this key: diode mode should conduct with red on the column and black on the row, but not the reverse. Release it: the path should open.",
+          "color": "#5963b8",
+          "kbPins": [
+            "D8",
+            "D3"
+          ],
+          "icPins": []
+        },
+        {
+          "id": "agent06",
+          "title": "Agent 06",
+          "from_": "D9 · column 4",
+          "to": "Switch → diode → D3 · row 2",
+          "how": "Solder D9’s column wire to either metal switch leg. Join the other leg to the unbanded end of its own 1N4148 diode. Join the banded end to the D3 row wire. Insulate every exposed crossing.",
+          "why": "Pressing this switch closes one row/column path. The diode makes that path one-way so simultaneous key presses can be distinguished.",
+          "check": "Before connecting the matrix to the controller, hold this key: diode mode should conduct with red on the column and black on the row, but not the reverse. Release it: the path should open.",
+          "color": "#5963b8",
+          "kbPins": [
+            "D9",
+            "D3"
+          ],
+          "icPins": []
+        },
+        {
+          "id": "fast",
+          "title": "Fast",
+          "from_": "D6 · column 1",
+          "to": "Switch → diode → D4 · row 3",
+          "how": "Solder D6’s column wire to either metal switch leg. Join the other leg to the unbanded end of its own 1N4148 diode. Join the banded end to the D4 row wire. Insulate every exposed crossing.",
+          "why": "Pressing this switch closes one row/column path. The diode makes that path one-way so simultaneous key presses can be distinguished.",
+          "check": "Before connecting the matrix to the controller, hold this key: diode mode should conduct with red on the column and black on the row, but not the reverse. Release it: the path should open.",
+          "color": "#5963b8",
+          "kbPins": [
+            "D6",
+            "D4"
+          ],
+          "icPins": []
+        },
+        {
+          "id": "approve",
+          "title": "Approve",
+          "from_": "D7 · column 2",
+          "to": "Switch → diode → D4 · row 3",
+          "how": "Solder D7’s column wire to either metal switch leg. Join the other leg to the unbanded end of its own 1N4148 diode. Join the banded end to the D4 row wire. Insulate every exposed crossing.",
+          "why": "Pressing this switch closes one row/column path. The diode makes that path one-way so simultaneous key presses can be distinguished.",
+          "check": "Before connecting the matrix to the controller, hold this key: diode mode should conduct with red on the column and black on the row, but not the reverse. Release it: the path should open.",
+          "color": "#5963b8",
+          "kbPins": [
+            "D7",
+            "D4"
+          ],
+          "icPins": []
+        },
+        {
+          "id": "decline",
+          "title": "Decline",
+          "from_": "D8 · column 3",
+          "to": "Switch → diode → D4 · row 3",
+          "how": "Solder D8’s column wire to either metal switch leg. Join the other leg to the unbanded end of its own 1N4148 diode. Join the banded end to the D4 row wire. Insulate every exposed crossing.",
+          "why": "Pressing this switch closes one row/column path. The diode makes that path one-way so simultaneous key presses can be distinguished.",
+          "check": "Before connecting the matrix to the controller, hold this key: diode mode should conduct with red on the column and black on the row, but not the reverse. Release it: the path should open.",
+          "color": "#5963b8",
+          "kbPins": [
+            "D8",
+            "D4"
+          ],
+          "icPins": []
+        },
+        {
+          "id": "newchat",
+          "title": "New Chat",
+          "from_": "D9 · column 4",
+          "to": "Switch → diode → D4 · row 3",
+          "how": "Solder D9’s column wire to either metal switch leg. Join the other leg to the unbanded end of its own 1N4148 diode. Join the banded end to the D4 row wire. Insulate every exposed crossing.",
+          "why": "Pressing this switch closes one row/column path. The diode makes that path one-way so simultaneous key presses can be distinguished.",
+          "check": "Before connecting the matrix to the controller, hold this key: diode mode should conduct with red on the column and black on the row, but not the reverse. Release it: the path should open.",
+          "color": "#5963b8",
+          "kbPins": [
+            "D9",
+            "D4"
+          ],
+          "icPins": []
+        },
+        {
+          "id": "voiceleft",
+          "title": "Voice · left",
+          "from_": "D7 · column 2",
+          "to": "Switch → diode → D5 · row 4",
+          "how": "Solder D7’s column wire to either metal switch leg. Join the other leg to the unbanded end of its own 1N4148 diode. Join the banded end to the D5 row wire. Insulate every exposed crossing.",
+          "why": "Pressing this switch closes one row/column path. The diode makes that path one-way so simultaneous key presses can be distinguished. Both Voice switches have their own diode; the firmware merges them into one Voice action.",
+          "check": "Before connecting the matrix to the controller, hold this key: diode mode should conduct with red on the column and black on the row, but not the reverse. Release it: the path should open.",
+          "color": "#5963b8",
+          "kbPins": [
+            "D7",
+            "D5"
+          ],
+          "icPins": []
+        },
+        {
+          "id": "voiceright",
+          "title": "Voice · right",
+          "from_": "D8 · column 3",
+          "to": "Switch → diode → D5 · row 4",
+          "how": "Solder D8’s column wire to either metal switch leg. Join the other leg to the unbanded end of its own 1N4148 diode. Join the banded end to the D5 row wire. Insulate every exposed crossing.",
+          "why": "Pressing this switch closes one row/column path. The diode makes that path one-way so simultaneous key presses can be distinguished. Both Voice switches have their own diode; the firmware merges them into one Voice action.",
+          "check": "Before connecting the matrix to the controller, hold this key: diode mode should conduct with red on the column and black on the row, but not the reverse. Release it: the path should open.",
+          "color": "#5963b8",
+          "kbPins": [
+            "D8",
+            "D5"
+          ],
+          "icPins": []
+        },
+        {
+          "id": "send",
+          "title": "Send",
+          "from_": "D9 · column 4",
+          "to": "Switch → diode → D5 · row 4",
+          "how": "Solder D9’s column wire to either metal switch leg. Join the other leg to the unbanded end of its own 1N4148 diode. Join the banded end to the D5 row wire. Insulate every exposed crossing.",
+          "why": "Pressing this switch closes one row/column path. The diode makes that path one-way so simultaneous key presses can be distinguished.",
+          "check": "Before connecting the matrix to the controller, hold this key: diode mode should conduct with red on the column and black on the row, but not the reverse. Release it: the path should open.",
+          "color": "#5963b8",
+          "kbPins": [
+            "D9",
+            "D5"
+          ],
+          "icPins": []
+        }
+      ]
+    },
+    {
+      "id": "pixels",
+      "title": "RGBW light chain",
+      "short": "Lights",
+      "intro": "Turn each mini PCB over to expose its six solder pads. Follow the printed arrows.",
+      "orientation": "Actual back-side photo. DIN above DOUT; GND left, 5V right.",
+      "steps": [
+        {
+          "id": "pixel-power",
+          "title": "Carry power to every pixel",
+          "from_": "LED +5V and GND rails",
+          "to": "5V and GND pads on all 14 boards",
+          "how": "Solder +5V to each right-hand 5V pad and ground to each left-hand GND pad in this back view. The duplicated pads let you carry power onward.",
+          "why": "Every pixel uses the same supply. Only data passes through the pixels in sequence.",
+          "check": "Orient each board by its printed DIN, DOUT, 5V and GND labels before soldering. The lit face points away from you here.",
+          "color": "#c44f38",
+          "kbPins": [],
+          "icPins": []
+        },
+        {
+          "id": "pixel-first",
+          "title": "Start at pixel 0",
+          "from_": "330Ω resistor from IC pin 3",
+          "to": "Pixel 0 · DIN",
+          "how": "Connect the resistor’s free end to the middle pad beside DIN on the first board. Put this pixel beneath Agent 01.",
+          "why": "The first pixel consumes the first color in the firmware’s list. Connecting to DOUT will not feed data into it.",
+          "check": "DIN is the center pad in the top row of this photo. Follow the printed arrows toward DOUT.",
+          "color": "#267e79",
+          "kbPins": [],
+          "icPins": []
+        },
+        {
+          "id": "pixel-chain",
+          "title": "Link data through all 14",
+          "from_": "Each pixel’s DOUT",
+          "to": "Next pixel’s DIN",
+          "how": "Connect pixel 0 DOUT to pixel 1 DIN, then repeat in order through pixel 13. Put 0–5 beneath Agent 01–06; put 6–13 around the perimeter. Keep the wires short.",
+          "why": "A pixel takes its own color, then forwards the remaining data to the next one. Physical chain order defines the software address.",
+          "check": "There are 13 DOUT-to-DIN links between 14 boards. Do not join all DIN pads to one signal bus.",
+          "color": "#267e79",
+          "kbPins": [],
+          "icPins": []
+        },
+        {
+          "id": "pixel-end",
+          "title": "Finish the chain",
+          "from_": "Pixel 13 · DOUT",
+          "to": "Leave open",
+          "how": "Power pixel 13 from the shared rails and feed its DIN from pixel 12 DOUT. Leave its DOUT pad unconnected.",
+          "why": "The last pixel has no next device to send data to. It still needs its own power and ground.",
+          "check": "Test a dim moving pixel before mounting. It should visit Agent 01–06 first, then each perimeter light.",
+          "color": "#267e79",
+          "kbPins": [],
+          "icPins": []
+        }
+      ]
+    },
+    {
+      "id": "controls",
+      "title": "Dial & joystick",
+      "short": "Controls",
+      "intro": "These are separate controls: the dial uses switch contacts; the joystick uses analog voltages.",
+      "orientation": "Joystick: underside photo. Encoder: underside drawing, shaft away from you.",
+      "steps": [
+        {
+          "id": "joy-ground",
+          "title": "Joystick ground",
+          "from_": "KB2040 G",
+          "to": "Joystick pad 4 · GND",
+          "how": "On the joystick’s underside, locate the four gold contacts. Pad 4 is nearest the pair of mounting tabs at the bottom of this photo. Wire it to G.",
+          "why": "This is the low end of both resistive tracks, giving the analog readings a common reference.",
+          "check": "Use the COM-09426 orientation shown; other PSP-style joystick parts can differ.",
+          "color": "#42494c",
+          "kbPins": [
+            "G"
+          ],
+          "icPins": []
+        },
+        {
+          "id": "joy-power",
+          "title": "Joystick power",
+          "from_": "KB2040 3V",
+          "to": "Joystick pad 2 · VCC",
+          "how": "Connect 3V to the second contact from the top in this underside photo. Do not use the LED’s RAW rail.",
+          "why": "This passive joystick is powered at 3.3V in our circuit so its outputs stay within the KB2040’s analog-input range. SparkFun’s Arduino example labels this supply +5V; that is not our supply choice.",
+          "check": "Confirm pad 2 goes to 3V and has no connection to RAW.",
+          "color": "#ad731a",
+          "kbPins": [
+            "3V"
+          ],
+          "icPins": []
+        },
+        {
+          "id": "joy-x",
+          "title": "Joystick X axis",
+          "from_": "Joystick pad 1 · X",
+          "to": "KB2040 A0",
+          "how": "Wire the top gold contact to A0. Tin the small pad and wire separately, then make a brief solder joint and add strain relief.",
+          "why": "A0 measures the horizontal slider’s voltage.",
+          "check": "With power connected after inspection, X should change when you move horizontally and stay between ground and 3.3V.",
+          "color": "#865ba4",
+          "kbPins": [
+            "A0"
+          ],
+          "icPins": []
+        },
+        {
+          "id": "joy-y",
+          "title": "Joystick Y axis",
+          "from_": "Joystick pad 3 · Y",
+          "to": "KB2040 A1",
+          "how": "Wire the third gold contact from the top to A1. Route it alongside the X wire without bridging adjacent pads.",
+          "why": "A1 independently measures the vertical slider. The firmware calibrates center at startup.",
+          "check": "Leave the joystick centered while plugging in. Check both directions before closing the case.",
+          "color": "#865ba4",
+          "kbPins": [
+            "A1"
+          ],
+          "icPins": []
+        },
+        {
+          "id": "encoder-common",
+          "title": "Encoder common",
+          "from_": "Middle of the three encoder pins",
+          "to": "KB2040 G",
+          "how": "Locate the encoder side with three electrical pins. Solder the middle pin to ground. The wider side tabs only hold the encoder in place.",
+          "why": "The two rotation contacts close against this common terminal.",
+          "check": "Use the three-pin side, not one of the mechanical mounting tabs. No 3V or RAW wire goes to this encoder.",
+          "color": "#42494c",
+          "kbPins": [
+            "G"
+          ],
+          "icPins": []
+        },
+        {
+          "id": "encoder-a",
+          "title": "Encoder rotation · first contact",
+          "from_": "One outer pin on the three-pin side",
+          "to": "KB2040 TX",
+          "how": "Connect the first outer rotation contact to TX. In the underside drawing it is the left outer contact.",
+          "why": "The firmware compares the timing of the two outer contacts to determine rotation direction.",
+          "check": "If the finished dial scrolls backwards, swap TX and RX in the encoder constructor; do not change the common ground.",
+          "color": "#267e79",
+          "kbPins": [
+            "TX"
+          ],
+          "icPins": []
+        },
+        {
+          "id": "encoder-b",
+          "title": "Encoder rotation · second contact",
+          "from_": "Other outer pin on the three-pin side",
+          "to": "KB2040 RX",
+          "how": "Connect the remaining outer rotation contact to RX. Keep the center contact grounded.",
+          "why": "Two staggered signals let the controller distinguish clockwise from counterclockwise movement.",
+          "check": "Check that each outer contact intermittently connects to the center as you turn the shaft.",
+          "color": "#865ba4",
+          "kbPins": [
+            "RX"
+          ],
+          "icPins": []
+        },
+        {
+          "id": "encoder-push",
+          "title": "Encoder push button",
+          "from_": "Two pins on the opposite side",
+          "to": "One → A2; the other → G",
+          "how": "Wire one of the two push-switch pins to A2 and the other to G. This switch is not polarized, so either assignment works.",
+          "why": "Pushing the shaft closes a separate switch; the firmware uses it for Enter.",
+          "check": "With power unplugged, the pair should be open at rest and continuous when pressed.",
+          "color": "#267e79",
+          "kbPins": [
+            "A2",
+            "G"
+          ],
+          "icPins": []
+        }
+      ]
+    },
+    {
+      "id": "extras",
+      "title": "Touch & bank indicators",
+      "short": "Touch + indicators",
+      "intro": "Finish the touch sensor and the three small white indicator LEDs.",
+      "orientation": "KB2040: component side. LED drawings show long + and short − leads.",
+      "steps": [
+        {
+          "id": "touch",
+          "title": "Connect the touch electrode",
+          "from_": "KB2040 D10",
+          "to": "Copper foil electrode",
+          "how": "Solder a thin signal wire to the copper foil electrode. Route it to D10, keeping the lead short and away from the LED power runs.",
+          "why": "The RP2040 detects a change in capacitance when you touch the electrode through the cap.",
+          "check": "Insulate the copper from the case hardware, ground wiring and nearby switch legs.",
+          "color": "#267e79",
+          "kbPins": [
+            "D10"
+          ],
+          "icPins": []
+        },
+        {
+          "id": "pulldown",
+          "title": "Add the touch pulldown",
+          "from_": "D10 / electrode junction",
+          "to": "1MΩ resistor → G",
+          "how": "Join one end of a 1MΩ resistor to the same D10 junction; connect its other end to G. The resistor is a branch to ground, not in series with the touch lead.",
+          "why": "CircuitPython’s RP2040 touch input needs this external resistor to discharge the electrode between measurements.",
+          "check": "Verify 1MΩ, not 1kΩ. A meter should read approximately 1MΩ from the isolated electrode circuit to ground.",
+          "color": "#42494c",
+          "kbPins": [
+            "D10",
+            "G"
+          ],
+          "icPins": []
+        },
+        {
+          "id": "indicator-0",
+          "title": "Bank indicator 1",
+          "from_": "KB2040 CLK",
+          "to": "1kΩ resistor → LED 1 anode; cathode → G",
+          "how": "Put a separate 1kΩ resistor in series with this LED’s long anode lead. Connect its short cathode lead (the flat side of the rim) to ground. Resistor direction does not matter.",
+          "why": "The resistor limits LED current. Each of the three indicators has its own controller pin and resistor.",
+          "check": "This LED marks bank 1. Confirm polarity before clipping the legs; in firmware CLK is board.SCK.",
+          "color": "#267e79",
+          "kbPins": [
+            "CLK",
+            "G"
+          ],
+          "icPins": []
+        },
+        {
+          "id": "indicator-1",
+          "title": "Bank indicator 2",
+          "from_": "KB2040 MI",
+          "to": "1kΩ resistor → LED 2 anode; cathode → G",
+          "how": "Put a separate 1kΩ resistor in series with this LED’s long anode lead. Connect its short cathode lead (the flat side of the rim) to ground. Resistor direction does not matter.",
+          "why": "The resistor limits LED current. Each of the three indicators has its own controller pin and resistor.",
+          "check": "This LED marks bank 2. Confirm polarity before clipping the legs; in firmware MI is board.MISO.",
+          "color": "#267e79",
+          "kbPins": [
+            "MI",
+            "G"
+          ],
+          "icPins": []
+        },
+        {
+          "id": "indicator-2",
+          "title": "Bank indicator 3",
+          "from_": "KB2040 A3",
+          "to": "1kΩ resistor → LED 3 anode; cathode → G",
+          "how": "Put a separate 1kΩ resistor in series with this LED’s long anode lead. Connect its short cathode lead (the flat side of the rim) to ground. Resistor direction does not matter.",
+          "why": "The resistor limits LED current. Each of the three indicators has its own controller pin and resistor.",
+          "check": "This LED marks bank 3. Confirm polarity before clipping the legs; in firmware A3 is board.A3.",
+          "color": "#267e79",
+          "kbPins": [
+            "A3",
+            "G"
+          ],
+          "icPins": []
+        }
+      ]
+    }
+  ]
+}

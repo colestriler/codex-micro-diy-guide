@@ -45,7 +45,7 @@
     "how": ["Label rows R1–R4 and columns C1–C4 while looking down at the plate with USB at the rear. Keep those labels when you flip the plate over.", "Connect one terminal of each switch to its column. Connect its other terminal to the unbanded end of a diode; connect the banded end to the row. Fit one diode per switch, including both wide-key switches.", "Run rows to D2–D5 and columns to D6–D9. Insulate crossing wires and exposed joints. The encoder, joystick and touch pad have their own connections and are not matrix switches."],
     "why": "The controller scans combinations of four rows and four columns to identify a pressed switch using eight pins. Each diode makes the connection one-way, preventing unintended paths through other pressed keys. The firmware combines the two wide-key positions into one Voice action.",
     "check": "All 13 diode bands face their rows. There is no continuity between unrelated row/column wires when no key is pressed.",
-    "links": [{"label": "Full connection map", "url": "/downloads/docs/wiring.svg"}, {"label": "Learn about matrix scanning", "url": "https://learn.adafruit.com/key-pad-matrix-scanning-in-circuitpython/overview"}]
+    "links": [{"label": "Follow the wiring on real components", "url": "#wiring"}, {"label": "Full connection map", "url": "/downloads/docs/wiring.svg"}, {"label": "Learn about matrix scanning", "url": "https://learn.adafruit.com/key-pad-matrix-scanning-in-circuitpython/overview"}]
   },
   {
     "id": "light-chain", "title": "Build the light chain", "summary": "Give each key its own light and control its direction.", "visual": "cad",
@@ -84,7 +84,7 @@
     "how": ["With USB disconnected, inspect polarity, diode direction and every power connection. Check with a multimeter for an unintended power-to-ground short. Keep the KB2040 fuse-bypass jumper open.", "Use fused RAW for the light circuit and 3V for the joystick, with all grounds joined. Keep the supplied 15% LED brightness limit. Connect a USB data cable only after the unpowered checks pass.", "Install CircuitPython and the included firmware files using the Firmware & colors section. Test all 13 switches, both wide-key halves, encoder/button, joystick axes, touch, three indicators and all 14 pixels before closing the case."],
     "why": "An open assembly makes a reversed diode, broken connection or incorrectly ordered pixel easier to find and repair. Separate power domains keep the joystick’s analog signals within the controller’s 3.3 V range. A data-capable cable carries both USB power and the keyboard connection.",
     "check": "Every input and light passes the final-check list while the plate is accessible. The custom firmware provides the documented DIY behavior; native Codex integration still requires compatible genuine electronics.",
-    "links": [{"label": "Firmware setup", "url": "#software"}, {"label": "Input and light checks", "url": "#checks"}, {"label": "KB2040 power pins", "url": "https://learn.adafruit.com/adafruit-kb2040/pinouts"}]
+    "links": [{"label": "Follow the wiring on real components", "url": "#wiring"}, {"label": "Firmware setup", "url": "#software"}, {"label": "Input and light checks", "url": "#checks"}, {"label": "KB2040 power pins", "url": "https://learn.adafruit.com/adafruit-kb2040/pinouts"}]
   },
   {
     "id": "close-case", "title": "Close the case and fit the controls", "summary": "Bring the tested subassemblies together without strain.", "visual": "cad",

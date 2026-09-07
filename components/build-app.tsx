@@ -8,6 +8,7 @@ import files from "@/data/files.json";
 import PartsTable from "@/components/parts-table";
 import TableOfContents from "@/components/table-of-contents";
 import AssemblyLessons from "@/components/assembly-lessons";
+import WiringWorkbench from "@/components/wiring-workbench";
 
 type Part = (typeof catalog)[number];
 const categories = ["All parts", "Printed", "Electronics", "Hardware", "Materials", "Native"];
@@ -94,7 +95,7 @@ export default function BuildApp() {
 
       <section id="assembly" className="build-section" aria-labelledby="heading-assembly">
           <SectionHeading number="04" id="heading-assembly" title="Assembly" />
-          <div className="section-toolbar"><p>Explore the whole assembly, or <a href="#assembly-lessons">learn one step at a time ↓</a>.</p><a href="/downloads/docs/wiring.svg" target="_blank" rel="noreferrer">Open wiring diagram ↗</a></div>
+          <div className="section-toolbar"><p>Explore the whole assembly, or <a href="#assembly-lessons">learn one step at a time ↓</a>.</p><a href="#wiring">Follow the wiring ↓</a></div>
           <div className="model-section" aria-label="Interactive assembly model">
             <div className="model-caption"><span>Click a part for print files or buying links.</span><span className="model-status">{viewerStatus === "ready" ? "3D model ready" : viewerStatus === "unavailable" ? "Use the parts checklist" : "Loading 3D model…"}</span></div>
             <iframe ref={frame} src="/viewer/index.html" title="Interactive Micro assembly — click parts to inspect them" className="assembly-viewer" onLoad={() => frame.current?.contentWindow?.postMessage({ type: "micro:ping" }, window.location.origin)} />
@@ -104,18 +105,23 @@ export default function BuildApp() {
           <Instruction content={instructions.assembly} />
       </section>
 
+      <section id="wiring" className="build-section" aria-labelledby="heading-wiring">
+          <SectionHeading number="05" id="heading-wiring" title="Wire it together" />
+          <WiringWorkbench />
+      </section>
+
       <section id="software" className="build-section" aria-labelledby="heading-software">
-          <SectionHeading number="05" id="heading-software" title="Firmware & colors" />
+          <SectionHeading number="06" id="heading-software" title="Firmware & colors" />
           <Instruction content={instructions.software} />
       </section>
 
       <section id="checks" className="build-section" aria-labelledby="heading-checks">
-          <SectionHeading number="06" id="heading-checks" title="Final checks" />
+          <SectionHeading number="07" id="heading-checks" title="Final checks" />
           <Instruction content={instructions.checks} />
       </section>
 
       <section id="files" className="build-section" aria-labelledby="heading-files">
-          <SectionHeading number="07" id="heading-files" title="Downloads" />
+          <SectionHeading number="08" id="heading-files" title="Downloads" />
           <div className="section-toolbar"><p>STLs are oriented for printing. STEP files retain assembly coordinates. Units are millimeters.</p><a href="/downloads/build-files.zip" download>Download everything ↓</a></div>
           <div className="file-shortcuts"><a href="/downloads/step/assembly.step" download>Assembly STEP</a><a href="/downloads/cad/parameters.json" download>CAD parameters</a><a href="/downloads/cad/build.py" download>CAD source</a><a href="/downloads/docs/key-legends.svg" download>Key legends</a><a href="/downloads/docs/bom.csv" download>Shopping list CSV</a><a href="/downloads/build-guide.html" download>Offline guide</a></div>
           <div className="table-scroll"><table className="files-table"><thead><tr><th>Printed part</th><th>Quantity</th><th>Files</th></tr></thead><tbody>{files.map(file => <tr key={file.id}><td><b>{file.name.replace(/^\d+ /, "").replaceAll("_", " ")}</b><small>{file.note}</small></td><td>{file.quantity}</td><td><a href={`/downloads/stl/${file.id}.stl`} download>STL</a><a href={`/downloads/step/${file.id}.step`} download>STEP</a></td></tr>)}</tbody></table></div>

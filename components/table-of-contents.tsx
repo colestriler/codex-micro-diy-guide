@@ -8,6 +8,7 @@ export const sections = [
   { id: "parts", title: "Parts checklist" },
   { id: "printing", title: "3D printing" },
   { id: "assembly", title: "Assembly" },
+  { id: "wiring", title: "Wire it together" },
   { id: "software", title: "Firmware & colors" },
   { id: "checks", title: "Final checks" },
   { id: "files", title: "Downloads" },
