@@ -27,6 +27,8 @@ Rebuild the animation after exporting updated STEP files with `.venv/bin/python 
 
 Units: millimetres. Overall prototype case: 110 × 110 × 25 mm, before controls and 5 mm foot. It is deliberately deeper than a custom-PCB design. Standard MX switch centers: 19.05 mm.
 
+Keycap update, 13 September 2026: both cap files now have flat finger surfaces, rounded corners and a 0.5 mm beveled rim. File 08 is shared by the five white command caps and six clear agent caps; file 09 is the white wide cap with two MX sockets 19.05 mm apart. Print top up at 100% scale, with underside supports as needed and sockets kept clear. For a 0.4 mm nozzle, start with 0.10–0.12 mm layers. Print the stem-fit coupon and one cap before the full set; physical fit and finish remain untested.
+
 Rebuild:
 
 ```sh

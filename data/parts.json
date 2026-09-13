@@ -187,7 +187,7 @@
     "category": "Printed",
     "quantity": "6",
     "description": "Lets each agent\u2019s status light show through while providing a normal mechanical key surface.",
-    "spec": "Standard MX cross socket. Print a stem-fit coupon first; purchased caps are an option.",
+    "spec": "Flat finger surface, rounded corners and 0.5 mm beveled rim. Standard MX cross socket. Print a stem-fit coupon first; purchased caps are an option.",
     "links": [
       {
         "label": "Buy clear PETG",
@@ -208,7 +208,7 @@
         "url": "/downloads/step/08_keycap_1u.step"
       }
     ],
-    "note": "Print this part in clear PETG.",
+    "note": "Print this part in clear PETG. Top UP; start with 0.10\u20130.12 mm layers on a 0.4 mm nozzle. Support the underside as needed and keep the sockets clear. Print a stem-fit coupon and one cap first.",
     "material": "Clear PETG"
   },
   {
@@ -217,7 +217,7 @@
     "category": "Printed",
     "quantity": "5",
     "description": "Covers the individual command switches. The supplied legend sheet adds labels for Fast, approve, decline, new chat and send.",
-    "spec": "Same 1U CAD as the agent cap; use white filament.",
+    "spec": "Flat finger surface, rounded corners and 0.5 mm beveled rim. Same 1U CAD as the agent cap; use white filament.",
     "links": [
       {
         "label": "Buy white PETG",
@@ -238,7 +238,7 @@
         "url": "/downloads/step/08_keycap_1u.step"
       }
     ],
-    "note": "Print this part in white PETG.",
+    "note": "Print this part in white PETG. Top UP; start with 0.10\u20130.12 mm layers on a 0.4 mm nozzle. Support the underside as needed and keep the sockets clear. Print a stem-fit coupon and one cap first.",
     "material": "White PETG"
   },
   {
@@ -247,7 +247,7 @@
     "category": "Printed",
     "quantity": "1",
     "description": "Presses two independent switches together. The firmware combines those switch events into one logical key.",
-    "spec": "Two MX sockets, 19.05 mm apart. A conventional centered 2U cap will not fit.",
+    "spec": "Flat finger surface, rounded corners and 0.5 mm beveled rim. Two MX sockets, 19.05 mm apart. A conventional centered 2U cap will not fit.",
     "links": [
       {
         "label": "Buy white PETG",
@@ -264,7 +264,7 @@
         "url": "/downloads/step/09_keycap_2u_dual_stem.step"
       }
     ],
-    "note": "Print this part in white PETG.",
+    "note": "Print this part in white PETG. Top UP; start with 0.10\u20130.12 mm layers on a 0.4 mm nozzle. Support the underside as needed and keep the sockets clear. Print a stem-fit coupon and one cap first.",
     "material": "White PETG"
   },
   {

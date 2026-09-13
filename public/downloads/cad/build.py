@@ -130,15 +130,9 @@ save('07_led_baffle',pod,qty=6,notes='Black filament, cavity UP. LED PCB on floo
 # 1U keycaps and dual-MX-stem 2U cap: printable, trial fit required for cross sockets.
 def keycap(w,stems):
     cap=rr(w,18,6,3,z=0)
+    # Flat finger surface with a small 45-degree bevel around the rounded outline.
+    cap=cap.faces('>Z').edges().chamfer(P['keycap_top_bevel'])
     cap=cap.cut(rr(w-2.8,15.2,4.2,2,z=-.01))
-    # Shallow bowl; the wide cap uses a capsule-shaped dish.
-    scoop=cq.Workplane('XY').sphere(42).translate((0,0,47.3))
-    if len(stems)>1:
-        span=max(stems)-min(stems)
-        scoop=cq.Workplane('YZ').circle(42).extrude(span).translate((-span/2,0,47.3))
-        for x in stems:
-            scoop=scoop.union(cq.Workplane('XY').sphere(42).translate((x,0,47.3)))
-    cap=cap.cut(scoop)
     for x in stems:
         cap=cap.union(cyl(6.0,4.9,x,0,-.6))
         a=P['mx_stem_cross_length'];b=P['mx_stem_cross_width']
@@ -147,8 +141,8 @@ def keycap(w,stems):
     return cap
 cap=keycap(P['keycap_width'],[0])
 cap2=keycap(P['keycap_width']+pitch,[-pitch/2,pitch/2])
-save('08_keycap_1u',cap,qty=11,notes='Prototype cap: 6 translucent and 5 white. Support only cavity roofs, keep sockets clear. Bought MX caps feel better.')
-save('09_keycap_2u_dual_stem',cap2,notes='Two MX stems spaced 19.05 mm; uses two switches, NOT a conventional centered 2U stabilizer.')
+save('08_keycap_1u',cap,qty=11,notes='Flat top, 0.5 mm beveled rim. Print 6 clear and 5 white, top UP; 0.10-0.12 mm layers with a 0.4 mm nozzle. Support underside as needed, keep sockets clear. Test one cap first.')
+save('09_keycap_2u_dual_stem',cap2,notes='Flat top, 0.5 mm beveled rim; white PETG, top UP. Support underside as needed, keep sockets clear. Two MX sockets 19.05 mm apart; fits two switches, not a centered stabilizer. Test fit first.')
 
 # Fit coupon: three switch cutouts and three stem sockets plus encoder hole and insert well.
 coupon=box(66,24,3)

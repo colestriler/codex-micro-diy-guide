@@ -112,6 +112,20 @@
     }
   ],
   "step_valid": true,
+  "keycap_checks": [
+    {
+      "file": "08_keycap_1u.step",
+      "flat_top_z_mm": 6.0,
+      "top_area_mm2": 283.635,
+      "single_planar_top": true
+    },
+    {
+      "file": "09_keycap_2u_dual_stem.step",
+      "flat_top_z_mm": 6.0,
+      "top_area_mm2": 607.485,
+      "single_planar_top": true
+    }
+  ],
   "assembly_pair_checks": [
     {
       "a": "01_case",

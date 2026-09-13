@@ -25,6 +25,7 @@
   "mx_stem_cross_length": 4.15,
   "mx_stem_cross_width": 1.35,
   "keycap_width": 18.0,
+  "keycap_top_bevel": 0.5,
   "foot_diameter": 84.0,
   "foot_height": 5.0
 }

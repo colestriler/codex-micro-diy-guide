@@ -16,6 +16,16 @@ for p in sorted((ROOT/'stl').glob('*.stl')):
     checks.append({'file':p.name,'watertight':True,'single_solid':True,'size_mm':m.extents.round(2).tolist()})
 parts={p.stem:cq.importers.importStep(str(p)) for p in (ROOT/'step').glob('*.step') if p.name!='assembly.step'}
 for name,s in parts.items():assert s.val().isValid(),name+' bad STEP'
+# A printable finger surface must be a broad, upward-facing plane, not a dish
+# or a narrow rim accidentally selected as the highest surface.
+keycaps=[]
+for name in ['08_keycap_1u','09_keycap_2u_dual_stem']:
+    shape=parts[name];bounds=shape.val().BoundingBox();faces=shape.faces('>Z').vals()
+    assert len(faces)==1 and faces[0].geomType()=='PLANE',name+' top must be one plane'
+    face=faces[0];b=face.BoundingBox()
+    assert abs(b.zmin-6)<1e-5 and abs(b.zmax-6)<1e-5,name+' incorrect top height'
+    assert face.normalAt().z>.999 and face.Area()>.85*bounds.xlen*bounds.ylen,name+' top too small'
+    keycaps.append({'file':name+'.step','flat_top_z_mm':6.0,'top_area_mm2':round(face.Area(),3),'single_planar_top':True})
 pairs=[('01_case','02_switch_plate'),('01_case','03_round_foot'),('02_switch_plate','04_joystick_cradle'),('02_switch_plate','05_touch_cap'),('02_switch_plate','06_encoder_knob')]
 collisions=[]
 for a,b in pairs:
@@ -38,7 +48,7 @@ for bad in [[-1,0,0],[0,0,256],[0,0],['x',0,0]]:
     except ValueError:pass
     else:raise AssertionError(bad)
 for p in (ROOT/'firmware').glob('*.py'):ast.parse(p.read_text())
-report={'stl_checks':checks,'step_valid':True,'assembly_pair_checks':collisions,'input_state_tests':'passed','firmware_syntax':'passed','physical_print_test':'NOT PERFORMED','hardware_electrical_test':'NOT PERFORMED','native_codex_integration':'NOT IMPLEMENTED','oem_donor_fit':'NOT VERIFIED'}
+report={'stl_checks':checks,'step_valid':True,'keycap_checks':keycaps,'assembly_pair_checks':collisions,'input_state_tests':'passed','firmware_syntax':'passed','physical_print_test':'NOT PERFORMED','hardware_electrical_test':'NOT PERFORMED','native_codex_integration':'NOT IMPLEMENTED','oem_donor_fit':'NOT VERIFIED'}
 (ROOT/'docs/validation.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps({k:v for k,v in report.items() if k not in ('stl_checks','assembly_pair_checks')},indent=2))
 print('Validated',len(checks),'STLs and',len(parts),'STEP parts')

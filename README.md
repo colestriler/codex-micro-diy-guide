@@ -31,6 +31,8 @@ The custom KB2040 firmware provides generic USB inputs and manual LED control. *
 
 The guide explains both routes so you can decide what to build before buying a pile of parts.
 
+The printable keycaps were updated on September 13, 2026 with flat tops, rounded corners and a 0.5 mm beveled rim for easier printing and labeling. This applies to the shared white/clear single cap and the wide white cap. Start with a stem-fit coupon and one cap before printing the set. The assembly viewer shows the current CAD; the hero remains a concept illustration.
+
 ## Run the site
 
 Requires Node.js 22 or newer.
@@ -64,6 +66,8 @@ The live site is hosted on Vercel. Pushing to `main` automatically builds and de
 To update the model, edit `viewer-src/assembly.js` or its source geometry, then run `npm run viewer`. Every selectable model component maps to a catalog entry in `viewer-src/part-map.json`; subcomponents such as LED boards and copper foil have their own part identifiers.
 
 The CAD source and its Python dependencies live in `public/downloads/cad/` and `public/downloads/requirements.txt`. Keep Python virtual environments outside `public/`. The original CAD and firmware rebuild instructions are included in the downloadable guide.
+
+After editing the CAD, use that Python environment to run `public/downloads/cad/build.py`, `public/downloads/tools/verify.py`, `public/downloads/tools/render.py`, and `public/downloads/tools/make_animation.py`. Then run `scripts/sync-cad.py` to regenerate the viewer geometry, download catalog, offline guide and verified ZIP, followed by `npm run build`.
 
 ## Credits
 

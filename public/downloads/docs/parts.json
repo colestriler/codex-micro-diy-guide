@@ -72,22 +72,22 @@
   "08_keycap_1u": {
     "qty": 11,
     "bounds_mm": [
-      18.001,
-      18.001,
-      6.684
+      18.014,
+      18.014,
+      6.607
     ],
-    "volume_mm3": 976.74,
-    "notes": "Prototype cap: 6 translucent and 5 white. Support only cavity roofs, keep sockets clear. Bought MX caps feel better."
+    "volume_mm3": 1032.81,
+    "notes": "Flat top, 0.5 mm beveled rim. Print 6 clear and 5 white, top UP; 0.10-0.12 mm layers with a 0.4 mm nozzle. Support underside as needed, keep sockets clear. Test one cap first."
   },
   "09_keycap_2u_dual_stem": {
     "qty": 1,
     "bounds_mm": [
-      37.051,
-      18.001,
-      6.601
+      37.064,
+      18.014,
+      6.607
     ],
-    "volume_mm3": 1982.24,
-    "notes": "Two MX stems spaced 19.05 mm; uses two switches, NOT a conventional centered 2U stabilizer."
+    "volume_mm3": 1969.25,
+    "notes": "Flat top, 0.5 mm beveled rim; white PETG, top UP. Support underside as needed, keep sockets clear. Two MX sockets 19.05 mm apart; fits two switches, not a centered stabilizer. Test fit first."
   },
   "10_switch_fit_coupon": {
     "qty": 1,
