@@ -1,0 +1,46 @@
+{
+  "holder": {
+    "volume_mm3": 2687.924512630137,
+    "size_mm": [
+      26.5,
+      26.5,
+      7.8
+    ]
+  },
+  "shim_A_0.5mm": {
+    "volume_mm3": 10.51049260892401,
+    "size_mm": [
+      6.199999999999999,
+      5.2,
+      0.5000000000000002
+    ],
+    "reference_overlap_mm3": 0.0
+  },
+  "shim_A_1.0mm": {
+    "volume_mm3": 21.02098521784802,
+    "size_mm": [
+      6.199999999999999,
+      5.2,
+      1.0000000000000002
+    ]
+  },
+  "shim_B_0.5mm": {
+    "volume_mm3": 10.921692608924015,
+    "size_mm": [
+      6.200000000000001,
+      5.199999999999999,
+      0.5000000000000002
+    ]
+  },
+  "shim_B_1.0mm": {
+    "volume_mm3": 21.84338521784803,
+    "size_mm": [
+      6.200000000000001,
+      5.199999999999999,
+      1.0000000000000002
+    ],
+    "reference_overlap_mm3": 0.0
+  },
+  "reference_overlap_mm3": 0.0,
+  "validation": "CAD checks only; physical fit and printed nut pockets unverified"
+}

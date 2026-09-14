@@ -37,7 +37,7 @@
       3.601
     ],
     "volume_mm3": 829.15,
-    "notes": "Pocket 19.8 mm. Vendor does not publish a controlled drawing; fit-check actual joystick."
+    "notes": "SUPERSEDED: old unretained cradle, retained only for original assembly compatibility. Use joystick-fit-v1 for bench testing; final plate mount pending."
   },
   "05_touch_cap": {
     "qty": 1,
@@ -108,5 +108,55 @@
     ],
     "volume_mm3": 7645.49,
     "notes": "Cross fits -0.05 / nominal / +0.05, then 3.9 mm insert pocket. Sockets UP for inspection."
+  },
+  "04_joystick_fit_holder_v1": {
+    "qty": 1,
+    "bounds_mm": [
+      26.5,
+      26.5,
+      7.8
+    ],
+    "volume_mm3": 2687.9245,
+    "notes": "Bench sample only; not a drop-in plate mount. Flat bottom down, 0.20 mm layers."
+  },
+  "04_shim_A_05_v1": {
+    "qty": 1,
+    "bounds_mm": [
+      6.199999999999999,
+      5.2,
+      0.5000000000000002
+    ],
+    "volume_mm3": 10.5105,
+    "notes": "Starting shim A. Flat down, 0.10 mm layers; see fit guide for position."
+  },
+  "04_shim_B_10_v1": {
+    "qty": 1,
+    "bounds_mm": [
+      6.200000000000001,
+      5.199999999999999,
+      1.0000000000000002
+    ],
+    "volume_mm3": 21.8434,
+    "notes": "Starting shim B. Flat down, 0.10 mm layers; see fit guide for position."
+  },
+  "04_shim_A_10_v1": {
+    "qty": 0,
+    "bounds_mm": [
+      6.199999999999999,
+      5.2,
+      1.0000000000000002
+    ],
+    "volume_mm3": 21.021,
+    "notes": "Optional fit adjustment only; do not stack with starting shim."
+  },
+  "04_shim_B_05_v1": {
+    "qty": 0,
+    "bounds_mm": [
+      6.200000000000001,
+      5.199999999999999,
+      0.5000000000000002
+    ],
+    "volume_mm3": 10.9217,
+    "notes": "Optional fit adjustment only; do not stack with starting shim."
   }
 }

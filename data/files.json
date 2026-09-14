@@ -33,14 +33,58 @@
     ]
   },
   {
-    "name": "04 joystick cradle",
-    "id": "04_joystick_cradle",
+    "name": "Joystick fit holder v1",
+    "id": "04_joystick_fit_holder_v1",
     "quantity": 1,
-    "note": "Pocket 19.8 mm. Vendor does not publish a controlled drawing; fit-check actual joystick.",
+    "note": "Bench sample only; not a drop-in plate mount. Flat bottom down, 0.20 mm layers.",
     "size": [
-      21.601,
-      21.601,
-      3.601
+      26.5,
+      26.5,
+      7.8
+    ]
+  },
+  {
+    "name": "Joystick shim A — 0.5 mm",
+    "id": "04_shim_A_05_v1",
+    "quantity": 1,
+    "note": "Starting shim A. Flat down, 0.10 mm layers; see fit guide for position.",
+    "size": [
+      6.199999999999999,
+      5.2,
+      0.5000000000000002
+    ]
+  },
+  {
+    "name": "Joystick shim B — 1.0 mm",
+    "id": "04_shim_B_10_v1",
+    "quantity": 1,
+    "note": "Starting shim B. Flat down, 0.10 mm layers; see fit guide for position.",
+    "size": [
+      6.200000000000001,
+      5.199999999999999,
+      1.0000000000000002
+    ]
+  },
+  {
+    "name": "Joystick shim A — 1.0 mm alternate",
+    "id": "04_shim_A_10_v1",
+    "quantity": 0,
+    "note": "Optional fit adjustment only; do not stack with starting shim.",
+    "size": [
+      6.199999999999999,
+      5.2,
+      1.0000000000000002
+    ]
+  },
+  {
+    "name": "Joystick shim B — 0.5 mm alternate",
+    "id": "04_shim_B_05_v1",
+    "quantity": 0,
+    "note": "Optional fit adjustment only; do not stack with starting shim.",
+    "size": [
+      6.200000000000001,
+      5.199999999999999,
+      0.5000000000000002
     ]
   },
   {
