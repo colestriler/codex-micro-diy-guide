@@ -584,16 +584,20 @@
     "name": "Steel weight washer",
     "category": "Hardware",
     "quantity": "4 optional",
-    "description": "Adds a little weight so the keypad feels steadier on the desk. Tape the washers into the round foot’s top pockets.",
-    "spec": "M8 fender washer, 24 mm outside diameter, at most 2 mm thick.",
+    "description": "Adds a little weight so the keypad feels steadier on the desk. Tape the washers into the round foot\u2019s top pockets.",
+    "spec": "M8 oversized washer, 316 stainless steel, 8.4 mm inside diameter, 24 mm outside diameter, nominal 2 mm thick.",
     "links": [
       {
-        "label": "Find steel washers",
-        "url": "https://www.mcmaster.com/products/washers/for-screw-size~m8/"
+        "label": "Buy on Amazon (10 pack)",
+        "url": "https://www.amazon.com/dp/B0DDGRXHT7"
+      },
+      {
+        "label": "Buy on McMaster (10 pack)",
+        "url": "https://www.mcmaster.com/95211A180/"
       }
     ],
     "files": [],
-    "note": null
+    "note": "One pack covers the four optional weights. McMaster specifies 1.8–2.2 mm thickness; check your printed pockets and allow room for the retaining tape before assembly."
   },
   {
     "id": "rubber",
