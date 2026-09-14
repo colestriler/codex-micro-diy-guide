@@ -1,0 +1,35 @@
+{
+  "PRINT_FIRST_joystick_corner_v2": {
+    "size_mm": [
+      30.5,
+      30.5,
+      7.80000019073486
+    ],
+    "volume_mm3": 2395.5158853544576,
+    "watertight": true,
+    "connected_solids": 1,
+    "print_z_min": 3.3445648611334132e-15
+  },
+  "WAIT_full_top_plate_v2": {
+    "size_mm": [
+      94.0,
+      94.0,
+      7.800000190734863
+    ],
+    "volume_mm3": 15960.637953758933,
+    "watertight": true,
+    "connected_solids": 1,
+    "print_z_min": 0.0
+  },
+  "reference_joystick_overlap_mm3": 0.0,
+  "existing_case_overlap_mm3": 0.0,
+  "source_plate": "Unchanged switch, encoder, touch, status LED and M3 case hole geometry outside joystick area.",
+  "mounting": "Same M1.6 x 8 DIN912 screws and M1.6 DIN934 nuts as v1; no loose shims.",
+  "limits": [
+    "Physical fit and stiffness unverified.",
+    "Stock thumb-cap shape and full travel not accurately modeled; test in all directions.",
+    "Printed nut-pocket and screw-slot fit unverified.",
+    "Support removal must preserve the body seat and wire opening.",
+    "Full plate withheld from recommended printing until corner fit passes."
+  ]
+}

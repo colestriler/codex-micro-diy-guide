@@ -1,0 +1,6 @@
+{
+  "revision": "integrated-v2-fit-test",
+  "body_recess_mm": 1.0,
+  "ear_support_mm": {"A": 0.5, "B": 1.0},
+  "note": "Support offsets above the body seat reproduce the starting v1 shims; change only after physical fit feedback. A/B follow original mounting ears despite the 180-degree rotation."
+}

@@ -168,7 +168,7 @@
         }
       ]
     },
-    "caption": "The case is hidden so you can inspect the plate. The switch row closest to you includes both halves of the wide Voice key. Joystick geometry in this animation is the old mount; use the new fit guide for the holder.",
+    "caption": "The case is hidden so you can inspect the plate. The switch row closest to you includes both halves of the wide Voice key. Joystick geometry in this animation is the old mount; use the v2 guide for the integrated mount and test corner.",
     "parts": [
       "plate",
       "mx-switch",
@@ -180,14 +180,14 @@
     "how": [
       "Work with the plate outside the case. Clip in all 13 normal MX switches from above, including both switches underneath the wide Voice cap.",
       "Mount the encoder from below, with its washer and M7 nut above the plate. Tighten gently and trial the printed dial; it needs clearance to turn and press.",
-      "Before mounting or wiring the joystick, print the new fit-test holder and starting A/B shims. Follow the linked fit guide; secure its mounting ears with two M1.6 × 8 mm screws and M1.6 nuts. Do not bond it into the old recess. Final top-plate attachment is still pending physical fit testing."
+      "Print and test the integrated joystick v2 corner before the full top plate. The two tab seats are built in: no shims. Fit two M1.6 × 8 mm screws and M1.6 nuts only after the body and tabs sit flat. Check full thumb-cap travel and case clearance. Follow the v2 guide; this animation still shows legacy geometry."
     ],
     "why": "The plate keeps the controls aligned and absorbs the force of pressing keys. Doing this as a separate subassembly gives you access to both sides. The wide cap uses two switches for support, so leaving one out changes both its feel and alignment.",
     "check": "Every switch latches, the dial rotates and clicks, and the joystick travels freely without its leads pulling on it.",
     "links": [
       {
-        "label": "New joystick fit-test guide",
-        "url": "/downloads/joystick-fit-v1/guide.html"
+        "label": "Integrated joystick v2: print-first guide",
+        "url": "/downloads/joystick-integrated-v2/guide.html"
       },
       {
         "label": "Joystick orientation reference",

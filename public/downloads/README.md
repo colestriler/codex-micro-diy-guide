@@ -1,3 +1,7 @@
+# Integrated joystick v2 — print the corner first
+
+Open `joystick-integrated-v2/guide.html`. The full top plate is a candidate pending the corner fit test. Two M1.6 × 8 mm screws and M1.6 nuts, same as v1; no loose shims. Original assembly STEP and original generator still show the old mount. The versioned v2 kit contains the new parametric source and reference assembly.
+
 # Joystick fit-kit update
 
 Joystick update: use the new screw-retained bench fit kit first. The original cradle and full keyboard animation are legacy geometry; the final top-plate attachment is not yet designed or physically verified. Keep your existing top plate until the sample fits.

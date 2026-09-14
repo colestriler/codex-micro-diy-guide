@@ -30,8 +30,8 @@
     "name": "Switch plate",
     "category": "Printed",
     "quantity": "1",
-    "description": "Clips the switches in place and locates the dial, joystick, touch input and three indicator lights. It drops onto the case ledge.",
-    "spec": "94 × 94 × 3 mm; 1.6 mm retaining lands. Print visible face down.",
+    "description": "Holds the switches and controls. The v2 candidate incorporates the joystick mount, two supporting seats and underside nut pockets.",
+    "spec": "94 × 94 mm; main plate 3 mm, 1.6 mm switch clip lands. Local joystick nut bosses extend 4.8 mm below the plate. See v2 support settings.",
     "links": [
       {
         "label": "Buy white PETG",
@@ -40,15 +40,19 @@
     ],
     "files": [
       {
-        "label": "STL",
-        "url": "/downloads/stl/02_switch_plate.stl"
+        "label": "Full-plate STL — wait for fit check",
+        "url": "/downloads/stl/02_integrated_top_plate_v2_WAIT.stl"
       },
       {
-        "label": "STEP",
-        "url": "/downloads/step/02_switch_plate.step"
+        "label": "Full-plate STEP",
+        "url": "/downloads/step/02_integrated_top_plate_v2_WAIT.step"
+      },
+      {
+        "label": "Print-first guide",
+        "url": "/downloads/joystick-integrated-v2/guide.html"
       }
     ],
-    "note": "Print this part in white PETG.",
+    "note": "Print the small v2 test corner first. Wait to print this full plate until the corner passes the physical fit check.",
     "material": "White PETG"
   },
   {
@@ -79,11 +83,11 @@
   },
   {
     "id": "cradle",
-    "name": "Joystick fit-test holder + shims",
+    "name": "Joystick test corner v2",
     "category": "Printed",
-    "quantity": "1 holder + 2 shims",
-    "description": "Screw-retained bench sample for the slide joystick. Includes a holder, shim A (0.5 mm) and shim B (1.0 mm). This tests fit before the final top-plate mount is designed.",
-    "spec": "26.5 × 26.5 × 7.8 mm holder. Two M1.6 × 8 mm socket-head screws and two M1.6 nuts required for retention.",
+    "quantity": "1 test piece",
+    "description": "A corner cut from the new integrated top plate. The joystick supports and nut pockets are built in; no separate stand or shims. Test this piece before printing the full plate.",
+    "spec": "30.5 × 30.5 mm; main plate 3 mm thick, nut bosses extend 4.8 mm below. Uses the same two M1.6 × 8 mm screws and M1.6 nuts as v1.",
     "links": [
       {
         "label": "Buy black PETG",
@@ -92,15 +96,15 @@
     ],
     "files": [
       {
-        "label": "Fit guide",
-        "url": "/downloads/joystick-fit-v1/guide.html"
+        "label": "Print-first STL",
+        "url": "/downloads/stl/04_joystick_corner_v2_PRINT_FIRST.stl"
       },
       {
-        "label": "STL + STEP kit",
-        "url": "/downloads/joystick-fit-v1/joystick-fit-sample-v1.zip"
+        "label": "V2 fit guide",
+        "url": "/downloads/joystick-integrated-v2/guide.html"
       }
     ],
-    "note": "Use existing PETG. Dry-fit first; keep the current top plate. Final plate mounting remains unverified.",
+    "note": "Physical fit pending. Visible face down with supports under the shallow recess. Do not stack this on the old plate.",
     "material": "Clear PETG"
   },
   {
@@ -584,7 +588,7 @@
     "name": "Steel weight washer",
     "category": "Hardware",
     "quantity": "4 optional",
-    "description": "Adds a little weight so the keypad feels steadier on the desk. Tape the washers into the round foot\u2019s top pockets.",
+    "description": "Adds a little weight so the keypad feels steadier on the desk. Tape the washers into the round foot’s top pockets.",
     "spec": "M8 oversized washer, 316 stainless steel, 8.4 mm inside diameter, 24 mm outside diameter, nominal 2 mm thick.",
     "links": [
       {
