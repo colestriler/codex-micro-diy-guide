@@ -170,7 +170,10 @@ with (ROOT / "cpl-jlcpcb.csv").open("w", newline="") as handle:
     writer = csv.writer(handle)
     writer.writerow(("Designator", "Mid X", "Mid Y", "Rotation", "Layer"))
     for ref, x, y, rotation, side in placements:
-        writer.writerow((ref, f"{x:.3f}mm", f"{y:.3f}mm", rotation, side))
+        # KiCad's board Y axis points down in this generated file. JLCPCB's CPL
+        # importer plots positive Y upward from the Gerber origin, so top-side
+        # placement Y values must be inverted to land on the pads.
+        writer.writerow((ref, f"{x:.3f}mm", f"{-y:.3f}mm", rotation, side))
 
 (ROOT / "design-summary.json").write_text(json.dumps({
     "revision": "A-prototype",
