@@ -1,0 +1,56 @@
+.bench-guide { font-size:14px; line-height:1.65; }
+.bench-lead { max-width:760px; color:#58614f; }
+.bench-downloads { display:flex; flex-wrap:wrap; gap:12px 22px; margin:22px 0; }
+.bench-downloads a,.bench-step-links a,.bench-explorer a { text-decoration:underline; text-underline-offset:4px; }
+.bench-index { padding:20px 0; border-block:1px solid var(--line); }
+.bench-index ol { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:1fr 1fr; gap:10px 24px; }
+.bench-index a { display:flex; gap:12px; align-items:baseline; }
+.bench-index a span { color:#657a50; font-variant-numeric:tabular-nums; }
+.bench-progress { color:#626b5b; font-size:12px; margin:14px 0 24px; }
+.bench-basics { border-bottom:1px solid var(--line); margin:12px 0; }
+.bench-basics>summary { cursor:pointer; padding:14px 0; font-weight:500; }
+.bench-basics>div { padding:0 0 16px; max-width:800px; }
+.bench-basics p { margin:12px 0; }
+.bench-basics a,.bench-phase>p a { text-decoration:underline; text-underline-offset:3px; }
+.bench-phase { scroll-margin-top:24px; margin:42px 0; padding-top:18px; border-top:1px solid var(--line); }
+.bench-phase>header { display:flex; align-items:baseline; gap:15px; }
+.bench-phase-number { color:#738563; font-size:13px; font-variant-numeric:tabular-nums; }
+.bench-phase h3 { margin:0; font-size:23px; line-height:1.25; font-weight:550; letter-spacing:-.45px; }
+.bench-phase header p { margin:9px 0 14px; color:#626b5b; max-width:760px; }
+.bench-materials { padding:14px 17px; background:#f5f6f1; border-radius:5px; color:#59614f; }
+.bench-materials b { display:block; color:var(--ink); margin-bottom:4px; font-size:12px; }
+.bench-group { margin:25px 0 30px; }
+.bench-group>h4 { font-size:16px; font-weight:550; margin:0 0 9px; }
+.bench-step { border-bottom:1px solid var(--line); scroll-margin-top:24px; }
+.bench-step>summary { display:flex; gap:13px; align-items:baseline; list-style:none; padding:16px 2px; cursor:pointer; }
+.bench-step>summary::-webkit-details-marker { display:none; }
+.bench-step-number { min-width:22px; color:#6e7b60; font-size:12px; }
+.bench-step.is-complete .bench-step-number { color:#476530; }
+.bench-expand { margin-left:auto; color:#7a836e; }
+.bench-step[open] .bench-expand { transform:rotate(45deg); }
+.bench-step-body { padding:0 0 22px 37px; max-width:860px; }
+.bench-step-body ol { padding-left:21px; margin:0 0 18px; }
+.bench-step-body li { padding-left:3px; margin:11px 0; }
+.bench-why,.bench-check { display:grid; grid-template-columns:48px 1fr; gap:10px; margin:12px 0; }
+.bench-why>b,.bench-check>b { font-size:12px; color:#69765d; padding-top:2px; }
+.bench-why p,.bench-check p { margin:0; }
+.bench-step-links { display:flex; flex-wrap:wrap; gap:10px 20px; margin:20px 0 16px; font-size:13px; }
+.bench-complete { display:flex; align-items:center; gap:10px; min-height:44px; cursor:pointer; color:#4e603e; font-size:13px; }
+.bench-complete input { width:18px; height:18px; accent-color:#526d39; }
+.bench-next { display:inline-block; padding:10px 0; font-size:13px; color:#50673e; }
+.bench-explorer { margin:26px 0; border:1px solid var(--line); border-radius:7px; padding:16px; }
+.bench-explorer-heading { display:flex; gap:14px; flex-wrap:wrap; justify-content:space-between; align-items:baseline; }
+.bench-explorer-heading h4 { margin:0; font-size:16px; font-weight:550; }
+.bench-explorer iframe { display:block; width:100%; border:0; margin:10px 0; }
+.bench-explorer p { font-size:12px; color:#66705e; }
+.bench-knob-figure { margin:20px 0; }
+.bench-knob-pair { display:grid; grid-template-columns:1.4fr 1fr; gap:30px; align-items:center; }
+.bench-knob-pair svg { width:100%; height:auto; display:block; }
+.bench-knob-figure figcaption { font-size:12px; color:#626b5b; margin-top:12px; }
+.bench-reference-step { margin:20px 0; }
+.bench-reference-step h4 { margin:0 0 6px; font-size:15px; }
+.bench-reference-step p { margin:6px 0; }
+.guide-sidebar .toc-wiring-substeps { display:block; padding:4px 0 8px 22px; }
+.guide-sidebar .toc-wiring-substeps a { padding:6px 7px; font-size:11px; border:0; }
+@media(max-width:760px){.bench-index ol{grid-template-columns:1fr}.bench-knob-pair{grid-template-columns:1fr;gap:15px}.bench-knob-pair svg:last-child{max-width:330px;margin:auto}.bench-phase h3{font-size:21px}.bench-step-body{padding-left:5px}.bench-explorer{padding:6px}.bench-explorer-heading{padding:10px}.bench-guide{font-size:14px}.guide-sidebar .toc-wiring-substeps{display:none}}
+@media print{.bench-step>summary{break-after:avoid}.bench-step-body{break-inside:avoid}.bench-explorer iframe{display:none}}

@@ -4,12 +4,21 @@
   "private": true,
   "scripts": {
     "dev": "next dev --hostname 127.0.0.1 --port 3007",
-    "prebuild": "node scripts/build-viewer.mjs && node scripts/build-labels.mjs && node scripts/check-content.mjs && node scripts/check-wiring.mjs",
+    "prebuild": "node scripts/build-viewer.mjs && node scripts/build-labels.mjs && node scripts/check-content.mjs && node scripts/check-wiring.mjs && node scripts/check-wiring-lessons.mjs",
     "build": "next build",
     "start": "next start --hostname 127.0.0.1 --port 3007",
     "typecheck": "tsc --noEmit",
     "viewer": "node scripts/build-viewer.mjs"
   },
-  "dependencies": { "next": "16.3.4", "react": "19.2.8", "react-dom": "19.2.8" },
-  "devDependencies": { "@types/node": "^22", "@types/react": "^19", "@types/react-dom": "^19", "typescript": "^5" }
+  "dependencies": {
+    "next": "16.3.4",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
+  }
 }

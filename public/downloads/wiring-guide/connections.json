@@ -1,0 +1,315 @@
+{
+  "wires": [
+    {
+      "id": "g-loop",
+      "a": "C10",
+      "b": "C4",
+      "net": "ground",
+      "label": "C10 ↔ C4 — enable the channel we use",
+      "desc": "C10–D10 and C4–D4 put chip pins 1 and 7 at ground: channel 1 enabled."
+    },
+    {
+      "id": "kb-ground",
+      "a": "B4",
+      "b": "KB.G",
+      "net": "ground",
+      "label": "B4 → KB2040 G — shared ground",
+      "desc": "The wire at B4 joins the entire ground network to G on the KB2040."
+    },
+    {
+      "id": "kb-power",
+      "a": "H10",
+      "b": "KB.RAW",
+      "net": "power",
+      "label": "H10 → KB2040 RAW — power supply",
+      "desc": "RAW supplies power to H10, then G10 (chip pin 14) and I10 (LED power)."
+    },
+    {
+      "id": "kb-data",
+      "a": "C9",
+      "b": "KB.MO",
+      "net": "signal",
+      "label": "KB2040 MO → C9 — color instructions",
+      "desc": "MO sends 3.3V data through C9–D9 to chip pin 2; this wire does not power the LED."
+    },
+    {
+      "id": "led-data",
+      "a": "A12",
+      "b": "LED.DIN",
+      "net": "signal",
+      "label": "A12 → LED DIN — translated instructions",
+      "desc": "Chip pin 3 at D8 → B8 → 330 Ω resistor → B12 → A12 → LED DIN."
+    },
+    {
+      "id": "led-ground",
+      "a": "A4",
+      "b": "LED.GND",
+      "net": "ground",
+      "label": "A4 → LED GND — LED ground",
+      "desc": "The LED ground wire at A4 joins B4 and the KB2040 ground."
+    },
+    {
+      "id": "led-power",
+      "a": "I10",
+      "b": "LED.5V",
+      "net": "power",
+      "label": "I10 → LED 5V — LED power",
+      "desc": "The LED gets power through I10–H10 from RAW, separately from its data wire."
+    },
+    {
+      "id": "unused-1",
+      "a": "C6",
+      "b": "B5",
+      "net": "ground",
+      "label": "C6 ↔ B5 — hold unused input steady",
+      "desc": "C6–D6 grounds chip pin 5 through B5–B4."
+    },
+    {
+      "id": "unused-pair",
+      "a": "H5",
+      "b": "H8",
+      "net": "ground",
+      "label": "H5 ↔ H8 — join two unused inputs",
+      "desc": "H5–G5 and H8–G8 join chip input pins 9 and 12."
+    },
+    {
+      "id": "unused-ground",
+      "a": "I5",
+      "b": "A5",
+      "net": "ground",
+      "label": "I5 ↔ A5 — ground those inputs",
+      "desc": "I5–H5 connects that input pair to A5–A4 and the shared ground."
+    },
+    {
+      "id": "enable-pair",
+      "a": "H6",
+      "b": "H9",
+      "net": "power",
+      "label": "H6 ↔ H9 — join two disable controls",
+      "desc": "H6–G6 and H9–G9 join enable pins 10 and 13; 5V switches these channels off."
+    },
+    {
+      "id": "enable-power",
+      "a": "I9",
+      "b": "J10",
+      "net": "power",
+      "label": "I9 ↔ J10 — switch two channels off",
+      "desc": "I9–H9 puts the enable pair on 5V through J10–I10."
+    },
+    {
+      "id": "enable-last",
+      "a": "C7",
+      "b": "K10",
+      "net": "power",
+      "label": "C7 ↔ K10 — switch last unused channel off",
+      "desc": "C7–D7 puts enable pin 4 on 5V through K10–J10."
+    },
+    {
+      "id": "knob-ground",
+      "a": "A3",
+      "b": "KNOB.G",
+      "net": "ground",
+      "label": "Knob ground → A3 — shared ground junction",
+      "desc": "The wire formerly in KB2040 G now goes to A3–A4; B4 provides its route back to KB2040 G."
+    }
+  ],
+  "bridges": [
+    [
+      "C10",
+      "D10",
+      "ground"
+    ],
+    [
+      "C4",
+      "D4",
+      "ground"
+    ],
+    [
+      "B4",
+      "C4",
+      "ground"
+    ],
+    [
+      "H10",
+      "G10",
+      "power"
+    ],
+    [
+      "D11",
+      "D10",
+      "ground"
+    ],
+    [
+      "G11",
+      "G10",
+      "power"
+    ],
+    [
+      "C9",
+      "D9",
+      "signal"
+    ],
+    [
+      "B8",
+      "C8",
+      "signal"
+    ],
+    [
+      "C8",
+      "D8",
+      "signal"
+    ],
+    [
+      "A12",
+      "B12",
+      "signal"
+    ],
+    [
+      "A4",
+      "B4",
+      "ground"
+    ],
+    [
+      "I10",
+      "H10",
+      "power"
+    ],
+    [
+      "C6",
+      "D6",
+      "ground"
+    ],
+    [
+      "B5",
+      "B4",
+      "ground"
+    ],
+    [
+      "H5",
+      "G5",
+      "ground"
+    ],
+    [
+      "H8",
+      "G8",
+      "ground"
+    ],
+    [
+      "I5",
+      "H5",
+      "ground"
+    ],
+    [
+      "A5",
+      "A4",
+      "ground"
+    ],
+    [
+      "H6",
+      "G6",
+      "power"
+    ],
+    [
+      "H9",
+      "G9",
+      "power"
+    ],
+    [
+      "I9",
+      "H9",
+      "power"
+    ],
+    [
+      "J10",
+      "I10",
+      "power"
+    ],
+    [
+      "C7",
+      "D7",
+      "power"
+    ],
+    [
+      "K10",
+      "J10",
+      "power"
+    ],
+    [
+      "A3",
+      "A4",
+      "ground"
+    ]
+  ],
+  "pins": [
+    [
+      "D10",
+      1,
+      "ground"
+    ],
+    [
+      "D9",
+      2,
+      "signal"
+    ],
+    [
+      "D8",
+      3,
+      "signal"
+    ],
+    [
+      "D7",
+      4,
+      "power"
+    ],
+    [
+      "D6",
+      5,
+      "ground"
+    ],
+    [
+      "D5",
+      6,
+      "unused"
+    ],
+    [
+      "D4",
+      7,
+      "ground"
+    ],
+    [
+      "G4",
+      8,
+      "unused"
+    ],
+    [
+      "G5",
+      9,
+      "ground"
+    ],
+    [
+      "G6",
+      10,
+      "power"
+    ],
+    [
+      "G7",
+      11,
+      "unused"
+    ],
+    [
+      "G8",
+      12,
+      "ground"
+    ],
+    [
+      "G9",
+      13,
+      "power"
+    ],
+    [
+      "G10",
+      14,
+      "power"
+    ]
+  ]
+}

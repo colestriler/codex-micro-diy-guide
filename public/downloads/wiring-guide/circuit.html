@@ -1,0 +1,169 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Codex Micro - perfboard wiring explorer</title><link rel="stylesheet" href="explorer.css"></head><body>
+<div id="micro-circuit">
+  <h3>Your first LED circuit</h3>
+  <div class="viz-controls">
+    <label class="form-label">View
+      <select class="form-select" id="mc-view"><option value="overview">How it works</option><option value="board">Your perfboard holes</option></select>
+    </label>
+    <label class="form-label">Follow
+      <select class="form-select" id="mc-net"><option value="signal">Color instructions</option><option value="power">5V power</option><option value="ground">Shared ground</option><option value="all">Everything</option></select>
+    </label>
+  </div>
+  <div id="mc-traces" hidden>
+    <label class="form-label">Inspect a connection
+      <select class="form-select" id="mc-trace"></select>
+    </label>
+    <div class="viz-row text-small"><span>Solid: insulated wire on top</span><span>Dashed: bare connection underneath</span></div>
+    <div class="text-small">Top view, with solder links visible through the board · used area A–K</div>
+    <div class="text-small">Colors show function, not wire insulation. Crossing wires do not automatically connect.</div>
+  </div>
+  <div id="mc-drawing"></div>
+  <div id="mc-detail" class="text-small" aria-live="polite"></div>
+  <div class="viz-row" id="mc-parts"></div>
+  <div class="text-small" style="margin-top:12px">Based on the connections you confirmed; wire shapes are illustrative.</div>
+</div>
+<style>
+#micro-circuit { color:var(--foreground); }
+#micro-circuit #mc-drawing { width:100%; margin:12px 0; }
+#micro-circuit .mc-svg { display:block; width:100%; }
+#micro-circuit .mc-svg text { fill:var(--foreground); font-size:12px; }
+#micro-circuit .mc-svg .small { font-size:11px; }
+#micro-circuit .mc-structure { fill:var(--background); stroke:var(--border); stroke-width:1.5; }
+#micro-circuit .mc-component { fill:var(--card); stroke:var(--foreground); stroke-width:1.3; }
+#micro-circuit .mc-hole { fill:var(--background); stroke:var(--muted-foreground); stroke-width:1; }
+#micro-circuit .mc-wire { fill:none; stroke-width:3; stroke-linecap:round; stroke-linejoin:round; }
+#micro-circuit .mc-bridge { fill:none; stroke-width:3; stroke-dasharray:3 3; stroke-linecap:round; }
+#micro-circuit #mc-detail { min-height:42px; margin-bottom:8px; }
+#micro-circuit #mc-parts { justify-content:flex-start; }
+</style>
+<script>
+(() => {
+ const root=document.getElementById('micro-circuit');
+ const view=root.querySelector('#mc-view'), net=root.querySelector('#mc-net'), pick=root.querySelector('#mc-trace');
+ const host=root.querySelector('#mc-drawing'), detail=root.querySelector('#mc-detail'), parts=root.querySelector('#mc-parts');
+ const C={power:'var(--red)',ground:'var(--blue)',signal:'var(--purple)'};
+ const wires=[
+  {id:'g-loop',a:'C10',b:'C4',net:'ground',label:'C10 ↔ C4 — enable the channel we use',desc:'C10–D10 and C4–D4 put chip pins 1 and 7 at ground: channel 1 enabled.'},
+  {id:'kb-ground',a:'B4',b:'KB.G',net:'ground',label:'B4 → KB2040 G — shared ground',desc:'The wire at B4 joins the entire ground network to G on the KB2040.'},
+  {id:'kb-power',a:'H10',b:'KB.RAW',net:'power',label:'H10 → KB2040 RAW — power supply',desc:'RAW supplies power to H10, then G10 (chip pin 14) and I10 (LED power).'},
+  {id:'kb-data',a:'C9',b:'KB.MO',net:'signal',label:'KB2040 MO → C9 — color instructions',desc:'MO sends 3.3V data through C9–D9 to chip pin 2; this wire does not power the LED.'},
+  {id:'led-data',a:'A12',b:'LED.DIN',net:'signal',label:'A12 → LED DIN — translated instructions',desc:'Chip pin 3 at D8 → B8 → 330 Ω resistor → B12 → A12 → LED DIN.'},
+  {id:'led-ground',a:'A4',b:'LED.GND',net:'ground',label:'A4 → LED GND — LED ground',desc:'The LED ground wire at A4 joins B4 and the KB2040 ground.'},
+  {id:'led-power',a:'I10',b:'LED.5V',net:'power',label:'I10 → LED 5V — LED power',desc:'The LED gets power through I10–H10 from RAW, separately from its data wire.'},
+  {id:'unused-1',a:'C6',b:'B5',net:'ground',label:'C6 ↔ B5 — hold unused input steady',desc:'C6–D6 grounds chip pin 5 through B5–B4.'},
+  {id:'unused-pair',a:'H5',b:'H8',net:'ground',label:'H5 ↔ H8 — join two unused inputs',desc:'H5–G5 and H8–G8 join chip input pins 9 and 12.'},
+  {id:'unused-ground',a:'I5',b:'A5',net:'ground',label:'I5 ↔ A5 — ground those inputs',desc:'I5–H5 connects that input pair to A5–A4 and the shared ground.'},
+  {id:'enable-pair',a:'H6',b:'H9',net:'power',label:'H6 ↔ H9 — join two disable controls',desc:'H6–G6 and H9–G9 join enable pins 10 and 13; 5V switches these channels off.'},
+  {id:'enable-power',a:'I9',b:'J10',net:'power',label:'I9 ↔ J10 — switch two channels off',desc:'I9–H9 puts the enable pair on 5V through J10–I10.'},
+  {id:'enable-last',a:'C7',b:'K10',net:'power',label:'C7 ↔ K10 — switch last unused channel off',desc:'C7–D7 puts enable pin 4 on 5V through K10–J10.'},
+  {id:'knob-ground',a:'A3',b:'KNOB.G',net:'ground',label:'Knob ground → A3 — shared ground junction',desc:'The wire formerly in KB2040 G now goes to A3–A4; B4 provides its route back to KB2040 G.'}
+ ];
+ const bridges=[['C10','D10','ground'],['C4','D4','ground'],['B4','C4','ground'],['H10','G10','power'],['D11','D10','ground'],['G11','G10','power'],['C9','D9','signal'],['B8','C8','signal'],['C8','D8','signal'],['A12','B12','signal'],['A4','B4','ground'],['I10','H10','power'],['C6','D6','ground'],['B5','B4','ground'],['H5','G5','ground'],['H8','G8','ground'],['I5','H5','ground'],['A5','A4','ground'],['H6','G6','power'],['H9','G9','power'],['I9','H9','power'],['J10','I10','power'],['C7','D7','power'],['K10','J10','power'],['A3','A4','ground']];
+ const pins=[['D10',1,'ground'],['D9',2,'signal'],['D8',3,'signal'],['D7',4,'power'],['D6',5,'ground'],['D5',6,'unused'],['D4',7,'ground'],['G4',8,'unused'],['G5',9,'ground'],['G6',10,'power'],['G7',11,'unused'],['G8',12,'ground'],['G9',13,'power'],['G10',14,'power']];
+ const descriptions={
+  board:'Perfboard: each metal ring starts separate; our wires and solder links create the connections.',
+  chip:'74AHCT125: copies the color signal from pin 2 to pin 3 at a higher voltage; it needs its own power and ground.',
+  resistor:'330 Ω resistor: sits in the data path between the chip and LED; it helps protect the signal input.',
+  capacitor:'104 capacitor: connects across power and ground to smooth brief power disturbances; it is not a wire shorting them together.',
+  unused:'Three spare channels: input pins 5, 9 and 12 are grounded; enable pins 4, 10 and 13 are at 5V; outputs 6, 8 and 11 stay unconnected.'
+ };
+ const summary={signal:'MO → input pin 2 → output pin 3 → resistor → LED DIN. The signal tells the LED which color to make.',power:'RAW supplies both the chip and LED. The enable pins at 5V switch the three unused channels off.',ground:'The chip, LED and knob share one ground connection back to the KB2040.',all:'Power runs the parts; the data wire tells the LED what to do; ground is their shared electrical reference.'};
+ pick.innerHTML='<option value="">All connections in selected group</option>'+wires.map(w=>'<option value="'+w.id+'">'+w.label+'</option>').join('');
+ for(const [id,label] of [['board','Perfboard'],['chip','Black chip'],['resistor','Resistor'],['capacitor','Capacitor'],['unused','Unused legs']]) {
+  const b=document.createElement('button');b.type='button';b.className='btn';b.textContent=label;b.onclick=()=>{detail.textContent=descriptions[id];};parts.appendChild(b);
+ }
+ const NS='http://www.w3.org/2000/svg';
+ function el(tag,attrs={},text){const e=document.createElementNS(NS,tag);for(const[k,v]of Object.entries(attrs))e.setAttribute(k,v);if(text!==undefined)e.textContent=text;return e;}
+ function label(g,x,y,text,attrs={}){g.appendChild(el('text',{x,y,'text-anchor':'middle',...attrs},text));}
+ function opacity(n,id){return pick.value ? (id===pick.value?1:0.16) : (net.value==='all'||net.value===n?1:0.13);}
+ function svg(w,h,title){const s=el('svg',{viewBox:`0 0 ${w} ${h}`,width:w,height:h,class:'mc-svg',role:'img','aria-label':title});s.appendChild(el('title',{},title));return s;}
+ function wire(g,points,n,opts={}){const p=el('path',{d:points,stroke:C[n]||'var(--foreground)',class:opts.bridge?'mc-bridge':'mc-wire',opacity:opts.opacity??1});g.appendChild(p);return p;}
+ function overview(w){
+  const narrow=w<530, h=narrow?610:360,s=svg(w,h,'KB2040 sends data through a level shifter and resistor to an RGBW LED; power and ground are shared.');
+  const boxes=narrow?[[w/2,64,176,80],[w/2,218,176,80],[w/2,356,136,56],[w/2,489,176,90]]:[[85,150,134,104],[w*.43,150,138,104],[w*.67,150,98,64],[w-66,150,108,104]];
+  const nodes=[['KB2040','Your code'],['74AHCT125','Level shifter'],['330 Ω','Resistor'],['RGBW LED','Your little light']];
+  const centers=boxes.map(([x,y,bw,bh])=>({x,y,bw,bh}));
+  const group=(n)=>{const g=el('g',{opacity:net.value==='all'||net.value===n?1:0.13});s.appendChild(g);return g;};
+  const sig=group('signal');
+  for(let i=0;i<3;i++){const a=centers[i],b=centers[i+1];const start=narrow?[a.x,a.y+a.bh/2]:[a.x+a.bw/2,a.y];const end=narrow?[b.x,b.y-b.bh/2]:[b.x-b.bw/2,b.y];wire(sig,`M${start} L${end}`,'signal');const [ex,ey]=end;wire(sig,narrow?`M${ex-5},${ey-8} L${ex},${ey} L${ex+5},${ey-8}`:`M${ex-8},${ey-5} L${ex},${ey} L${ex-8},${ey+5}`,'signal');}
+  const pwr=group('power'),gnd=group('ground');
+  if(narrow){
+   const left=23,right=w-23;
+   wire(pwr,`M${centers[0].x-88},64 H${left} V489 H${centers[3].x-88}`,'power');
+   wire(pwr,`M${left},218 H${centers[1].x-88}`,'power');
+   wire(gnd,`M${centers[0].x+88},64 H${right} V489 H${centers[3].x+88}`,'ground');
+   wire(gnd,`M${right},218 H${centers[1].x+88}`,'ground');
+   label(pwr,left+6,577,'5V RAW',{'text-anchor':'start'});label(gnd,right-6,577,'G ground',{'text-anchor':'end'});
+   label(sig,w/2+12,135,'MO → 3.3V data',{'text-anchor':'start'});
+   label(sig,w/2+12,300,'5V data',{'text-anchor':'start'});
+   label(sig,w/2+12,420,'→ DIN',{'text-anchor':'start'});
+  }else{
+   const a=centers[0],b=centers[1],d=centers[3];
+   wire(pwr,`M${a.x},98 V49 H${d.x} V98 M${b.x},49 V98`,'power');
+   wire(gnd,`M${a.x},202 V265 H${d.x} V202 M${b.x},202 V265`,'ground');
+   label(pwr,w/2,30,'5V power from RAW');label(gnd,w/2,290,'Shared ground → KB2040 G');
+   label(sig,(a.x+a.bw/2+b.x-b.bw/2)/2,220,'MO → 3.3V');
+   label(sig,(b.x+centers[2].x)/2,94,'5V data');label(sig,centers[3].x,220,'DIN');
+  }
+  boxes.forEach(([x,y,bw,bh],i)=>{s.appendChild(el('rect',{x:x-bw/2,y:y-bh/2,width:bw,height:bh,rx:8,class:'mc-component'}));label(s,x,y-5,nodes[i][0]);label(s,x,y+17,nodes[i][1],{class:'small'});});
+  label(s,w/2,h-12,'Functional layout • not component placement');
+  return s;
+ }
+ function board(w){
+  const pitch=Math.min(40,(w-90)/10), ox=(w-10*pitch)/2, oy=105, bottom=oy+9*pitch,h=bottom+118;
+  const pos=(name)=>[ox+(name.charCodeAt(0)-65)*pitch,oy+(12-Number(name.slice(1)))*pitch];
+  const s=svg(w,h,'Top view of used perfboard holes A through K, rows 12 through 3, with insulated wires and underside solder bridges.');
+  s.appendChild(el('rect',{x:ox-16,y:oy-20,width:10*pitch+32,height:9*pitch+42,rx:8,class:'mc-structure'}));
+  for(let c=0;c<11;c++){label(s,ox+c*pitch,oy-31,String.fromCharCode(65+c));}
+  for(let row=3;row<=12;row++){
+   const y=pos('A'+row)[1];label(s,ox-25,y+4,String(row).padStart(2,'0'),{'text-anchor':'end',class:'small'});
+   for(let c=0;c<11;c++){const name=String.fromCharCode(65+c)+row,[x,py]=pos(name);const circle=el('circle',{cx:x,cy:py,r:4,class:'mc-hole','data-hole':name});circle.appendChild(el('title',{},name));s.appendChild(circle);}
+  }
+  // Dashed links are physically on the underside; draw them through the top-view board.
+  for(const[a,b,n]of bridges){const aa=pos(a),bb=pos(b);wire(s,`M${aa} L${bb}`,n,{bridge:true,opacity:pick.value?0.38:opacity(n)});}
+  // Body sits between the two pin columns, with pin 1 at D10.
+  const [dx,dy]=pos('D10'),[gx,gy]=pos('G4'), bodyX=dx+pitch*.23,bodyW=2.54*pitch;
+  s.appendChild(el('rect',{x:bodyX,y:dy-pitch*.36,width:bodyW,height:6.72*pitch,rx:5,class:'mc-component'}));
+  s.appendChild(el('path',{d:`M${(dx+gx)/2-7},${dy-pitch*.36} a7,7 0 0 0 14,0`,fill:'none',stroke:'var(--foreground)'}));
+  for(const[hole,num,n]of pins){const[x,y]=pos(hole),left=hole[0]==='D',inside=left?bodyX:bodyX+bodyW;
+   wire(s,`M${x},${y} H${inside}`,n,{opacity:n==='unused'?.5:opacity(n)});
+   label(s,left?inside+5:inside-5,y+4,String(num),{'text-anchor':left?'start':'end',class:'small'});
+  }
+  label(s,(dx+gx)/2,(dy+gy)/2,'74AHCT125',{transform:`rotate(-90 ${(dx+gx)/2} ${(dy+gy)/2})`});
+  // Insulated jumpers arc above the board; crossings are not junctions.
+  for(const item of wires.filter(z=>!z.b.includes('.'))){
+   const a=pos(item.a),b=pos(item.b),horizontal=Math.abs(a[0]-b[0])>Math.abs(a[1]-b[1]);
+   const bend=item.id==='g-loop'?-pitch*.65:item.id==='enable-pair'?pitch*.40: -pitch*.35;
+   const path=horizontal?`M${a} C${a[0]},${a[1]-pitch*.8} ${b[0]},${b[1]-pitch*.8} ${b}`:`M${a} C${a[0]+bend},${a[1]} ${b[0]+bend},${b[1]} ${b}`;
+   const p=wire(s,path,item.net,{opacity:opacity(item.net,item.id)});p.appendChild(el('title',{},item.label));
+   for(const[x,y]of[a,b])s.appendChild(el('circle',{cx:x,cy:y,r:3,fill:C[item.net],opacity:opacity(item.net,item.id)}));
+  }
+  // Resistor spans B8–B12; its leads remain conductive on their own ends only.
+  const r1=pos('B8'),r2=pos('B12'),ry=(r1[1]+r2[1])/2,ro=pick.value? (pick.value==='led-data'?1:.25):opacity('signal');
+  const rg=el('g',{opacity:ro});s.appendChild(rg);wire(rg,`M${r1} L${r2}`,'signal');
+  rg.appendChild(el('rect',{x:r1[0]-6,y:ry-pitch*.8,width:12,height:pitch*1.6,rx:5,class:'mc-component'}));
+  label(rg,r1[0]-10,ry,'330 Ω',{'text-anchor':'middle',transform:`rotate(-90 ${r1[0]-10} ${ry})`});
+  // Capacitor bridges two different electrical nets as a component, not a bare wire.
+  const ca=pos('D11'),cb=pos('G11'),cm=(ca[0]+cb[0])/2;
+  s.appendChild(el('path',{d:`M${ca} L${cm-11},${ca[1]-9} M${cb} L${cm+11},${cb[1]-9}`,fill:'none',stroke:'var(--muted-foreground)','stroke-width':2}));
+  s.appendChild(el('rect',{x:cm-18,y:ca[1]-23,width:36,height:25,rx:9,class:'mc-component'}));label(s,cm,ca[1]-6,'104');
+  // Cable ends are routed to named off-board destinations; curves are illustrative.
+  const external=[['led-data',ox,30,'LED DIN'],['kb-data',ox+3.8*pitch,12,'KB MO'],['kb-power',ox+7.7*pitch,30,'KB RAW'],['led-power',ox+10*pitch,58,'LED +'],['led-ground',ox,bottom+55,'LED GND'],['knob-ground',ox+3.6*pitch,bottom+88,'Knob GND'],['kb-ground',ox+8*pitch,bottom+55,'KB G']];
+  for(const[id,x,y,text]of external){const item=wires.find(z=>z.id===id),a=pos(item.a),op=opacity(item.net,id),up=y<oy;
+   const curve=`M${a} C${a[0]+(up?-pitch*.55:-pitch*.2)},${a[1]+(up?-pitch: pitch)} ${x},${y+(up?24:-24)} ${x},${y+(up?9:-9)}`;
+   wire(s,curve,item.net,{opacity:op});s.appendChild(el('circle',{cx:a[0],cy:a[1],r:3,fill:C[item.net],opacity:op}));
+   label(s,x,y+4,text,{'text-anchor':x===ox?'start':x===ox+10*pitch?'end':'middle'});
+  }
+  if(pick.value){const item=wires.find(z=>z.id===pick.value);for(const hole of[item.a,item.b].filter(z=>!z.includes('.'))){const[x,y]=pos(hole);s.appendChild(el('circle',{cx:x,cy:y,r:8,fill:'none',stroke:C[item.net],'stroke-width':2}));}}
+  return s;
+ }
+ function draw(){const w=Math.max(290,Math.floor(host.getBoundingClientRect().width));host.replaceChildren(view.value==='board'?board(w):overview(w));detail.textContent=pick.value?wires.find(z=>z.id===pick.value).desc:summary[net.value];}
+ view.onchange=()=>{root.querySelector('#mc-traces').hidden=view.value!=='board';pick.value='';draw();};
+ net.onchange=()=>{pick.value='';draw();};pick.onchange=()=>{if(pick.value)net.value=wires.find(z=>z.id===pick.value).net;draw();};
+ new ResizeObserver(draw).observe(host);draw();
+ // Expose only the local schematic data for offline consistency checks.
+ root.circuitData={wires,bridges,pins};
+})();
+</script>
+
+<script src="explorer.js"></script></body></html>

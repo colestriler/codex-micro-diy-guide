@@ -78,3 +78,11 @@ After editing the CAD, use that Python environment to run `public/downloads/cad/
 - GitHub icon: [Primer Octicons](https://github.com/primer/octicons), with its MIT license in `public/licenses/octicons.txt`.
 
 An independent DIY tutorial, not an official OpenAI or Work Louder product. Seller links are ordinary product and catalog links; availability can change.
+
+## Learn the wiring one circuit at a time
+
+Start with the [knob and perfboard walkthrough](https://codexmicro.diy/#wiring). Each step includes the action, why it matters, a checkpoint, and saved browser progress. Download the [six-page wiring PDF](https://codexmicro.diy/downloads/wiring-guide/Codex-Micro-LED-Wiring-Guide.pdf) or the [staged tests and libraries](https://codexmicro.diy/downloads/wiring-guide/wiring-starter.zip).
+
+The stages test the knob button, knob rotation and one RGBW LED separately. Install only the selected test as `code.py`; keep your rotation direction setting when changing stages. The optional reasoning-shortcut example requires an app or OS binding. These tests do not provide native Codex integration. Remaining full-keyboard circuits are documented separately in the guide.
+
+The perfboard map describes the connections from our bench walkthrough, including the shared-ground reroute. Software checks validate the intended nets; they do not verify physical solder joints or that the LED lights.

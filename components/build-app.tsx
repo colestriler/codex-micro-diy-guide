@@ -8,7 +8,7 @@ import files from "@/data/files.json";
 import PartsTable from "@/components/parts-table";
 import TableOfContents from "@/components/table-of-contents";
 import AssemblyLessons from "@/components/assembly-lessons";
-import WiringWorkbench from "@/components/wiring-workbench";
+import WiringLessons from "@/components/wiring-lessons";
 
 type Part = (typeof catalog)[number];
 const categories = ["All parts", "Printed", "Electronics", "Hardware", "Materials", "Native"];
@@ -109,11 +109,12 @@ export default function BuildApp() {
 
       <section id="wiring" className="build-section" aria-labelledby="heading-wiring">
           <SectionHeading number="05" id="heading-wiring" title="Wire it together" />
-          <WiringWorkbench />
+          <WiringLessons />
       </section>
 
       <section id="software" className="build-section" aria-labelledby="heading-software">
           <SectionHeading number="06" id="heading-software" title="Firmware & colors" />
+          <p className="section-intro">Still following the bench walkthrough? Use the <a href="/downloads/wiring-guide/wiring-starter.zip" download>staged test programs</a> until the remaining circuits are ready. The full-keyboard firmware below expects the matrix, joystick, touch input and light chain; its dial mapping differs from the knob tests.</p>
           <Instruction content={instructions.software} />
       </section>
 
@@ -124,15 +125,16 @@ export default function BuildApp() {
 
       <section id="files" className="build-section" aria-labelledby="heading-files">
           <SectionHeading number="08" id="heading-files" title="Downloads" />
+          <div className="print-summary"><h3>Start wiring one circuit at a time</h3><p>The new walkthrough starts with the knob button, then rotation, then the perfboard LED driver. Use the PDF at your workbench and install only the test program for your current stage.</p><div className="file-shortcuts"><a href="/downloads/wiring-guide/Codex-Micro-LED-Wiring-Guide.pdf" download>Perfboard wiring PDF ↓</a><a href="/downloads/wiring-guide/wiring-starter.zip" download>Test programs + libraries ↓</a><a href="/downloads/wiring-guide/circuit.html" target="_blank" rel="noopener noreferrer">Interactive wiring map ↗</a><a href="#wiring">Follow the walkthrough ↑</a></div></div>
           <div className="print-summary"><h3>New: two-layer baffle tray — test two small pieces</h3><p>The upper plate holds the switches. A rigid lower tray contains all six light compartments. Your existing M3 × 8 screws join the layers using heat-set inserts in the tops of the four tray posts. No loose nuts or flexible clips.</p><p>Print the two-key upper and lower samples first. Use two existing M3 × 8 screws and two M3 × 4 inserts for the sample. The screws are reusable; the inserts stay in the sample. The v2 upper sample is unchanged and can be reused. Use PETG at 100% scale, 0.15 mm layers and supports off for these samples. Cool the inserts fully before assembly. Heat-set grip, wiring clearance and physical strength still need testing.</p><p><a href="/downloads/stl/07_two_layer_top_sample.stl" download>1. Upper sample STL ↓</a> · <a href="/downloads/stl/07_heatset_baffle_sample_v3.stl" download>2. Lower sample STL ↓</a> · <a href="/downloads/baffle-tray-v3/guide.html" target="_blank" rel="noopener noreferrer">Interactive CAD, hardware and assembly ↗</a></p><img src="/downloads/baffle-tray-v3/preview.png" alt="Two-layer CAD: upper switch plate, removable six-light tray and small two-key test pair" style={{width:"100%",height:"auto"}}/><p>The full-size pair below is marked WAIT. Finish the baffle and joystick fit tests first. The lower tray is black PETG and prints cups up; the full upper plate has its own orientation notes.</p></div>
           <div className="print-summary"><h3>New: flat joystick mount v3</h3><p>A flat plate with two raised tab supports and exposed nuts underneath. Print just the small test corner first—one piece, with no nut boxes or separate shims.</p><p>Existing PETG, 100% scale, 0.10 mm layers. Flat side down, raised supports up. Supports OFF for the test corner. Use the same M1.6 × 8 mm screws and M1.6 nuts; hold the exposed nuts with small pliers.</p><p><a href="/downloads/stl/04_flat_joystick_corner_v3_PRINT_FIRST.stl" download>Download the ONE v3 test STL ↓</a> · <a href="/downloads/joystick-flat-v3/guide.html" target="_blank" rel="noopener noreferrer">Print and fit guide ↗</a></p><img src="/downloads/joystick-flat-v3/preview.png" alt="Flat joystick mount with raised tab seats and accessible nuts underneath" style={{width:"100%",height:"auto"}}/><p>Wait for the corner fit check before printing the full plate. CAD clearance checks pass; physical fit, strength and full thumb-cap movement remain unverified. The full-keyboard animation and original assembly STEP still show the old mount.</p><p><a href="/downloads/joystick-flat-v3/flat-mount-v3-kit.zip" download>Complete v3 CAD/source kit ↓</a> · <a href="/downloads/joystick-integrated-v2/guide.html">Previous recessed mount v2 (archive)</a></p></div>
           <div className="section-toolbar"><p>STLs are oriented for printing. Original keyboard STEP files retain assembly coordinates; fit-kit parts use local coordinates. Units are millimeters.</p><a href="/downloads/build-files.zip" download>Download everything ↓</a></div>
-          <div className="file-shortcuts"><a href="/downloads/step/assembly.step" download>Original assembly STEP (old mount)</a><a href="/downloads/cad/parameters.json" download>CAD parameters</a><a href="/downloads/cad/build.py" download>Original keyboard CAD source</a><a href="/downloads/docs/key-legends.svg" download>Key legends</a><a href="/downloads/docs/bom.csv" download>Shopping list CSV</a><a href="/downloads/build-guide.html" download>Offline guide</a></div>
+          <div className="file-shortcuts"><a href="/downloads/step/assembly.step" download>Original assembly STEP (old mount)</a><a href="/downloads/cad/parameters.json" download>CAD parameters</a><a href="/downloads/cad/build.py" download>Original keyboard CAD source</a><a href="/downloads/docs/key-legends.svg" download>Key legends</a><a href="/downloads/docs/bom.csv" download>Shopping list CSV</a><a href="/downloads/build-guide.html" download>Original offline guide (archive)</a></div>
           <div className="table-scroll"><table className="files-table"><thead><tr><th>Printed part</th><th>Quantity</th><th>Files</th></tr></thead><tbody>{files.map(file => <tr key={file.id}><td><b>{file.name.replace(/^\d+ /, "").replaceAll("_", " ")}</b><small>{file.note}</small></td><td>{file.quantity}</td><td><a href={`/downloads/stl/${file.id}.stl`} download>STL</a><a href={`/downloads/step/${file.id}.step`} download>STEP</a></td></tr>)}</tbody></table></div>
-          <h3 className="download-subheading">Firmware, wiring and validation files</h3><div className="file-shortcuts"><a href="/downloads/firmware/boot.py" download>boot.py</a><a href="/downloads/firmware/code.py" download>code.py</a><a href="/downloads/firmware/logic.py" download>logic.py</a><a href="/downloads/tools/set_light.py" download>Manual LED helper</a><a href="/downloads/docs/wiring.svg" download>Wiring SVG</a><a href="/downloads/docs/validation.json" download>CAD validation</a><a href="/downloads/docs/oem-measurements.csv" download>Donor measurement sheet</a></div>
+          <h3 className="download-subheading">Firmware, wiring and validation files</h3><div className="file-shortcuts"><a href="/downloads/firmware/boot.py" download>boot.py</a><a href="/downloads/firmware/code.py" download>Full-keyboard code.py</a><a href="/downloads/firmware/logic.py" download>logic.py</a><a href="/downloads/tools/set_light.py" download>Manual LED helper</a><a href="/downloads/docs/wiring.svg" download>Full-circuit wiring SVG (reference)</a><a href="/downloads/docs/validation.json" download>CAD validation</a><a href="/downloads/docs/oem-measurements.csv" download>Donor measurement sheet</a></div>
       </section>
 
-      <footer><span>Independent DIY reconstruction. Physical fit and electronics remain untested.</span><a href="https://openai.com/supply/co-lab/work-louder/" target="_blank" rel="noreferrer">Original reference ↗</a></footer>
+      <footer><span>Independent DIY reconstruction. Test each circuit and printed fit; the full assembly remains a prototype.</span><a href="https://openai.com/supply/co-lab/work-louder/" target="_blank" rel="noreferrer">Original reference ↗</a></footer>
       </div>
       </div>
 

@@ -1,0 +1,42 @@
+[
+  {
+    "path": "lib/adafruit_hid/__init__.py",
+    "url": "https://raw.githubusercontent.com/adafruit/Adafruit_CircuitPython_HID/693baa60eb684bb53379d98c6a036f56b8010666/adafruit_hid/__init__.py",
+    "sha256": "1b9ec7f0e45f283c37cea7467f65569c2223e6086eada6b985eb97b3825777aa"
+  },
+  {
+    "path": "lib/adafruit_hid/keyboard.py",
+    "url": "https://raw.githubusercontent.com/adafruit/Adafruit_CircuitPython_HID/693baa60eb684bb53379d98c6a036f56b8010666/adafruit_hid/keyboard.py",
+    "sha256": "4671ac9f8c0d70def35fb122058211688300930fe74e7674ce6866c3c3fdf0d3"
+  },
+  {
+    "path": "lib/adafruit_hid/keycode.py",
+    "url": "https://raw.githubusercontent.com/adafruit/Adafruit_CircuitPython_HID/693baa60eb684bb53379d98c6a036f56b8010666/adafruit_hid/keycode.py",
+    "sha256": "0dff8e3b3afbc45105444e1201450a3ef4c9a08fa1bccc5adb8a4fd9d404a142"
+  },
+  {
+    "path": "licenses/Adafruit_CircuitPython_HID.txt",
+    "url": "https://raw.githubusercontent.com/adafruit/Adafruit_CircuitPython_HID/693baa60eb684bb53379d98c6a036f56b8010666/LICENSE",
+    "sha256": "45ca96c509fa3fae19fd6a55ee5d0cba22746b41acb10ab2037d3ece6f4a932e"
+  },
+  {
+    "path": "lib/neopixel.py",
+    "url": "https://raw.githubusercontent.com/adafruit/Adafruit_CircuitPython_NeoPixel/aa82c0724ccb68fbd94605c9f4f09b19c5d2919d/neopixel.py",
+    "sha256": "ecd9c8bc70675b65fd708f61c9c938590e4e83af2f937bbd01e4b313fe554e1f"
+  },
+  {
+    "path": "licenses/Adafruit_CircuitPython_NeoPixel.txt",
+    "url": "https://raw.githubusercontent.com/adafruit/Adafruit_CircuitPython_NeoPixel/aa82c0724ccb68fbd94605c9f4f09b19c5d2919d/LICENSE",
+    "sha256": "cffca9714e85201e3b41f5002d77441f3dec6cfed6e4a494cb76339852c897cc"
+  },
+  {
+    "path": "lib/adafruit_pixelbuf.py",
+    "url": "https://raw.githubusercontent.com/adafruit/Adafruit_CircuitPython_Pixelbuf/86bba3670d15b5c6deb3a7358955c8090a2c468b/adafruit_pixelbuf.py",
+    "sha256": "8d57de266ab071b86965f0dbd1ab7de529273dfd47b5cdb4adedb738a08a3235"
+  },
+  {
+    "path": "licenses/Adafruit_CircuitPython_Pixelbuf.txt",
+    "url": "https://raw.githubusercontent.com/adafruit/Adafruit_CircuitPython_Pixelbuf/86bba3670d15b5c6deb3a7358955c8090a2c468b/LICENSE",
+    "sha256": "3bd64cc081159764bc835a6237b2a0d5e37cdb62f0e656d7b70f35fb9c42f93f"
+  }
+]
