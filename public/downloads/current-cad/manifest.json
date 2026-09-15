@@ -1,0 +1,112 @@
+[
+  {
+    "file": "parts/07_two_layer_top_sample.step",
+    "name": "Print FIRST: two-key upper plate sample",
+    "quantity": 1,
+    "print_note": "Upper sample unchanged from v2: reuse it if printed. White/clear PETG, visible face DOWN, supports OFF. Pair with heat-set lower sample; M3 \u00d7 8 screws and M3 \u00d7 4 inserts.",
+    "source": "/downloads/baffle-tray-v3/files/PRINT_FIRST_two_key_top_sample.step",
+    "sha256": "253f16298b7c66d2459f172df9b99efc6c27303e0baa4cbce3119dddbbc1f1a1"
+  },
+  {
+    "file": "parts/07_heatset_baffle_sample_v3.step",
+    "name": "Print FIRST: lower sample for existing inserts",
+    "quantity": 1,
+    "print_note": "Black PETG, cups UP, supports OFF. Heat-set two M3 \u00d7 4 inserts into post tops, cool fully, then use two existing M3 \u00d7 8 screws. Test before full print.",
+    "source": "/downloads/baffle-tray-v3/files/PRINT_FIRST_two_key_baffle_sample.step",
+    "sha256": "f54d9cedcf6e865e55f7b17067dc77ff4db1e1c986430594de1daf2358f61418"
+  },
+  {
+    "file": "parts/04_flat_joystick_corner_v3_PRINT_FIRST.step",
+    "name": "Print FIRST: flat joystick corner v3",
+    "quantity": 1,
+    "print_note": "One piece; flat underside down, supports facing UP. PETG, 0.10 mm layers, supports OFF for this corner. Read the v3 guide.",
+    "source": "/downloads/joystick-flat-v3/files/PRINT_FIRST_flat_joystick_corner_v3.step",
+    "sha256": "5379653b871a873f219a01ecfbd6515afaf33e0f161703fc8755c7f979189b60"
+  },
+  {
+    "file": "parts/01_case.step",
+    "name": "01 case",
+    "quantity": 1,
+    "print_note": "Open side up; supports in USB tunnel only if your slicer needs them.",
+    "source": "/downloads/step/01_case.step",
+    "sha256": "bf823457d97c4a411f99512a24816427bfea5f5d9fea7d8555a4701900f02f1b"
+  },
+  {
+    "file": "parts/02_two_layer_top_plate_WAIT.step",
+    "name": "02 Two-layer upper plate \u2014 WAIT",
+    "quantity": 1,
+    "print_note": "Unchanged from baffle-tray-v2; reuse if already printed. Wait for baffle and joystick fit tests. Full plate underside DOWN, joystick seats UP; inspect shallow switch reliefs for local support.",
+    "source": "/downloads/baffle-tray-v3/files/WAIT_full_top_plate.step",
+    "sha256": "52e62c816aa57c84230d0d493eb5b41386623d90ab1f090ad1927c945cd20993"
+  },
+  {
+    "file": "parts/07_heatset_six_light_tray_v3_WAIT.step",
+    "name": "07 Heat-set lower tray v3 \u2014 WAIT",
+    "quantity": 1,
+    "print_note": "Uses four existing M3 \u00d7 8 screws and four Adafruit M3 \u00d7 4 inserts. No long bolts or loose nuts. Black PETG, bottom DOWN, cups UP. Heat-set fit test first.",
+    "source": "/downloads/baffle-tray-v3/files/WAIT_six_light_baffle_tray.step",
+    "sha256": "8f6829998446a6f5895efe726d2a782e4418a3fec25e07e737a06e761e89d067"
+  },
+  {
+    "file": "parts/03_round_foot.step",
+    "name": "03 round foot",
+    "quantity": 1,
+    "print_note": "Flat bottom DOWN. Washer pockets face up; secure washers with tape before assembly.",
+    "source": "/downloads/step/03_round_foot.step",
+    "sha256": "30bdb558de80bad7749a208cfc209af1e36988712c549072009b124fff12425c"
+  },
+  {
+    "file": "parts/05_touch_cap.step",
+    "name": "05 touch cap",
+    "quantity": 1,
+    "print_note": "Visible face DOWN. Bond 13 mm copper disk immediately beneath the 0.8 mm top skin.",
+    "source": "/downloads/step/05_touch_cap.step",
+    "sha256": "b37a449c7ec7950443e2dde943662418e8accd48d908ce60e382b8ea6954ec1f"
+  },
+  {
+    "file": "parts/06_encoder_knob.step",
+    "name": "06 encoder knob",
+    "quantity": 1,
+    "print_note": "Socket DOWN; short bridging above nut pocket. Trial fit the D socket before pressing fully. Adhesive optional after testing.",
+    "source": "/downloads/step/06_encoder_knob.step",
+    "sha256": "ba81159b84563ad00d07fa0e18def7ccacbde6a7d21bb8eacf249f18da6a831a"
+  },
+  {
+    "file": "parts/08_keycap_1u.step",
+    "name": "08 keycap 1u",
+    "quantity": 11,
+    "print_note": "Flat top, 0.5 mm beveled rim. Print 6 clear and 5 white, top UP; 0.10-0.12 mm layers with a 0.4 mm nozzle. Support underside as needed, keep sockets clear. Test one cap first.",
+    "source": "/downloads/step/08_keycap_1u.step",
+    "sha256": "27c73f0af04df59bcdcdb82448db8d31998be13624b17942c1f1a1e91fddb1fc"
+  },
+  {
+    "file": "parts/09_keycap_2u_dual_stem.step",
+    "name": "09 keycap 2u dual stem",
+    "quantity": 1,
+    "print_note": "Flat top, 0.5 mm beveled rim; white PETG, top UP. Support underside as needed, keep sockets clear. Two MX sockets 19.05 mm apart; fits two switches, not a centered stabilizer. Test fit first.",
+    "source": "/downloads/step/09_keycap_2u_dual_stem.step",
+    "sha256": "995bf6cc5500fdc4e11bd68cc8d85d5878c3301b92640b4cda356915ad5a78c3"
+  },
+  {
+    "file": "parts/10_switch_fit_coupon.step",
+    "name": "10 switch fit coupon",
+    "quantity": 1,
+    "print_note": "Left/middle/right from top: 14.0 / 14.1 / 14.2 mm. Choose snug clip fit before full print.",
+    "source": "/downloads/step/10_switch_fit_coupon.step",
+    "sha256": "e268a649a72d741656cd4b362a919fd5c49503ed77faa12e87b70bebf72f8da6"
+  },
+  {
+    "file": "parts/11_stem_insert_coupon.step",
+    "name": "11 stem insert coupon",
+    "quantity": 1,
+    "print_note": "Cross fits -0.05 / nominal / +0.05, then 3.9 mm insert pocket. Sockets UP for inspection.",
+    "source": "/downloads/step/11_stem_insert_coupon.step",
+    "sha256": "27ef547fd4fa67591b36b8cb40cb407c8aa6eef50a14b0155e5c906bed18c628"
+  },
+  {
+    "file": "reference/tray_v3_assembly_NOT_PRINTABLE.step",
+    "name": "Tray v3 partial reference assembly \u2014 NOT PRINTABLE",
+    "source": "/downloads/baffle-tray-v3/files/reference_assembly_NOT_PRINTABLE.step",
+    "sha256": "8bfcdb1e2c7bf89309868dd3dae1c22ee68dfa105444941c3fe3bbd9b8e471a0"
+  }
+]

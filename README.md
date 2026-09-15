@@ -25,13 +25,21 @@ This is that guide: a way to explore the parts, watch how they fit together, dow
 
 ## Where the build stands
 
-The CAD is a dimensioned prototype reconstructed from the reference layout and standard parts. It is not the manufacturer's CAD. The meshes have passed geometry checks, but the enclosure has not been physically printed and the electronics have not been bench-tested here.
+The CAD is a dimensioned prototype reconstructed from the reference layout and standard parts. It is not the manufacturer's CAD. Earlier enclosure revisions have been printed, and the knob button and rotation have been bench-tested. The latest joystick/tray fits, LED illumination and complete keyboard still need physical confirmation.
 
 The custom KB2040 firmware provides generic USB inputs and manual LED control. **It does not yet reproduce the full native Codex integration.** OpenAI documents native support for the genuine Codex Micro and Creator Micro 2. Retaining genuine electronics is the documented route to those features; adapting the printed case to a donor board still requires measurements and a mechanical revision.
 
 The guide explains both routes so you can decide what to build before buying a pile of parts.
 
-The printable keycaps were updated on September 13, 2026 with flat tops, rounded corners and a 0.5 mm beveled rim for easier printing and labeling. This applies to the shared white/clear single cap and the wide white cap. Start with a stem-fit coupon and one cap before printing the set. The assembly viewer shows the current CAD; the hero remains a concept illustration.
+The printable keycaps were updated on September 13, 2026 with flat tops, rounded corners and a 0.5 mm beveled rim for easier printing and labeling. This applies to the shared white/clear single cap and the wide white cap. Start with a stem-fit coupon and one cap before printing the set. The main assembly viewer includes the flat keycaps but retains the older mount and individual baffles. Use the current revision guides for the latest joystick and tray; the hero remains a concept illustration.
+
+## Current CAD downloads
+
+Download the [current STEP set](https://codexmicro.diy/downloads/current-cad/Codex-Micro-current-STEP.zip): 13 current part and fit-sample files, plus a partial tray reference assembly. The latest full upper plate combines the flat joystick v3 mount with the four holes for the heat-set baffle tray v3. The lower tray uses the existing M3 × 8 screws and M3 × 4 inserts. Flat single and wide keycaps are included.
+
+Start with the upper/lower two-key samples and the joystick corner. The full plate and tray remain marked **WAIT** until their physical fit checks pass. The upper plate and upper sample geometry are unchanged from baffle-tray-v2. Retired mounts, shims, individual baffles and the old full-keyboard assembly are excluded from this STEP set; historical kits remain in the complete archive.
+
+Run `python3 scripts/package-current-cad.py` after updating a revision kit to synchronize the current exports, refresh the STEP bundle and rebuild the complete archive. The manifest records the source and hash of every included STEP file.
 
 ## Run the site
 

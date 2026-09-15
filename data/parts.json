@@ -100,6 +100,10 @@
         "url": "/downloads/stl/04_flat_joystick_corner_v3_PRINT_FIRST.stl"
       },
       {
+        "label": "Test corner STEP \u2014 v3",
+        "url": "/downloads/step/04_flat_joystick_corner_v3_PRINT_FIRST.step"
+      },
+      {
         "label": "V3 flat-mount guide",
         "url": "/downloads/joystick-flat-v3/guide.html"
       }
@@ -178,12 +182,24 @@
         "url": "/downloads/stl/07_heatset_baffle_sample_v3.stl"
       },
       {
+        "label": "Lower sample STEP \u2014 print first",
+        "url": "/downloads/step/07_heatset_baffle_sample_v3.step"
+      },
+      {
         "label": "Upper sample STL \u2014 print first",
         "url": "/downloads/stl/07_two_layer_top_sample.stl"
       },
       {
+        "label": "Upper sample STEP \u2014 print first",
+        "url": "/downloads/step/07_two_layer_top_sample.step"
+      },
+      {
         "label": "Full tray STL \u2014 WAIT",
         "url": "/downloads/stl/07_heatset_six_light_tray_v3_WAIT.stl"
+      },
+      {
+        "label": "Full tray STEP \u2014 WAIT",
+        "url": "/downloads/step/07_heatset_six_light_tray_v3_WAIT.step"
       },
       {
         "label": "Assembly / print guide",
