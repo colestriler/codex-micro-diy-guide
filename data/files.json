@@ -3,7 +3,7 @@
     "name": "Print FIRST: two-key upper plate sample",
     "id": "07_two_layer_top_sample",
     "quantity": 1,
-    "note": "White or clear PETG; supplied visible face DOWN, supports OFF. Pair with the lower sample; use two M3 \u00d7 20 screws and two M3 nuts.",
+    "note": "Upper sample unchanged from v2: reuse it if printed. White/clear PETG, visible face DOWN, supports OFF. Pair with heat-set lower sample; M3 \u00d7 8 screws and M3 \u00d7 4 inserts.",
     "size": [
       48.0,
       26.950000762939453,
@@ -11,10 +11,10 @@
     ]
   },
   {
-    "name": "Print FIRST: two-key lower baffle sample",
-    "id": "07_two_layer_baffle_sample",
+    "name": "Print FIRST: lower sample for existing inserts",
+    "id": "07_heatset_baffle_sample_v3",
     "quantity": 1,
-    "note": "Black PETG; flat bottom DOWN, cups UP, supports OFF. Print one upper sample too. Test actual switches, LEDs, screw fit and wire clearance.",
+    "note": "Black PETG, cups UP, supports OFF. Heat-set two M3 \u00d7 4 inserts into post tops, cool fully, then use two existing M3 \u00d7 8 screws. Test before full print.",
     "size": [
       39.99997329711914,
       26.449996948242188,
@@ -47,7 +47,7 @@
     "name": "02 Two-layer upper plate \u2014 WAIT",
     "id": "02_two_layer_top_plate_WAIT",
     "quantity": 1,
-    "note": "Wait for baffle and joystick samples. Underside DOWN, joystick seats UP. Review local support under shallow switch reliefs; full plate uses a different orientation from the small sample.",
+    "note": "Unchanged from baffle-tray-v2; reuse if already printed. Wait for baffle and joystick fit tests. Full plate underside DOWN, joystick seats UP; inspect shallow switch reliefs for local support.",
     "size": [
       94.0,
       94.0,
@@ -55,10 +55,10 @@
     ]
   },
   {
-    "name": "07 Six-light lower tray \u2014 WAIT",
-    "id": "07_six_light_tray_WAIT",
+    "name": "07 Heat-set lower tray v3 \u2014 WAIT",
+    "id": "07_heatset_six_light_tray_v3_WAIT",
     "quantity": 1,
-    "note": "One piece replaces six separate cups. Black PETG, flat bottom DOWN, cups UP. Four M3 \u00d7 20 screws and four ordinary exposed M3 nuts; physical fit pending.",
+    "note": "Uses four existing M3 \u00d7 8 screws and four Adafruit M3 \u00d7 4 inserts. No long bolts or loose nuts. Black PETG, bottom DOWN, cups UP. Heat-set fit test first.",
     "size": [
       91.0,
       45.32499694824219,

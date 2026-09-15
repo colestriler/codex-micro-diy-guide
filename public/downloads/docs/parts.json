@@ -268,5 +268,25 @@
     ],
     "volume_mm3": 9369.3185637195,
     "notes": "One piece replaces six separate cups. Black PETG, flat bottom DOWN, cups UP. Four M3 \u00d7 20 screws and four ordinary exposed M3 nuts; physical fit pending."
+  },
+  "07_heatset_baffle_sample_v3": {
+    "qty": 1,
+    "bounds_mm": [
+      39.99997329711914,
+      26.449996948242188,
+      12.0
+    ],
+    "volume_mm3": 3552.6758813916927,
+    "notes": "v3 uses M3 x 8 screws and M3 x 4 heat-set inserts; test pilot fit first."
+  },
+  "07_heatset_six_light_tray_v3_WAIT": {
+    "qty": 1,
+    "bounds_mm": [
+      91.0,
+      45.32499694824219,
+      12.0
+    ],
+    "volume_mm3": 9537.867680341147,
+    "notes": "v3 uses M3 x 8 screws and M3 x 4 heat-set inserts; test pilot fit first."
   }
 }

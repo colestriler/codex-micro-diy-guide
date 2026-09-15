@@ -30,7 +30,7 @@
     "name": "Switch plate",
     "category": "Printed",
     "quantity": "1",
-    "description": "Upper switch plate with the flat joystick v3 mount and four holes for a removable lower baffle tray. No flexible baffle clips.",
+    "description": "Upper switch plate with flat joystick v3 mount and four tray holes. Unchanged from the two-layer v2 plate; now secured to heat-set inserts in the lower tray.",
     "spec": "94 mm square; 3 mm main plate, 1.6 mm switch lands. Four additional 3.4 mm tray screw holes.",
     "links": [
       {
@@ -49,10 +49,10 @@
       },
       {
         "label": "Two-layer fit guide",
-        "url": "/downloads/baffle-tray-v2/guide.html"
+        "url": "/downloads/baffle-tray-v3/guide.html"
       }
     ],
-    "note": "Test two-key baffle samples and the separate joystick corner first. Full plate underside DOWN; inspect shallow switch reliefs for local support. Uses four additional M3 \u00d7 20 screws and exposed nuts.",
+    "note": "Reuse the v2 upper plate if already printed. Full plate underside DOWN; inspect switch reliefs for local support. Uses four spare M3 \u00d7 8 screws with inserts in the new lower tray.",
     "material": "White PETG"
   },
   {
@@ -161,11 +161,11 @@
   },
   {
     "id": "baffle",
-    "name": "Six-light baffle tray (test small sample first)",
+    "name": "Heat-set six-light tray (test sample first)",
     "category": "Printed",
     "quantity": "1 tray",
-    "description": "One lower plate containing six light compartments, LED locating pockets and four rigid posts. Screws secure it beneath the upper switch plate; exposed nuts allow removal.",
-    "spec": "91 \u00d7 45.325 \u00d7 12 mm. Black PETG; four M3 \u00d7 20 screws and four M3 nuts. Printed clips and six individual cups are replaced by one tray.",
+    "description": "One lower tray holds six light compartments. Existing M3 \u00d7 8 screws thread into M3 \u00d7 4 heat-set inserts in its four rigid posts. No loose nuts or flexible clips.",
+    "spec": "91 \u00d7 45.325 \u00d7 12 mm; black PETG. 3.9 mm starting pilots for Adafruit 4255 inserts; heat-set fit must be tested.",
     "links": [
       {
         "label": "Buy black PETG",
@@ -175,7 +175,7 @@
     "files": [
       {
         "label": "Lower sample STL \u2014 print first",
-        "url": "/downloads/stl/07_two_layer_baffle_sample.stl"
+        "url": "/downloads/stl/07_heatset_baffle_sample_v3.stl"
       },
       {
         "label": "Upper sample STL \u2014 print first",
@@ -183,14 +183,14 @@
       },
       {
         "label": "Full tray STL \u2014 WAIT",
-        "url": "/downloads/stl/07_six_light_tray_WAIT.stl"
+        "url": "/downloads/stl/07_heatset_six_light_tray_v3_WAIT.stl"
       },
       {
         "label": "Assembly / print guide",
-        "url": "/downloads/baffle-tray-v2/guide.html"
+        "url": "/downloads/baffle-tray-v3/guide.html"
       }
     ],
-    "note": "Print the two small samples first. No glue holds the tray; LEDs still require thin removable insulating adhesive in their pockets. Leave wiring slack; actual fit and strength are unverified.",
+    "note": "Four spare screws and four inserts for final tray; two additional inserts consumed by sample. Upper plate unchanged from v2. LED pockets still need thin insulating adhesive and wiring slack.",
     "material": "Black PETG"
   },
   {
@@ -547,8 +547,8 @@
     "id": "insert",
     "name": "M3 heat-set insert",
     "category": "Hardware",
-    "quantity": "6",
-    "description": "Provides a metal thread in the printed plastic: four for the plate and two for the foot.",
+    "quantity": "10 installed (+2 for tray sample)",
+    "description": "Metal threads in printed plastic: four for the case, two for the foot and four for the new lower baffle tray. Two additional inserts stay in the test sample.",
     "spec": "4.2 mm outside diameter \u00d7 4 mm long. Starting pilot: 3.9 mm. Test coupon first.",
     "links": [
       {
@@ -557,7 +557,7 @@
       }
     ],
     "files": [],
-    "note": null
+    "note": "Use spares from the existing Adafruit 50-pack. Test heat-set fit before printing the full tray."
   },
   {
     "id": "screw",
@@ -814,34 +814,18 @@
   },
   {
     "id": "tray-screws",
-    "name": "Baffle tray screws \u2014 M3 \u00d7 20 mm",
+    "name": "Baffle tray screws \u2014 reuse M3 \u00d7 8 mm",
     "category": "Hardware",
-    "quantity": "4 (2 for sample, reused)",
-    "description": "Fasten the removable lower lighting tray to the new upper plate. These are separate from the case and joystick screws.",
-    "spec": "DIN 912, fully threaded; 5.5 mm head diameter, 3 mm head height; 2.5 mm hex key.",
+    "quantity": "4 spare (2 reused from sample)",
+    "description": "Four spare screws of the same type already bought for the case. Thread into heat-set inserts in the lower tray from above.",
+    "spec": "M3 \u00d7 8 mm under-head length; McMaster 91290A113 socket head. 2.5 mm hex key.",
     "links": [
       {
-        "label": "Buy exact size",
-        "url": "https://www.vital-parts.co.uk/socket-cap-screws-din-912/13260-hsc912-m3-20-a2"
+        "label": "Existing screw: McMaster 91290A113",
+        "url": "https://www.mcmaster.com/91290A113/"
       }
     ],
     "files": [],
-    "note": "Additional hardware for the two-layer design. Purchase status not assumed; stock and shipping unverified."
-  },
-  {
-    "id": "tray-nuts",
-    "name": "Baffle tray nuts \u2014 M3",
-    "category": "Hardware",
-    "quantity": "4 (2 for sample, reused)",
-    "description": "Ordinary exposed nuts underneath the tray. Hold with a wrench while turning each screw; no captive boxes.",
-    "spec": "DIN 934; 5.5 mm across flats, 2.4 mm thick.",
-    "links": [
-      {
-        "label": "Buy exact size",
-        "url": "https://www.accu.co.uk/hexagon-nuts/7888-HPN-M3-A2"
-      }
-    ],
-    "files": [],
-    "note": "Additional hardware for the two-layer design. Purchase status not assumed; stock and shipping unverified."
+    "note": "Use spares from your existing pack; do not remove case screws. No M3 \u00d7 20 screws or loose tray nuts needed."
   }
 ]

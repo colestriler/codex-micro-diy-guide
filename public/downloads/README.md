@@ -1,3 +1,7 @@
+# Latest: heat-set baffle tray v3
+
+Uses your existing M3 x 8 screws and Adafruit M3 x 4 inserts. Only lower tray geometry changes from v2; the upper plate and sample can be reused. Print the small lower sample first. See `baffle-tray-v3/guide.html`. Historical notes and files below are superseded.
+
 # Latest: two-layer baffle tray v2
 
 Print only the two samples in `baffle-tray-v2/files/PRINT_FIRST*` first. See `baffle-tray-v2/guide.html`. Full top plate and tray are marked WAIT. This replaces the clip proposal; old files below are retained as history. Four additional M3 × 20 screws and M3 nuts are required for the full build.

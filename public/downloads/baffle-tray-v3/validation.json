@@ -1,0 +1,113 @@
+{
+  "revision": "Two-layer baffle tray v3; existing hardware; physical fit pending",
+  "mount_centers_mm": [
+    [
+      -16,
+      41.5
+    ],
+    [
+      16,
+      41.5
+    ],
+    [
+      -41.5,
+      9.525
+    ],
+    [
+      41.5,
+      9.525
+    ]
+  ],
+  "cup_centers_mm": [
+    [
+      -9.525,
+      28.575
+    ],
+    [
+      9.525,
+      28.575
+    ],
+    [
+      -28.575,
+      9.525
+    ],
+    [
+      -9.525,
+      9.525
+    ],
+    [
+      9.525,
+      9.525
+    ],
+    [
+      28.575,
+      9.525
+    ]
+  ],
+  "PRINT_FIRST_two_key_top_sample": {
+    "size_mm": [
+      48.0,
+      26.950000762939453,
+      3.0
+    ],
+    "volume_mm3": 2399.875246860068,
+    "watertight": true,
+    "one_solid": true
+  },
+  "PRINT_FIRST_two_key_baffle_sample": {
+    "size_mm": [
+      39.99997329711914,
+      26.449996948242188,
+      12.0
+    ],
+    "volume_mm3": 3552.6758813916927,
+    "watertight": true,
+    "one_solid": true
+  },
+  "WAIT_full_top_plate": {
+    "size_mm": [
+      94.0,
+      94.0,
+      4.0
+    ],
+    "volume_mm3": 16032.60223084939,
+    "watertight": true,
+    "one_solid": true
+  },
+  "WAIT_six_light_baffle_tray": {
+    "size_mm": [
+      91.0,
+      45.32499694824219,
+      12.0
+    ],
+    "volume_mm3": 9537.867680341147,
+    "watertight": true,
+    "one_solid": true
+  },
+  "insert_pilot_diameter_mm": 3.9,
+  "insert_pilot_depth_mm": 4.3,
+  "insert_top_z_mm": 22.0,
+  "nominal_insert_thread_engagement_mm": 4.0,
+  "screw_tip_clearance_to_blind_well_floor_mm": 1.0,
+  "post_radial_wall_outside_insert_mm": 1.9,
+  "screw_tip_above_tray_bottom_mm": 7.0,
+  "insert_fit_note": "The insert intentionally overlaps the raw pilot; installed interference checks remove its melted envelope. Pilot fit, thermal distortion and pullout strength require physical testing.",
+  "case_tray_overlap_mm3": 0.0,
+  "top_plate_tray_overlap_mm3": 0.0,
+  "KB2040_reference_tray_overlap_mm3": 0.0,
+  "encoder_reference_tray_overlap_mm3": 0.0,
+  "joystick_underside_reference_tray_overlap_mm3": 0.0,
+  "top_plate_case_overlap_mm3": 0.0,
+  "nominal_LED_to_pin_envelope_gap_mm": 0.8,
+  "nominal_tray_to_controller_gap_mm": 1.1,
+  "limits": [
+    "Not physically printed or load/fatigue tested. No claim of verified strength.",
+    "Switch, pin, controller, encoder and joystick underside envelopes are approximations; solder joints and wires require a real fit check.",
+    "Test two small parts with real switches, keycaps, LEDs and two M3x8 screws and two M3x4 heat-set inserts before full print.",
+    "Undo tray screws from above while supporting the tray. Install inserts only with the tray removed, unpowered and empty; let them cool before assembly.",
+    "LED pockets locate LEDs but do not clamp them: use a thin removable insulating adhesive pad, total thickness 0.2mm allowance.",
+    "Keep service slack and insulate LED rear pads; no electrical disconnect is included.",
+    "Full top plate prints underside down; shallow switch reliefs may need slicer-specific support. Physical joystick fit remains pending.",
+    "Reference assembly and older main animation are not manufacturing verification."
+  ]
+}

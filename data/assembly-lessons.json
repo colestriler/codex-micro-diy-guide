@@ -86,7 +86,7 @@
     "links": [
       {
         "label": "Two-layer baffle tray: CAD and assembly",
-        "url": "/downloads/baffle-tray-v2/guide.html"
+        "url": "/downloads/baffle-tray-v3/guide.html"
       },
       {
         "label": "Printing settings and materials",
@@ -263,17 +263,18 @@
         }
       ]
     },
-    "caption": "Older animation: individual adhesive cups. Use the linked two-layer CAD guide for the current one-piece tray and exposed screw/nut mounting.",
+    "caption": "Older animation: individual adhesive cups. Use the linked v3 CAD guide for the one-piece tray with existing M3 \u00d7 8 screws and heat-set inserts.",
     "parts": [
       "baffle",
       "rgbw-led",
       "wire",
       "tape",
       "tray-screws",
-      "tray-nuts"
+      "insert"
     ],
     "how": [
-      "After the two-key fit test passes, install pixels 0\u20135 facing upward in the six tray pockets. Insulate rear pads with thin removable adhesive, allowing no more than 0.2 mm in this model. Route LED leads through floor slots and switch wires through wall notches. Leave slack to lower the tray after undoing four exposed nuts. Check real solder/pin clearance and test one light before wiring all six.",
+      "Install four Adafruit M3 \u00d7 4 inserts flush into the empty lower tray post tops, then let them cool fully. First test two inserts in the small sample. The matching upper plate is unchanged from tray v2.",
+      "After the two-key fit test passes, install pixels 0\u20135 facing upward in the six tray pockets. Insulate rear pads with thin removable adhesive, allowing no more than 0.2 mm in this model. Route LED leads through floor slots and switch wires through wall notches. Leave slack to lower the tray after undoing four M3 \u00d7 8 screws from above. Check real solder/pin clearance and test one light before wiring all six.",
       "Place pixels 6\u201313 in the eight inner-wall pockets, facing outward through the thin case windows.",
       "Connect DOUT on each pixel to DIN on the next, in that order. Share the power and ground buses. Use the level shifter, resistors and capacitors shown in the full connection map; do not connect MOSI straight to the pixel chain."
     ],
@@ -282,7 +283,7 @@
     "links": [
       {
         "label": "Two-layer baffle tray: CAD and assembly",
-        "url": "/downloads/baffle-tray-v2/guide.html"
+        "url": "/downloads/baffle-tray-v3/guide.html"
       },
       {
         "label": "Full connection map",
