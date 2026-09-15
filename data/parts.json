@@ -664,7 +664,7 @@
     "name": "Insulation and mounting tape",
     "category": "Hardware",
     "quantity": "As needed",
-    "description": "Insulates solder joints and secures the controller, light boards and optional weights.",
+    "description": "Insulates solder joints and secures the controller and optional weights. LED mounting tape is listed separately.",
     "spec": "Polyimide tape plus thin removable foam tape. About 1.6 mm below the controller.",
     "links": [
       {
@@ -674,6 +674,22 @@
     ],
     "files": [],
     "note": null
+  },
+  {
+    "id": "led-mounting-tape",
+    "name": "LED mounting tape \u2014 3M 9474LE",
+    "category": "Hardware",
+    "quantity": "1 pack of 5 sheets",
+    "description": "Holds the mini LED boards in the printed tray pockets. Cut small pieces from a sheet; one pack is more than enough for this keyboard.",
+    "spec": "3M 9474LE with 300LSE adhesive and a polyester film carrier. 0.17 mm thick excluding the peel-off liners; sheets are 12 \u00d7 9.5 inches.",
+    "links": [
+      {
+        "label": "Buy 3M 9474LE sheets on Amazon",
+        "url": "https://www.amazon.com/dp/B0CLJ3RK2B"
+      }
+    ],
+    "files": [],
+    "note": "Use one layer within the tray\u2019s 0.2 mm adhesive allowance. Keep LED faces and wire openings clear. Strong permanent adhesive: dry-fit and test the light before sticking it down."
   },
   {
     "id": "decals",

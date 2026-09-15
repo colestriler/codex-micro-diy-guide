@@ -119,7 +119,7 @@
     "Switch, pin, controller, encoder and joystick underside envelopes are approximations; solder joints and wires require a real fit check.",
     "Test two small parts with real switches, keycaps, LEDs and two M3x8 screws and two M3x4 heat-set inserts before full print.",
     "Undo tray screws from above while supporting the tray. Install inserts only with the tray removed, unpowered and empty; let them cool before assembly.",
-    "LED pockets locate LEDs but do not clamp them: use a thin removable insulating adhesive pad, total thickness 0.2mm allowance.",
+    "LED pockets locate LEDs but do not clamp them: use one layer of 3M 9474LE mounting tape, 0.17mm excluding liners within the 0.2mm allowance. Dry-fit and test first; this is strong permanent adhesive.",
     "Keep service slack and insulate LED rear pads; no electrical disconnect is included.",
     "Full top plate prints underside down; shallow switch reliefs may need slicer-specific support. Physical joystick fit remains pending.",
     "Reference assembly and older main animation are not manufacturing verification."
