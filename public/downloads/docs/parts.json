@@ -216,7 +216,7 @@
       18.700000762939453,
       11.5
     ],
-    "volume_mm3": 1137.915287337969,
+    "volume_mm3": 1081.543738432477,
     "notes": "Experimental fit candidate. Read baffle-snap-v1/guide.html; print two small samples first."
   },
   "02_flat_joystick_snap_baffle_plate_WAIT": {

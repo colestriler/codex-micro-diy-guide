@@ -34,7 +34,7 @@ The baffle rim still meets the underside of the plate. Two 0.8 mm thick beams ex
 
 After the empty mechanism works, clip one real switch into the sample from above. Its own retention tabs must latch normally without touching the added clips. Confirm full key travel. Try the removable cup again.
 
-Place one **unpowered** Adafruit 4776 board in the cup, LED facing the switch, with an insulating layer beneath its pads. Check for clearance from the switch's plastic pegs, metal pins and future solder joints. The CAD uses simplified keepout envelopes, not an exact Gateron switch model; your dry fit is required.
+Place one **unpowered** Adafruit 4776 board in the shallow LED pocket, LED facing the switch, with an insulating layer beneath its pads. The 0.6 mm deep pocket leaves a 0.6 mm floor. With a modeled 0.2 mm insulation layer, the LED clears the conservative pin keepout by 0.5 mm; actual solder and tape thickness still need checking. Check for clearance from the switch's plastic pegs, metal pins and future solder joints. The CAD uses simplified keepout envelopes, not an exact Gateron switch model; your dry fit is required.
 
 The cup is mechanically removable, but a wired LED remains connected. Leave a service loop long enough to lower the cup clear of the switch (start by checking a 20 mm drop on the bench), route wires through the open notches, and keep them away from both latch channels. Never pull on solder joints. Full electrical disconnection would need a connector and is not included in this revision.
 

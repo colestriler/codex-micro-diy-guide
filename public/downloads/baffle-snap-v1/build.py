@@ -27,6 +27,8 @@ for sign in [-1,1]:
  cup=cup.cut(box(3,4,1.3,sign*8.8,0,20.8))
  # Wire exits on the other two walls, separate from the latch movement.
  cup=cup.cut(box(6,3,4.6,0,sign*9,17.5))
+# Recess the LED .6 mm, leaving a .6 mm floor and room for insulation.
+cup=cup.cut(rr(9.7,9.7,2,.4,z=11.1))
 # Lower, edge-open wire exit lets insulated LED leads leave the cup.
 cup=cup.cut(box(5,4,2,0,-8.6,10.4))
 # Exact candidate plate: latest flat-joystick plate plus 12 identical clips.
@@ -52,7 +54,9 @@ assert vol(frame,cup)<.001,'cup interferes with seated plate/clips'
 # also be trial-fitted: these are NOT a vendor CAD model or a wiring harness.
 switch=box(14.2,14.2,5.0,z=18.4)
 pin_keepout=box(12,12,3.5,z=14.9)
-led=box(9.1,9.1,3.1,z=11.9) # allows 0.2 mm insulation above floor
+led=box(9.1,9.1,3.1,z=11.3) # allows 0.2 mm insulation above recessed floor
+assert vol(led,pin_keepout)<.001,'LED/pin keepout interference'
+results['nominal_LED_to_pin_keepout_gap_mm']=.5
 for name,shape in [('switch_lower_housing',switch),('pin_keepout',pin_keepout),('led_with_insulation',led)]:
  assert vol(cup,shape)<.001,(name,'cup interference')
  for clip in clips:assert vol(clip,shape)<.001,(name,'clip interference')
