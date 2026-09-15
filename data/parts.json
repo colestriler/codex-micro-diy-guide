@@ -30,8 +30,8 @@
     "name": "Switch plate",
     "category": "Printed",
     "quantity": "1",
-    "description": "Holds the switches and controls. The v2 candidate incorporates the joystick mount, two supporting seats and underside nut pockets.",
-    "spec": "94 × 94 mm; main plate 3 mm, 1.6 mm switch clip lands. Local joystick nut bosses extend 4.8 mm below the plate. See v2 support settings.",
+    "description": "Holds the switches and controls. The v3 candidate has a flat joystick mounting surface with two raised seats, straight screw holes and exposed nuts underneath.",
+    "spec": "94 × 94 mm; 3 mm main plate, 1.6 mm switch clip lands. Two joystick seats rise 0.5/1.0 mm; no nut bosses below the plate.",
     "links": [
       {
         "label": "Buy white PETG",
@@ -41,18 +41,18 @@
     "files": [
       {
         "label": "Full-plate STL — wait for fit check",
-        "url": "/downloads/stl/02_integrated_top_plate_v2_WAIT.stl"
+        "url": "/downloads/stl/02_flat_top_plate_v3_WAIT.stl"
       },
       {
         "label": "Full-plate STEP",
-        "url": "/downloads/step/02_integrated_top_plate_v2_WAIT.step"
+        "url": "/downloads/step/02_flat_top_plate_v3_WAIT.step"
       },
       {
         "label": "Print-first guide",
-        "url": "/downloads/joystick-integrated-v2/guide.html"
+        "url": "/downloads/joystick-flat-v3/guide.html"
       }
     ],
-    "note": "Print the small v2 test corner first. Wait to print this full plate until the corner passes the physical fit check.",
+    "note": "Print the v3 test corner first. Full plate face UP; review the switch-clip overhangs in the slicer before printing.",
     "material": "White PETG"
   },
   {
@@ -83,11 +83,11 @@
   },
   {
     "id": "cradle",
-    "name": "Joystick test corner v2",
+    "name": "Flat joystick test corner v3",
     "category": "Printed",
     "quantity": "1 test piece",
-    "description": "A corner cut from the new integrated top plate. The joystick supports and nut pockets are built in; no separate stand or shims. Test this piece before printing the full plate.",
-    "spec": "30.5 × 30.5 mm; main plate 3 mm thick, nut bosses extend 4.8 mm below. Uses the same two M1.6 × 8 mm screws and M1.6 nuts as v1.",
+    "description": "A small corner from the candidate full top plate. The flat body seat and two raised tab supports are printed together; two ordinary nuts are exposed underneath.",
+    "spec": "28.7 × 28.7 mm test; 3 mm base plus 0.5/1.0 mm tab seats. Straight 2.4 mm clearance holes. Same M1.6 × 8 screws and M1.6 nuts.",
     "links": [
       {
         "label": "Buy black PETG",
@@ -96,15 +96,15 @@
     ],
     "files": [
       {
-        "label": "Print-first STL",
-        "url": "/downloads/stl/04_joystick_corner_v2_PRINT_FIRST.stl"
+        "label": "Print-first v3 STL",
+        "url": "/downloads/stl/04_flat_joystick_corner_v3_PRINT_FIRST.stl"
       },
       {
-        "label": "V2 fit guide",
-        "url": "/downloads/joystick-integrated-v2/guide.html"
+        "label": "V3 flat-mount guide",
+        "url": "/downloads/joystick-flat-v3/guide.html"
       }
     ],
-    "note": "Physical fit pending. Visible face down with supports under the shallow recess. Do not stack this on the old plate.",
+    "note": "One piece. Flat side down, supports up. Supports OFF for this corner. Physical fit pending.",
     "material": "Clear PETG"
   },
   {
@@ -793,7 +793,7 @@
     "name": "Joystick M1.6 hex nuts",
     "category": "Hardware",
     "quantity": "2",
-    "description": "New hardware for the fit-test holder: loads sideways into the printed nut pockets.",
+    "description": "Tightens against the flat underside of the v3 plate. Hold this exposed nut with small pliers while turning the screw from above.",
     "spec": "DIN 934; 3.2 mm across flats; 1.3 mm thick.",
     "links": [
       {

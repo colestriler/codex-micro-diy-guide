@@ -178,5 +178,25 @@
     ],
     "volume_mm3": 15960.637953758933,
     "notes": "Physical fit pending; read joystick-integrated-v2/guide.html. Print the corner first."
+  },
+  "04_flat_joystick_corner_v3_PRINT_FIRST": {
+    "qty": 1,
+    "bounds_mm": [
+      28.700000762939453,
+      28.700000762939453,
+      4.0
+    ],
+    "volume_mm3": 2329.989723451065,
+    "notes": "V3 flat mount; print the corner first. Read joystick-flat-v3/guide.html."
+  },
+  "02_flat_top_plate_v3_WAIT": {
+    "qty": 1,
+    "bounds_mm": [
+      94.0,
+      94.0,
+      4.0
+    ],
+    "volume_mm3": 16141.523938972327,
+    "notes": "V3 flat mount; print the corner first. Read joystick-flat-v3/guide.html."
   }
 }

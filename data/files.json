@@ -1,13 +1,13 @@
 [
   {
-    "name": "Print FIRST: joystick test corner v2",
-    "id": "04_joystick_corner_v2_PRINT_FIRST",
+    "name": "Print FIRST: flat joystick corner v3",
+    "id": "04_flat_joystick_corner_v3_PRINT_FIRST",
     "quantity": 1,
-    "note": "One piece; no shims. Existing PETG, 0.10 mm layers, visible face down. Support the shallow recess; read the v2 guide before slicing.",
+    "note": "One piece; flat underside down, supports facing UP. PETG, 0.10 mm layers, supports OFF for this corner. Read the v3 guide.",
     "size": [
-      30.5,
-      30.5,
-      7.80000019073486
+      28.700000762939453,
+      28.700000762939453,
+      4.0
     ]
   },
   {
@@ -22,14 +22,14 @@
     ]
   },
   {
-    "name": "02 Integrated top plate v2 — WAIT",
-    "id": "02_integrated_top_plate_v2_WAIT",
+    "name": "02 Flat joystick top plate v3 — WAIT",
+    "id": "02_flat_top_plate_v3_WAIT",
     "quantity": 1,
-    "note": "Do not print until the small corner passes. Built-in joystick supports; see v2 guide. Visible face down with support in the shallow recess.",
+    "note": "Wait for the corner fit check. Face UP; exposed nuts, no nut boxes. Inspect original switch-clip underside overhangs in slicer; see v3 guide.",
     "size": [
       94.0,
       94.0,
-      7.800000190734863
+      4.0
     ]
   },
   {

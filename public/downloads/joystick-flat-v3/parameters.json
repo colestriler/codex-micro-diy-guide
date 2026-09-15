@@ -1,0 +1,13 @@
+{
+  "revision": "flat-v3-fit-test",
+  "joystick_center_mm": [
+    29.0,
+    30.5
+  ],
+  "ear_support_mm": {
+    "A": 0.5,
+    "B": 1.0
+  },
+  "screw_clearance_diameter_mm": 2.4,
+  "note": "Flat 3 mm plate; seats are integrated. Support heights reproduce v1 starting shims, not new measurements. Exposed nuts underneath."
+}

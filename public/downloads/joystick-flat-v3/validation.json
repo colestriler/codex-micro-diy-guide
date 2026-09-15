@@ -1,0 +1,44 @@
+{
+  "PRINT_FIRST_flat_joystick_corner_v3": {
+    "size_mm": [
+      28.700000762939453,
+      28.700000762939453,
+      4.0
+    ],
+    "volume_mm3": 2329.989723451065,
+    "watertight": true,
+    "connected_solids": 1,
+    "print_z_min": 0.0
+  },
+  "WAIT_flat_top_plate_v3": {
+    "size_mm": [
+      94.0,
+      94.0,
+      4.0
+    ],
+    "volume_mm3": 16141.523938972327,
+    "watertight": true,
+    "connected_solids": 1,
+    "print_z_min": 0.0
+  },
+  "reference_joystick_overlap_mm3": 0.0,
+  "existing_case_overlap_mm3": 0.0,
+  "underside_protrusions_mm3": 0.0,
+  "screw_tip_below_nut_mm": {
+    "A": 1.2,
+    "B": 1.7
+  },
+  "nut_bearing_area_mm2": {
+    "A": 4.344,
+    "B": 4.344
+  },
+  "source_plate": "Unchanged switch, encoder, touch, status LED and M3 case hole geometry outside joystick area.",
+  "mounting": "M1.6 x 8 DIN912 screws and exposed M1.6 DIN934 nuts against the flat underside. Two raised seats; no nut pockets or loose shims.",
+  "limits": [
+    "Physical fit and stiffness unverified.",
+    "Stock thumb-cap shape and full travel not accurately modeled; test in all directions.",
+    "Printed hole fit and support heights require physical confirmation.",
+    "Exposed screw tips must remain clear of wiring; case check covers the CAD case only.",
+    "Full plate withheld from recommended printing until corner fit passes."
+  ]
+}

@@ -1,3 +1,7 @@
+# Current joystick design: flat v3
+
+Open `joystick-flat-v3/guide.html`. Print only the small v3 corner first, flat side down, raised supports up, supports OFF. It uses exposed M1.6 nuts with the same M1.6 × 8 mm screws. The full plate remains a candidate pending fit testing. Older kits below are archived.
+
 # Integrated joystick v2 — print the corner first
 
 Open `joystick-integrated-v2/guide.html`. The full top plate is a candidate pending the corner fit test. Two M1.6 × 8 mm screws and M1.6 nuts, same as v1; no loose shims. Original assembly STEP and original generator still show the old mount. The versioned v2 kit contains the new parametric source and reference assembly.
