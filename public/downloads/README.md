@@ -1,3 +1,7 @@
+# Clip-on baffle update — print two small test pieces first
+
+Open `baffle-snap-v1/guide.html`. The new cup needs matching underside plate clips. Its candidate full plate also includes the flat joystick v3 mount. Physical fit/release and fatigue remain unverified; wait for both fit tests before printing the full plate. The full plate requires supports in its supplied orientation. Old source/assembly geometry below is archived and still shows adhesive cups.
+
 # Current joystick design: flat v3
 
 Open `joystick-flat-v3/guide.html`. Print only the small v3 corner first, flat side down, raised supports up, supports OFF. It uses exposed M1.6 nuts with the same M1.6 × 8 mm screws. The full plate remains a candidate pending fit testing. Older kits below are archived.

@@ -30,8 +30,8 @@
     "name": "Switch plate",
     "category": "Printed",
     "quantity": "1",
-    "description": "Holds the switches and controls. The v3 candidate has a flat joystick mounting surface with two raised seats, straight screw holes and exposed nuts underneath.",
-    "spec": "94 × 94 mm; 3 mm main plate, 1.6 mm switch clip lands. Two joystick seats rise 0.5/1.0 mm; no nut bosses below the plate.",
+    "description": "Candidate full plate with the flat joystick mount and twelve underside clips for six removable agent-key baffles.",
+    "spec": "94 mm square; 3 mm main plate, 1.6 mm MX lands. Long baffle clips underneath; flat joystick mount with exposed nuts retained.",
     "links": [
       {
         "label": "Buy white PETG",
@@ -40,19 +40,19 @@
     ],
     "files": [
       {
-        "label": "Full-plate STL — wait for fit check",
-        "url": "/downloads/stl/02_flat_top_plate_v3_WAIT.stl"
+        "label": "Candidate STL — WAIT",
+        "url": "/downloads/stl/02_flat_joystick_snap_baffle_plate_WAIT.stl"
       },
       {
-        "label": "Full-plate STEP",
-        "url": "/downloads/step/02_flat_top_plate_v3_WAIT.step"
+        "label": "Candidate STEP",
+        "url": "/downloads/step/02_flat_joystick_snap_baffle_plate_WAIT.step"
       },
       {
-        "label": "Print-first guide",
-        "url": "/downloads/joystick-flat-v3/guide.html"
+        "label": "Baffle test guide",
+        "url": "/downloads/baffle-snap-v1/guide.html"
       }
     ],
-    "note": "Print the v3 test corner first. Full plate face UP; review the switch-clip overhangs in the slicer before printing.",
+    "note": "Wait for both small fit tests. Supplied full-plate orientation is face down; supports are required beneath its face due to the raised joystick seats. Do not use the small-coupon support settings.",
     "material": "White PETG"
   },
   {
@@ -161,11 +161,11 @@
   },
   {
     "id": "baffle",
-    "name": "Light baffle",
+    "name": "Clip-on light baffle (test one first)",
     "category": "Printed",
     "quantity": "6",
-    "description": "A small cup below each agent switch. It holds one RGBW board and blocks light from spilling into neighboring keys.",
-    "spec": "Print cavity up. Insulate the LED pads; keep switch pins clear.",
+    "description": "Removable cup beneath an illuminated agent key. Two matching plate clips pass through the floor; pinch their exposed ends underneath to remove it. Keeps one LED below the switch.",
+    "spec": "18.7 × 18.7 × 11.5 mm. Requires the new plate clips. Black PETG; 0.10 mm layers. Print one cup and one test plate first.",
     "links": [
       {
         "label": "Buy black PETG",
@@ -174,15 +174,19 @@
     ],
     "files": [
       {
-        "label": "STL",
-        "url": "/downloads/stl/07_led_baffle.stl"
+        "label": "Cup STL — print one",
+        "url": "/downloads/stl/07_snap_baffle_v1.stl"
       },
       {
-        "label": "STEP",
-        "url": "/downloads/step/07_led_baffle.step"
+        "label": "Matching test plate STL",
+        "url": "/downloads/stl/07_baffle_clip_test_plate_v1.stl"
+      },
+      {
+        "label": "Fit guide",
+        "url": "/downloads/baffle-snap-v1/guide.html"
       }
     ],
-    "note": "Print this part in black PETG.",
+    "note": "No glue or additional fasteners. Physical snap fit and durability unverified; keep wires clear of the latch channels and leave service slack.",
     "material": "Black PETG"
   },
   {

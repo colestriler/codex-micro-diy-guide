@@ -1,5 +1,16 @@
 [
   {
+    "name": "Print FIRST: baffle plate sample with clips",
+    "id": "07_baffle_clip_test_plate_v1",
+    "quantity": 1,
+    "note": "Print with ONE matching snap baffle. PETG, visible face down, clips up. Supports OFF for this small sample; inspect hook paths in the slicer.",
+    "size": [
+      23.0,
+      23.0,
+      15.899999618530273
+    ]
+  },
+  {
     "name": "Print FIRST: flat joystick corner v3",
     "id": "04_flat_joystick_corner_v3_PRINT_FIRST",
     "quantity": 1,
@@ -22,14 +33,14 @@
     ]
   },
   {
-    "name": "02 Flat joystick top plate v3 — WAIT",
-    "id": "02_flat_top_plate_v3_WAIT",
+    "name": "02 Flat joystick + clip-on baffle plate — WAIT",
+    "id": "02_flat_joystick_snap_baffle_plate_WAIT",
     "quantity": 1,
-    "note": "Wait for the corner fit check. Face UP; exposed nuts, no nut boxes. Inspect original switch-clip underside overhangs in slicer; see v3 guide.",
+    "note": "Wait for both joystick and baffle fit tests. Face down, clips up; SUPPORTS REQUIRED beneath the plate face because of the joystick seats. See snap-baffle guide.",
     "size": [
       94.0,
       94.0,
-      4.0
+      16.899999618530273
     ]
   },
   {
@@ -66,13 +77,13 @@
     ]
   },
   {
-    "name": "07 led baffle",
-    "id": "07_led_baffle",
+    "name": "07 Clip-on light baffle v1 — print ONE first",
+    "id": "07_snap_baffle_v1",
     "quantity": 6,
-    "note": "Black filament, cavity UP. LED PCB on floor, insulated pads underneath. Six identical cups.",
+    "note": "New matching plate clips required; not compatible with the old glue mount. Cup bottom down, cavity up. Black PETG, 0.10 mm layers. Print one for the first test.",
     "size": [
-      18.7,
-      18.7,
+      18.700000762939453,
+      18.700000762939453,
       11.5
     ]
   },

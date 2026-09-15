@@ -198,5 +198,35 @@
     ],
     "volume_mm3": 16141.523938972327,
     "notes": "V3 flat mount; print the corner first. Read joystick-flat-v3/guide.html."
+  },
+  "07_baffle_clip_test_plate_v1": {
+    "qty": 1,
+    "bounds_mm": [
+      23.0,
+      23.0,
+      15.899999618530273
+    ],
+    "volume_mm3": 946.1483211392082,
+    "notes": "Experimental fit candidate. Read baffle-snap-v1/guide.html; print two small samples first."
+  },
+  "07_snap_baffle_v1": {
+    "qty": 1,
+    "bounds_mm": [
+      18.700000762939453,
+      18.700000762939453,
+      11.5
+    ],
+    "volume_mm3": 1137.915287337969,
+    "notes": "Experimental fit candidate. Read baffle-snap-v1/guide.html; print two small samples first."
+  },
+  "02_flat_joystick_snap_baffle_plate_WAIT": {
+    "qty": 1,
+    "bounds_mm": [
+      94.0,
+      94.0,
+      16.899999618530273
+    ],
+    "volume_mm3": 16575.72233185852,
+    "notes": "Experimental fit candidate. Read baffle-snap-v1/guide.html; print two small samples first."
   }
 }

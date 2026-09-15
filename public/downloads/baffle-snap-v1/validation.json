@@ -1,0 +1,48 @@
+{
+  "PRINT_ONE_test_plate_with_clips": {
+    "size_mm": [
+      23.0,
+      23.0,
+      15.899999618530273
+    ],
+    "volume_mm3": 946.1483211392082,
+    "watertight": true,
+    "one_solid": true
+  },
+  "PRINT_ONE_snap_baffle": {
+    "size_mm": [
+      18.700000762939453,
+      18.700000762939453,
+      11.5
+    ],
+    "volume_mm3": 1137.915287337969,
+    "watertight": true,
+    "one_solid": true
+  },
+  "WAIT_full_plate_flat_joystick_and_baffle_clips": {
+    "size_mm": [
+      94.0,
+      94.0,
+      16.899999618530273
+    ],
+    "volume_mm3": 16575.72233185852,
+    "watertight": true,
+    "one_solid": true
+  },
+  "estimated_beam_surface_strain_percent": 0.35502958579881666,
+  "nominal_latch_overlap_mm": 0.35,
+  "nominal_axial_play_mm": 0.1,
+  "release_deflection_mm": 0.5,
+  "seated_cup_overlap_mm3": 0.0,
+  "locked_pull_overlap_mm3": 0.49500000000000044,
+  "plate_case_overlap_mm3": 0.0,
+  "neighbor_cup_gap_mm": 0.3500000000000014,
+  "limits": [
+    "Physical latch fit, release accessibility, fatigue, print strength and light leakage unverified.",
+    "Strain number is a small-deflection beam estimate, not FEA or a material guarantee.",
+    "Switch and pin envelopes are approximations; actual switch retention tabs and solder joints require a dry fit.",
+    "No six-cup wiring or real LED optical test performed.",
+    "Candidate full plate requires supports in the supplied face-down orientation because the joystick seats protrude on its face.",
+    "Only print the TWO small test parts first; keep all older plates until fit passes."
+  ]
+}

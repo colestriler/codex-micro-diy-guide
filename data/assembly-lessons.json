@@ -77,13 +77,17 @@
       "baffle"
     ],
     "how": [
-      "Print the clear case open side up, the white plate face down, the white foot bottom down, and six black baffles open side up. Use the calibrated fit settings from step 1.",
+      "First print the two small snap-baffle test pieces and the separate flat-joystick corner. Wait until those fits pass before printing the full plate or all six cups. The combined plate now has underside clips and needs the support/orientation setup in the snap-baffle guide.",
       "Remove supports and burrs gently. Preserve the switch-retaining edges and the eight thin optical windows around the case.",
       "Test a USB plug in the 15 × 8 mm rear tunnel. Dry-fit the plate on its ledge and inspect the screw holes before adding hardware."
     ],
     "why": "The plate sets the alignment of every control, while the case supports it and exposes the lights. Cleaning the mating surfaces now prevents a burr from tilting the plate or stopping a switch from latching. The thin windows let the perimeter lights show through.",
     "check": "The plate rests flat without force, the USB plug has clearance, and the optical windows are intact.",
     "links": [
+      {
+        "label": "Clip-on baffle fit guide",
+        "url": "/downloads/baffle-snap-v1/guide.html"
+      },
       {
         "label": "Printing settings and materials",
         "url": "#printing"
@@ -259,7 +263,7 @@
         }
       ]
     },
-    "caption": "Replay shows the six pre-seated LED/baffle pairs moving under the plate. The eight wall LEDs are shown in their outward-facing positions. Use the connection map for wiring.",
+    "caption": "Replay shows the six pre-seated LED/baffle pairs moving under the plate. The eight wall LEDs are shown in their outward-facing positions. Use the connection map for wiring. This animation shows the older adhesive cups; use the linked snap-baffle guide for the release mechanism.",
     "parts": [
       "baffle",
       "rgbw-led",
@@ -267,13 +271,17 @@
       "tape"
     ],
     "how": [
-      "Place pixels 0–5 in the six black baffles with their LEDs facing up toward the agent keys. Insulate the rear pads so they cannot touch the switch pins. Wire before securing the baffles beneath the plate.",
+      "Use the new clip-on cups only after the empty snap/release test and real switch dry fit pass. Place pixels 0–5 facing upward, with their rear pads insulated. Leave wire slack to lower each cup; route leads away from both clip channels. Pinch the two tips underneath to remove a cup. Test one powered LED for leakage before wiring all six.",
       "Place pixels 6–13 in the eight inner-wall pockets, facing outward through the thin case windows.",
       "Connect DOUT on each pixel to DIN on the next, in that order. Share the power and ground buses. Use the level shifter, resistors and capacitors shown in the full connection map; do not connect MOSI straight to the pixel chain."
     ],
     "why": "Each pixel consumes its own color data and passes the remaining data along the chain, so physical order determines which key lights up. Opaque baffles keep one key’s light from spilling into the next. Translucent caps spread the light across the key surface.",
     "check": "Six boards point up, eight point outward, every DOUT feeds the next DIN, and no solder pad touches a switch pin.",
     "links": [
+      {
+        "label": "Clip-on baffle assembly and release",
+        "url": "/downloads/baffle-snap-v1/guide.html"
+      },
       {
         "label": "Full connection map",
         "url": "/downloads/docs/wiring.svg"
