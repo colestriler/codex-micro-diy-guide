@@ -162,8 +162,10 @@ with (ROOT / "bom-jlcpcb.csv").open("w", newline="") as handle:
     writer.writerows(parts)
 
 placements = [
-    ("J1", 9, 8, 180, "Top"), ("J2", 27, 8, 180, "Top"),
-    ("U1", 18, 17, 0, "Top"), ("R1", 22, 17.95, 0, "Top"),
+    # JLCPCB's catalog models for the JST socket and SOT-23 device use a
+    # 180-degree orientation offset from the KiCad library models.
+    ("J1", 9, 8, 0, "Top"), ("J2", 27, 8, 0, "Top"),
+    ("U1", 18, 17, 180, "Top"), ("R1", 22, 17.95, 0, "Top"),
     ("C1", 18, 13.5, 90, "Top"), ("C2", 9, 24, 0, "Top"),
 ]
 with (ROOT / "cpl-jlcpcb.csv").open("w", newline="") as handle:
