@@ -1,0 +1,26 @@
+{
+  "revision": "A-prototype",
+  "board_mm": [
+    36,
+    30,
+    1.6
+  ],
+  "purpose": "Fully assembled replacement for the tested perfboard LED level-shifter circuit",
+  "input_connector": [
+    "+5V from KB2040 RAW",
+    "data from KB2040 MO/MOSI",
+    "GND"
+  ],
+  "output_connector": [
+    "+5V",
+    "buffered data through 330 ohm",
+    "GND"
+  ],
+  "limits": [
+    "This is an unbuilt prototype; fabrication files do not prove physical or electrical operation.",
+    "It replaces only the LED-driver perfboard, not the key matrix, knob, joystick, touch sensor or KB2040.",
+    "The input and output connectors need matching JST XH 3-pin cable assemblies.",
+    "Confirm the existing single-LED perfboard circuit works before paying for assembly.",
+    "The 100uF capacitor supports the low-brightness prototype; current and USB power must be checked on the completed 14-pixel chain."
+  ]
+}
