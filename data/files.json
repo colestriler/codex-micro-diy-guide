@@ -12,9 +12,9 @@
   },
   {
     "name": "Print FIRST: lower sample for existing inserts",
-    "id": "07_heatset_baffle_sample_v3",
+    "id": "07_heatset_baffle_sample_v4",
     "quantity": 1,
-    "note": "Black PETG, cups UP, supports OFF. Heat-set two M3 \u00d7 4 inserts into post tops, cool fully, then use two existing M3 \u00d7 8 screws. Test before full print.",
+    "note": "V4: 10 \u00d7 4 mm LED openings. Test a wired LED edge-first with the upper plate off. Black PETG, cups UP, supports OFF. Heat-set two M3 \u00d7 4 inserts into post tops, cool fully, then use two existing M3 \u00d7 8 screws. Test before full print.",
     "size": [
       39.99997329711914,
       26.449996948242188,
@@ -55,10 +55,10 @@
     ]
   },
   {
-    "name": "07 Heat-set lower tray v3 \u2014 WAIT",
-    "id": "07_heatset_six_light_tray_v3_WAIT",
+    "name": "07 Heat-set lower tray v4 \u2014 WAIT",
+    "id": "07_heatset_six_light_tray_v4_WAIT",
     "quantity": 1,
-    "note": "Uses four existing M3 \u00d7 8 screws and four Adafruit M3 \u00d7 4 inserts. No long bolts or loose nuts. Black PETG, bottom DOWN, cups UP. Heat-set fit test first.",
+    "note": "V4: 10 \u00d7 4 mm LED openings. Test a wired LED edge-first with the upper plate off. Uses four existing M3 \u00d7 8 screws and four Adafruit M3 \u00d7 4 inserts. No long bolts or loose nuts. Black PETG, bottom DOWN, cups UP. Heat-set fit test first.",
     "size": [
       91.0,
       45.32499694824219,

@@ -49,7 +49,7 @@
       },
       {
         "label": "Two-layer fit guide",
-        "url": "/downloads/baffle-tray-v3/guide.html"
+        "url": "/downloads/baffle-tray-v4/guide.html"
       }
     ],
     "note": "Reuse the v2 upper plate if already printed. Full plate underside DOWN; inspect switch reliefs for local support. Uses four spare M3 \u00d7 8 screws with inserts in the new lower tray.",
@@ -165,10 +165,10 @@
   },
   {
     "id": "baffle",
-    "name": "Heat-set six-light tray (test sample first)",
+    "name": "Heat-set six-light tray v4 (test sample first)",
     "category": "Printed",
     "quantity": "1 tray",
-    "description": "One lower tray holds six light compartments. Existing M3 \u00d7 8 screws thread into M3 \u00d7 4 heat-set inserts in its four rigid posts. No loose nuts or flexible clips.",
+    "description": "V4: each light compartment has a 10 \u00d7 4 mm bottom opening for edge-first LED access. One lower tray holds six light compartments. Existing M3 \u00d7 8 screws thread into M3 \u00d7 4 heat-set inserts in its four rigid posts. No loose nuts or flexible clips.",
     "spec": "91 \u00d7 45.325 \u00d7 12 mm; black PETG. 3.9 mm starting pilots for Adafruit 4255 inserts; heat-set fit must be tested.",
     "links": [
       {
@@ -179,11 +179,11 @@
     "files": [
       {
         "label": "Lower sample STL \u2014 print first",
-        "url": "/downloads/stl/07_heatset_baffle_sample_v3.stl"
+        "url": "/downloads/stl/07_heatset_baffle_sample_v4.stl"
       },
       {
         "label": "Lower sample STEP \u2014 print first",
-        "url": "/downloads/step/07_heatset_baffle_sample_v3.step"
+        "url": "/downloads/step/07_heatset_baffle_sample_v4.step"
       },
       {
         "label": "Upper sample STL \u2014 print first",
@@ -195,18 +195,18 @@
       },
       {
         "label": "Full tray STL \u2014 WAIT",
-        "url": "/downloads/stl/07_heatset_six_light_tray_v3_WAIT.stl"
+        "url": "/downloads/stl/07_heatset_six_light_tray_v4_WAIT.stl"
       },
       {
         "label": "Full tray STEP \u2014 WAIT",
-        "url": "/downloads/step/07_heatset_six_light_tray_v3_WAIT.step"
+        "url": "/downloads/step/07_heatset_six_light_tray_v4_WAIT.step"
       },
       {
         "label": "Assembly / print guide",
-        "url": "/downloads/baffle-tray-v3/guide.html"
+        "url": "/downloads/baffle-tray-v4/guide.html"
       }
     ],
-    "note": "Four spare screws and four inserts for final tray; two additional inserts consumed by sample. Upper plate unchanged from v2. LED pockets still need thin insulating adhesive and wiring slack.",
+    "note": "Test the actual soldered LED through the lower sample before installing inserts. Upper plate unchanged. Four spare screws and four inserts for final tray; two additional inserts consumed by sample. Upper plate unchanged from v2. LED pockets still need thin insulating adhesive and wiring slack.",
     "material": "Black PETG"
   },
   {

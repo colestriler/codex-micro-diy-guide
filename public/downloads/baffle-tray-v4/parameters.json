@@ -1,0 +1,9 @@
+{
+  "floor_bottom_z_mm": 10.0,
+  "hole_diameter_mm": 3.4,
+  "insert_pilot_diameter_mm": 3.9,
+  "status": "V4: larger LED access openings; physical fit pending",
+  "led_access_width_mm": 10.0,
+  "led_access_depth_mm": 4.0,
+  "led_access_y_offset_mm": -5.0
+}

@@ -4,16 +4,16 @@
     "name": "Print FIRST: two-key upper plate sample",
     "quantity": 1,
     "print_note": "Upper sample unchanged from v2: reuse it if printed. White/clear PETG, visible face DOWN, supports OFF. Pair with heat-set lower sample; M3 \u00d7 8 screws and M3 \u00d7 4 inserts.",
-    "source": "/downloads/baffle-tray-v3/files/PRINT_FIRST_two_key_top_sample.step",
-    "sha256": "253f16298b7c66d2459f172df9b99efc6c27303e0baa4cbce3119dddbbc1f1a1"
+    "source": "/downloads/baffle-tray-v4/files/PRINT_FIRST_two_key_top_sample.step",
+    "sha256": "cc16f0a73e1fc594aa161f06d1cb7c923a2103392311730ca26b892b8e9f9507"
   },
   {
-    "file": "parts/07_heatset_baffle_sample_v3.step",
+    "file": "parts/07_heatset_baffle_sample_v4.step",
     "name": "Print FIRST: lower sample for existing inserts",
     "quantity": 1,
-    "print_note": "Black PETG, cups UP, supports OFF. Heat-set two M3 \u00d7 4 inserts into post tops, cool fully, then use two existing M3 \u00d7 8 screws. Test before full print.",
-    "source": "/downloads/baffle-tray-v3/files/PRINT_FIRST_two_key_baffle_sample.step",
-    "sha256": "f54d9cedcf6e865e55f7b17067dc77ff4db1e1c986430594de1daf2358f61418"
+    "print_note": "V4: 10 \u00d7 4 mm LED openings. Test a wired LED edge-first with the upper plate off. Black PETG, cups UP, supports OFF. Heat-set two M3 \u00d7 4 inserts into post tops, cool fully, then use two existing M3 \u00d7 8 screws. Test before full print.",
+    "source": "/downloads/baffle-tray-v4/files/PRINT_FIRST_two_key_baffle_sample.step",
+    "sha256": "162d920fb81c2a5e923f243dce9cedb35e986e59f0669db541a78dd61696b937"
   },
   {
     "file": "parts/04_flat_joystick_corner_v3_PRINT_FIRST.step",
@@ -36,16 +36,16 @@
     "name": "02 Two-layer upper plate \u2014 WAIT",
     "quantity": 1,
     "print_note": "Unchanged from baffle-tray-v2; reuse if already printed. Wait for baffle and joystick fit tests. Full plate underside DOWN, joystick seats UP; inspect shallow switch reliefs for local support.",
-    "source": "/downloads/baffle-tray-v3/files/WAIT_full_top_plate.step",
-    "sha256": "52e62c816aa57c84230d0d493eb5b41386623d90ab1f090ad1927c945cd20993"
+    "source": "/downloads/baffle-tray-v4/files/WAIT_full_top_plate.step",
+    "sha256": "e8b52b1ea2aeca2aa0e2b6bdb24bf0a56a81cb03f2389916d881ccaca22f7da0"
   },
   {
-    "file": "parts/07_heatset_six_light_tray_v3_WAIT.step",
-    "name": "07 Heat-set lower tray v3 \u2014 WAIT",
+    "file": "parts/07_heatset_six_light_tray_v4_WAIT.step",
+    "name": "07 Heat-set lower tray v4 \u2014 WAIT",
     "quantity": 1,
-    "print_note": "Uses four existing M3 \u00d7 8 screws and four Adafruit M3 \u00d7 4 inserts. No long bolts or loose nuts. Black PETG, bottom DOWN, cups UP. Heat-set fit test first.",
-    "source": "/downloads/baffle-tray-v3/files/WAIT_six_light_baffle_tray.step",
-    "sha256": "8f6829998446a6f5895efe726d2a782e4418a3fec25e07e737a06e761e89d067"
+    "print_note": "V4: 10 \u00d7 4 mm LED openings. Test a wired LED edge-first with the upper plate off. Uses four existing M3 \u00d7 8 screws and four Adafruit M3 \u00d7 4 inserts. No long bolts or loose nuts. Black PETG, bottom DOWN, cups UP. Heat-set fit test first.",
+    "source": "/downloads/baffle-tray-v4/files/WAIT_six_light_baffle_tray.step",
+    "sha256": "a249973b663c2fb6bca3da639e23f5d6f0077c8ec38483d386bba6ad9e10683c"
   },
   {
     "file": "parts/03_round_foot.step",
@@ -104,9 +104,9 @@
     "sha256": "27ef547fd4fa67591b36b8cb40cb407c8aa6eef50a14b0155e5c906bed18c628"
   },
   {
-    "file": "reference/tray_v3_assembly_NOT_PRINTABLE.step",
-    "name": "Tray v3 partial reference assembly \u2014 NOT PRINTABLE",
-    "source": "/downloads/baffle-tray-v3/files/reference_assembly_NOT_PRINTABLE.step",
-    "sha256": "8bfcdb1e2c7bf89309868dd3dae1c22ee68dfa105444941c3fe3bbd9b8e471a0"
+    "file": "reference/tray_v4_assembly_NOT_PRINTABLE.step",
+    "name": "Tray v4 partial reference assembly \u2014 NOT PRINTABLE",
+    "source": "/downloads/baffle-tray-v4/files/reference_assembly_NOT_PRINTABLE.step",
+    "sha256": "0ff69c54c0d95f07d6658a2de0d019d9478268c660ba7e8a1c034cba7c30972c"
   }
 ]
