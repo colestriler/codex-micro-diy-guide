@@ -1,13 +1,24 @@
 [
   {
-    "name": "Print FIRST: baffle plate sample with clips",
-    "id": "07_baffle_clip_test_plate_v1",
+    "name": "Print FIRST: two-key upper plate sample",
+    "id": "07_two_layer_top_sample",
     "quantity": 1,
-    "note": "Print with ONE matching snap baffle. PETG, visible face down, clips up. Supports OFF for this small sample; inspect hook paths in the slicer.",
+    "note": "White or clear PETG; supplied visible face DOWN, supports OFF. Pair with the lower sample; use two M3 \u00d7 20 screws and two M3 nuts.",
     "size": [
-      23.0,
-      23.0,
-      15.899999618530273
+      48.0,
+      26.950000762939453,
+      3.0
+    ]
+  },
+  {
+    "name": "Print FIRST: two-key lower baffle sample",
+    "id": "07_two_layer_baffle_sample",
+    "quantity": 1,
+    "note": "Black PETG; flat bottom DOWN, cups UP, supports OFF. Print one upper sample too. Test actual switches, LEDs, screw fit and wire clearance.",
+    "size": [
+      39.99997329711914,
+      26.449996948242188,
+      12.0
     ]
   },
   {
@@ -33,14 +44,25 @@
     ]
   },
   {
-    "name": "02 Flat joystick + clip-on baffle plate — WAIT",
-    "id": "02_flat_joystick_snap_baffle_plate_WAIT",
+    "name": "02 Two-layer upper plate \u2014 WAIT",
+    "id": "02_two_layer_top_plate_WAIT",
     "quantity": 1,
-    "note": "Wait for both joystick and baffle fit tests. Face down, clips up; SUPPORTS REQUIRED beneath the plate face because of the joystick seats. See snap-baffle guide.",
+    "note": "Wait for baffle and joystick samples. Underside DOWN, joystick seats UP. Review local support under shallow switch reliefs; full plate uses a different orientation from the small sample.",
     "size": [
       94.0,
       94.0,
-      16.899999618530273
+      4.0
+    ]
+  },
+  {
+    "name": "07 Six-light lower tray \u2014 WAIT",
+    "id": "07_six_light_tray_WAIT",
+    "quantity": 1,
+    "note": "One piece replaces six separate cups. Black PETG, flat bottom DOWN, cups UP. Four M3 \u00d7 20 screws and four ordinary exposed M3 nuts; physical fit pending.",
+    "size": [
+      91.0,
+      45.32499694824219,
+      12.0
     ]
   },
   {
@@ -74,17 +96,6 @@
       17.804,
       17.8,
       13.502
-    ]
-  },
-  {
-    "name": "07 Clip-on light baffle v1 — print ONE first",
-    "id": "07_snap_baffle_v1",
-    "quantity": 6,
-    "note": "New matching plate clips required; not compatible with the old glue mount. Cup bottom down, cavity up. Black PETG, 0.10 mm layers. Print one for the first test.",
-    "size": [
-      18.700000762939453,
-      18.700000762939453,
-      11.5
     ]
   },
   {

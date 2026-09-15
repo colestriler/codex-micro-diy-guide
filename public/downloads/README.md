@@ -1,3 +1,7 @@
+# Latest: two-layer baffle tray v2
+
+Print only the two samples in `baffle-tray-v2/files/PRINT_FIRST*` first. See `baffle-tray-v2/guide.html`. Full top plate and tray are marked WAIT. This replaces the clip proposal; old files below are retained as history. Four additional M3 × 20 screws and M3 nuts are required for the full build.
+
 # Clip-on baffle update — print two small test pieces first
 
 Open `baffle-snap-v1/guide.html`. The new cup needs matching underside plate clips. Its candidate full plate also includes the flat joystick v3 mount. Physical fit/release and fatigue remain unverified; wait for both fit tests before printing the full plate. The full plate requires supports in its supplied orientation. Old source/assembly geometry below is archived and still shows adhesive cups.

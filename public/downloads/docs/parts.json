@@ -228,5 +228,45 @@
     ],
     "volume_mm3": 16575.72233185852,
     "notes": "Experimental fit candidate. Read baffle-snap-v1/guide.html; print two small samples first."
+  },
+  "07_two_layer_top_sample": {
+    "qty": 1,
+    "bounds_mm": [
+      48.0,
+      26.950000762939453,
+      3.0
+    ],
+    "volume_mm3": 2399.875246860068,
+    "notes": "White or clear PETG; supplied visible face DOWN, supports OFF. Pair with the lower sample; use two M3 \u00d7 20 screws and two M3 nuts."
+  },
+  "07_two_layer_baffle_sample": {
+    "qty": 1,
+    "bounds_mm": [
+      39.99997329711914,
+      26.449996948242188,
+      12.0
+    ],
+    "volume_mm3": 3468.401312730752,
+    "notes": "Black PETG; flat bottom DOWN, cups UP, supports OFF. Print one upper sample too. Test actual switches, LEDs, screw fit and wire clearance."
+  },
+  "02_two_layer_top_plate_WAIT": {
+    "qty": 1,
+    "bounds_mm": [
+      94.0,
+      94.0,
+      4.0
+    ],
+    "volume_mm3": 16032.60223084939,
+    "notes": "Wait for baffle and joystick samples. Underside DOWN, joystick seats UP. Review local support under shallow switch reliefs; full plate uses a different orientation from the small sample."
+  },
+  "07_six_light_tray_WAIT": {
+    "qty": 1,
+    "bounds_mm": [
+      91.0,
+      45.32499694824219,
+      12.0
+    ],
+    "volume_mm3": 9369.3185637195,
+    "notes": "One piece replaces six separate cups. Black PETG, flat bottom DOWN, cups UP. Four M3 \u00d7 20 screws and four ordinary exposed M3 nuts; physical fit pending."
   }
 }
