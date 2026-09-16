@@ -30,7 +30,7 @@ export default function WiringLessons() {
 
   return <div className="bench-guide">
     <p className="bench-lead">One small circuit at a time. Start with the knob, build the LED circuit on the perfboard, then light one key. These are the short steps from our workbench walkthrough, with a reason and a checkpoint for each.</p>
-    <div className="bench-downloads"><a href={PDF} target="_blank" rel="noopener noreferrer">Read the wiring PDF ↗</a><a href={PDF} download>Download PDF ↓</a><a href={`${BASE}/wiring-starter.zip`} download>Test code + libraries ↓</a></div>
+    <div className="bench-downloads"><a href={`${BASE}/complete.html`} target="_blank" rel="noopener noreferrer">Complete keyboard diagram ↗</a><a href={`${BASE}/Codex-Micro-Complete-Wiring.pdf`} download>Complete wiring PDF ↓</a><a href={PDF} target="_blank" rel="noopener noreferrer">Read the wiring PDF ↗</a><a href={PDF} download>Download PDF ↓</a><a href={`${BASE}/wiring-starter.zip`} download>Test code + libraries ↓</a></div>
     <nav className="bench-index" aria-label="Wiring stages"><ol>{lessons.map((phase,i) => <li key={phase.id}><a href={`#${phase.id}`}><span>{i+1}</span>{phase.title}</a></li>)}<li><a href="#wiring-rest"><span>6</span>Finish the remaining circuits</a></li></ol></nav>
     <p className="bench-progress" aria-live="polite">{done.length} of {allSteps.length} checkpoints complete. {storageAvailable ? "Saved in this browser on this device." : "Browser storage is unavailable; checks will not persist after reload."}</p>
     <details className="bench-basics"><summary>New to soldering? Read this first.</summary><div>

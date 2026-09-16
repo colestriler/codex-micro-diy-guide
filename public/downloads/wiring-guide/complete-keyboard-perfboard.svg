@@ -1,0 +1,560 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3000" height="2200" viewBox="0 0 3000 2200" role="img"><title>Codex Micro enlarged perfboard and component pin orientation</title>
+<rect width="3000" height="2200" fill="white"/>
+<path d="M70,205 L2930,205" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="159.1" y="396.2" width="971.8000000000001" height="898.6999999999999" rx="14" fill="white" stroke="black" stroke-width="2"/>
+<circle cx="215" cy="465" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="301" cy="465" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="387" cy="465" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="473" cy="465" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="559" cy="465" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="645" cy="465" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="731" cy="465" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="817" cy="465" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="903" cy="465" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="989" cy="465" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="1075" cy="465" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="215" cy="551" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="301" cy="551" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="387" cy="551" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="473" cy="551" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="559" cy="551" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="645" cy="551" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="731" cy="551" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="817" cy="551" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="903" cy="551" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="989" cy="551" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="1075" cy="551" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="215" cy="637" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="301" cy="637" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="387" cy="637" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="473" cy="637" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="559" cy="637" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="645" cy="637" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="731" cy="637" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="817" cy="637" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="903" cy="637" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="989" cy="637" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="1075" cy="637" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="215" cy="723" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="301" cy="723" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="387" cy="723" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="473" cy="723" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="559" cy="723" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="645" cy="723" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="731" cy="723" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="817" cy="723" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="903" cy="723" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="989" cy="723" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="1075" cy="723" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="215" cy="809" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="301" cy="809" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="387" cy="809" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="473" cy="809" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="559" cy="809" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="645" cy="809" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="731" cy="809" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="817" cy="809" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="903" cy="809" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="989" cy="809" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="1075" cy="809" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="215" cy="895" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="301" cy="895" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="387" cy="895" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="473" cy="895" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="559" cy="895" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="645" cy="895" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="731" cy="895" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="817" cy="895" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="903" cy="895" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="989" cy="895" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="1075" cy="895" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="215" cy="981" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="301" cy="981" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="387" cy="981" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="473" cy="981" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="559" cy="981" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="645" cy="981" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="731" cy="981" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="817" cy="981" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="903" cy="981" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="989" cy="981" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="1075" cy="981" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="215" cy="1067" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="301" cy="1067" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="387" cy="1067" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="473" cy="1067" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="559" cy="1067" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="645" cy="1067" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="731" cy="1067" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="817" cy="1067" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="903" cy="1067" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="989" cy="1067" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="1075" cy="1067" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="215" cy="1153" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="301" cy="1153" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="387" cy="1153" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="473" cy="1153" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="559" cy="1153" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="645" cy="1153" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="731" cy="1153" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="817" cy="1153" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="903" cy="1153" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="989" cy="1153" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="1075" cy="1153" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="215" cy="1239" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="301" cy="1239" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="387" cy="1239" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="473" cy="1239" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="559" cy="1239" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="645" cy="1239" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="731" cy="1239" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="817" cy="1239" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="903" cy="1239" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="989" cy="1239" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<circle cx="1075" cy="1239" r="6.45" fill="white" stroke="black" stroke-width="1"/>
+<path d="M387,637 L473,637" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M387,637 L473,637" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<path d="M387,1153 L473,1153" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M387,1153 L473,1153" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<path d="M301,1153 L387,1153" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M301,1153 L387,1153" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<path d="M817,637 L731,637" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M817,637 L731,637" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<path d="M473,551 L473,637" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M473,551 L473,637" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<path d="M731,551 L731,637" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M731,551 L731,637" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<path d="M387,723 L473,723" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M387,723 L473,723" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<path d="M301,809 L387,809" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M301,809 L387,809" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<path d="M387,809 L473,809" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M387,809 L473,809" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<path d="M215,465 L301,465" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M215,465 L301,465" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<path d="M215,1153 L301,1153" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M215,1153 L301,1153" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<path d="M903,637 L817,637" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M903,637 L817,637" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<path d="M387,981 L473,981" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M387,981 L473,981" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<path d="M301,1067 L301,1153" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M301,1067 L301,1153" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<path d="M817,1067 L731,1067" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M817,1067 L731,1067" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<path d="M817,809 L731,809" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M817,809 L731,809" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<path d="M903,1067 L817,1067" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M903,1067 L817,1067" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<path d="M215,1067 L215,1153" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M215,1067 L215,1153" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<path d="M817,981 L731,981" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M817,981 L731,981" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<path d="M817,723 L731,723" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M817,723 L731,723" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<path d="M903,723 L817,723" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M903,723 L817,723" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<path d="M989,637 L903,637" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M989,637 L903,637" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<path d="M387,895 L473,895" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M387,895 L473,895" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<path d="M1075,637 L989,637" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1075,637 L989,637" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<path d="M215,1239 L215,1153" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M215,1239 L215,1153" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<rect x="493.64" y="600.88" width="216.72" height="588.24" rx="10" fill="white" stroke="black" stroke-width="2"/>
+<path d="M588.0,600.88 a14,14 0 0 0 28,0" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M473,637 L493.64,637" fill="none" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M473,723 L493.64,723" fill="none" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M473,809 L493.64,809" fill="none" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M473,895 L493.64,895" fill="none" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M473,981 L493.64,981" fill="none" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M473,1067 L493.64,1067" fill="none" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M467,1061 L479,1073" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M467,1073 L479,1061" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M473,1153 L493.64,1153" fill="none" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M731,1153 L710.36,1153" fill="none" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M725,1147 L737,1159" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M725,1159 L737,1147" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M731,1067 L710.36,1067" fill="none" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M731,981 L710.36,981" fill="none" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M731,895 L710.36,895" fill="none" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M725,889 L737,901" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M725,901 L737,889" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M731,809 L710.36,809" fill="none" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M731,723 L710.36,723" fill="none" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M731,637 L710.36,637" fill="none" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M387,637 L355.18,667.1 L355.18,1122.9 L387,1153" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M387,637 L355.18,667.1 L355.18,1122.9 L387,1153" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="387" cy="637" r="4" fill="black" stroke="black" stroke-width="1"/>
+<circle cx="387" cy="1153" r="4" fill="black" stroke="black" stroke-width="1"/>
+<path d="M387,981 L387,1067 L301,1067" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M387,981 L387,1067 L301,1067" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="387" cy="981" r="4" fill="black" stroke="black" stroke-width="1"/>
+<circle cx="301" cy="1067" r="4" fill="black" stroke="black" stroke-width="1"/>
+<path d="M817,1067 L840.22,1049.8 L840.22,826.2 L817,809" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M817,1067 L840.22,1049.8 L840.22,826.2 L817,809" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="817" cy="1067" r="4" fill="black" stroke="black" stroke-width="1"/>
+<circle cx="817" cy="809" r="4" fill="black" stroke="black" stroke-width="1"/>
+<path d="M903,1067 L903,1325 L215,1325 L215,1067" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M903,1067 L903,1325 L215,1325 L215,1067" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="903" cy="1067" r="4" fill="black" stroke="black" stroke-width="1"/>
+<circle cx="215" cy="1067" r="4" fill="black" stroke="black" stroke-width="1"/>
+<path d="M817,981 L862.58,981 L862.58,723 L817,723" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M817,981 L862.58,981 L862.58,723 L817,723" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="817" cy="981" r="4" fill="black" stroke="black" stroke-width="1"/>
+<circle cx="817" cy="723" r="4" fill="black" stroke="black" stroke-width="1"/>
+<path d="M903,723 L989,723 L989,637" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M903,723 L989,723 L989,637" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="903" cy="723" r="4" fill="black" stroke="black" stroke-width="1"/>
+<circle cx="989" cy="637" r="4" fill="black" stroke="black" stroke-width="1"/>
+<path d="M387,895 L331.96,860.6 L331.96,437.48 L1075,437.48 L1075,637" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M387,895 L331.96,860.6 L331.96,437.48 L1075,437.48 L1075,637" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="387" cy="895" r="4" fill="black" stroke="black" stroke-width="1"/>
+<circle cx="1075" cy="637" r="4" fill="black" stroke="black" stroke-width="1"/>
+<path d="M301,809 L301,465" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M301,809 L301,465" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="289.0" y="603.0" width="24" height="68" rx="4" fill="white" stroke="black" stroke-width="2"/>
+<path d="M473,551 L584.0,551" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M473,551 L584.0,551" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M620.0,551 L731,551" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M620.0,551 L731,551" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M584.0,533 L584.0,569" fill="none" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M620.0,533 L620.0,569" fill="none" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M215,465 L130,465 L130,290 L90,290" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M215,465 L130,465 L130,290 L90,290" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="83" y="255" width="153.15" height="30" rx="3" fill="white" stroke="none" stroke-width="2"/>
+<path d="M387,723 L130,723 L130,720 L90,720" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M387,723 L130,723 L130,720 L90,720" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="83" y="685" width="77.25" height="30" rx="3" fill="white" stroke="none" stroke-width="2"/>
+<path d="M301,1153 L130,1153 L130,1200 L90,1200" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M301,1153 L130,1153 L130,1200 L90,1200" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="83" y="1165" width="64.6" height="30" rx="3" fill="white" stroke="none" stroke-width="2"/>
+<path d="M215,1239 L215,1365 L430,1365 L430,1398" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M215,1239 L215,1365 L430,1365 L430,1398" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="423" y="1375" width="241.70000000000002" height="30" rx="3" fill="white" stroke="none" stroke-width="2"/>
+<path d="M215,1153 L215,1320 L100,1320 L100,1353" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M215,1153 L215,1320 L100,1320 L100,1353" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="93" y="1330" width="178.45000000000002" height="30" rx="3" fill="white" stroke="none" stroke-width="2"/>
+<path d="M817,637 L1160,637 L1160,320 L1200,320" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M817,637 L1160,637 L1160,320 L1200,320" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1193" y="285" width="153.15" height="30" rx="3" fill="white" stroke="none" stroke-width="2"/>
+<path d="M903,637 L1160,637 L1160,560 L1200,560" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M903,637 L1160,637 L1160,560 L1200,560" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1193" y="525" width="165.8" height="30" rx="3" fill="white" stroke="none" stroke-width="2"/>
+<path d="M1430,421 L2870,421" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1430,481 L2870,481" fill="none" stroke="black" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1430,527 L2870,527" fill="none" stroke="black" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1430,573 L2870,573" fill="none" stroke="black" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1430,619 L2870,619" fill="none" stroke="black" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1430,665 L2870,665" fill="none" stroke="black" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1430,711 L2870,711" fill="none" stroke="black" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1430,757 L2870,757" fill="none" stroke="black" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1430,803 L2870,803" fill="none" stroke="black" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1430,849 L2870,849" fill="none" stroke="black" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1430,895 L2870,895" fill="none" stroke="black" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1430,941 L2870,941" fill="none" stroke="black" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1430,987 L2870,987" fill="none" stroke="black" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1430,1033 L2870,1033" fill="none" stroke="black" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1430,1079 L2870,1079" fill="none" stroke="black" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M190,1650 L2870,1650" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M70,2113 L2930,2113" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="68" y="57.0" width="183.17499999999998" height="25" fill="white"/>
+<text x="70" y="77" font-family="Helvetica,Arial,sans-serif" font-size="25" font-weight="bold" text-anchor="start" fill="black">CODEX MICRO</text>
+<rect x="68" y="90.4" width="503.876" height="52" fill="white"/>
+<text x="70" y="132" font-family="Helvetica,Arial,sans-serif" font-size="52" font-weight="bold" text-anchor="start" fill="black">Inside the perfboard</text>
+<rect x="68" y="157.6" width="1343.819" height="23" fill="white"/>
+<text x="70" y="176" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="normal" text-anchor="start" fill="black">Top/component side. Column A is at the left; row 01 is at the bottom. Dashed bridges are on the underside, seen through the board.</text>
+<rect x="2870.458" y="56.4" width="56.542" height="27" fill="white"/>
+<text x="2925" y="78" font-family="Helvetica,Arial,sans-serif" font-size="27" font-weight="bold" text-anchor="end" fill="black">2 / 2</text>
+<rect x="205.058" y="411.28" width="19.884" height="22" fill="white"/>
+<text x="215" y="428.88" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="black">A</text>
+<rect x="291.058" y="411.28" width="19.884" height="22" fill="white"/>
+<text x="301" y="428.88" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="black">B</text>
+<rect x="377.058" y="411.28" width="19.884" height="22" fill="white"/>
+<text x="387" y="428.88" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="black">C</text>
+<rect x="463.058" y="411.28" width="19.884" height="22" fill="white"/>
+<text x="473" y="428.88" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="black">D</text>
+<rect x="549.663" y="411.28" width="18.674" height="22" fill="white"/>
+<text x="559" y="428.88" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="black">E</text>
+<rect x="636.279" y="411.28" width="17.442" height="22" fill="white"/>
+<text x="645" y="428.88" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="black">F</text>
+<rect x="720.442" y="411.28" width="21.116" height="22" fill="white"/>
+<text x="731" y="428.88" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="black">G</text>
+<rect x="807.058" y="411.28" width="19.884" height="22" fill="white"/>
+<text x="817" y="428.88" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="black">H</text>
+<rect x="897.942" y="411.28" width="10.116" height="22" fill="white"/>
+<text x="903" y="428.88" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="black">I</text>
+<rect x="980.884" y="411.28" width="16.232" height="22" fill="white"/>
+<text x="989" y="428.88" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="black">J</text>
+<rect x="1065.058" y="411.28" width="19.884" height="22" fill="white"/>
+<text x="1075" y="428.88" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="black">K</text>
+<rect x="159.192" y="456.8" width="25.128" height="19" fill="white"/>
+<text x="182.32" y="472" font-family="Helvetica,Arial,sans-serif" font-size="19" font-weight="normal" text-anchor="end" fill="black">12</text>
+<rect x="159.192" y="542.8" width="25.128" height="19" fill="white"/>
+<text x="182.32" y="558" font-family="Helvetica,Arial,sans-serif" font-size="19" font-weight="normal" text-anchor="end" fill="black">11</text>
+<rect x="159.192" y="628.8" width="25.128" height="19" fill="white"/>
+<text x="182.32" y="644" font-family="Helvetica,Arial,sans-serif" font-size="19" font-weight="normal" text-anchor="end" fill="black">10</text>
+<rect x="159.192" y="714.8" width="25.128" height="19" fill="white"/>
+<text x="182.32" y="730" font-family="Helvetica,Arial,sans-serif" font-size="19" font-weight="normal" text-anchor="end" fill="black">09</text>
+<rect x="159.192" y="800.8" width="25.128" height="19" fill="white"/>
+<text x="182.32" y="816" font-family="Helvetica,Arial,sans-serif" font-size="19" font-weight="normal" text-anchor="end" fill="black">08</text>
+<rect x="159.192" y="886.8" width="25.128" height="19" fill="white"/>
+<text x="182.32" y="902" font-family="Helvetica,Arial,sans-serif" font-size="19" font-weight="normal" text-anchor="end" fill="black">07</text>
+<rect x="159.192" y="972.8" width="25.128" height="19" fill="white"/>
+<text x="182.32" y="988" font-family="Helvetica,Arial,sans-serif" font-size="19" font-weight="normal" text-anchor="end" fill="black">06</text>
+<rect x="159.192" y="1058.8" width="25.128" height="19" fill="white"/>
+<text x="182.32" y="1074" font-family="Helvetica,Arial,sans-serif" font-size="19" font-weight="normal" text-anchor="end" fill="black">05</text>
+<rect x="159.192" y="1144.8" width="25.128" height="19" fill="white"/>
+<text x="182.32" y="1160" font-family="Helvetica,Arial,sans-serif" font-size="19" font-weight="normal" text-anchor="end" fill="black">04</text>
+<rect x="159.192" y="1230.8" width="25.128" height="19" fill="white"/>
+<text x="182.32" y="1246" font-family="Helvetica,Arial,sans-serif" font-size="19" font-weight="normal" text-anchor="end" fill="black">03</text>
+<rect x="503.64" y="627.8" width="14.564" height="19" fill="white"/>
+<text x="505.64" y="643" font-family="Helvetica,Arial,sans-serif" font-size="19" font-weight="normal" text-anchor="start" fill="black">1</text>
+<rect x="503.64" y="713.8" width="14.564" height="19" fill="white"/>
+<text x="505.64" y="729" font-family="Helvetica,Arial,sans-serif" font-size="19" font-weight="normal" text-anchor="start" fill="black">2</text>
+<rect x="503.64" y="799.8" width="14.564" height="19" fill="white"/>
+<text x="505.64" y="815" font-family="Helvetica,Arial,sans-serif" font-size="19" font-weight="normal" text-anchor="start" fill="black">3</text>
+<rect x="503.64" y="885.8" width="14.564" height="19" fill="white"/>
+<text x="505.64" y="901" font-family="Helvetica,Arial,sans-serif" font-size="19" font-weight="normal" text-anchor="start" fill="black">4</text>
+<rect x="503.64" y="971.8" width="14.564" height="19" fill="white"/>
+<text x="505.64" y="987" font-family="Helvetica,Arial,sans-serif" font-size="19" font-weight="normal" text-anchor="start" fill="black">5</text>
+<rect x="503.64" y="1057.8" width="14.564" height="19" fill="white"/>
+<text x="505.64" y="1073" font-family="Helvetica,Arial,sans-serif" font-size="19" font-weight="normal" text-anchor="start" fill="black">6</text>
+<rect x="503.64" y="1143.8" width="14.564" height="19" fill="white"/>
+<text x="505.64" y="1159" font-family="Helvetica,Arial,sans-serif" font-size="19" font-weight="normal" text-anchor="start" fill="black">7</text>
+<rect x="685.796" y="1143.8" width="14.564" height="19" fill="white"/>
+<text x="698.36" y="1159" font-family="Helvetica,Arial,sans-serif" font-size="19" font-weight="normal" text-anchor="end" fill="black">8</text>
+<rect x="685.796" y="1057.8" width="14.564" height="19" fill="white"/>
+<text x="698.36" y="1073" font-family="Helvetica,Arial,sans-serif" font-size="19" font-weight="normal" text-anchor="end" fill="black">9</text>
+<rect x="675.232" y="971.8" width="25.128" height="19" fill="white"/>
+<text x="698.36" y="987" font-family="Helvetica,Arial,sans-serif" font-size="19" font-weight="normal" text-anchor="end" fill="black">10</text>
+<rect x="675.232" y="885.8" width="25.128" height="19" fill="white"/>
+<text x="698.36" y="901" font-family="Helvetica,Arial,sans-serif" font-size="19" font-weight="normal" text-anchor="end" fill="black">11</text>
+<rect x="675.232" y="799.8" width="25.128" height="19" fill="white"/>
+<text x="698.36" y="815" font-family="Helvetica,Arial,sans-serif" font-size="19" font-weight="normal" text-anchor="end" fill="black">12</text>
+<rect x="675.232" y="713.8" width="25.128" height="19" fill="white"/>
+<text x="698.36" y="729" font-family="Helvetica,Arial,sans-serif" font-size="19" font-weight="normal" text-anchor="end" fill="black">13</text>
+<rect x="675.232" y="627.8" width="25.128" height="19" fill="white"/>
+<text x="698.36" y="643" font-family="Helvetica,Arial,sans-serif" font-size="19" font-weight="normal" text-anchor="end" fill="black">14</text>
+<rect x="557.221" y="851.6" width="89.558" height="22" fill="white"/>
+<text x="602.0" y="869.2" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="black">74AHCT</text>
+<rect x="572.515" y="889.5" width="58.970000000000006" height="23" fill="white"/>
+<text x="602.0" y="907.9" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="bold" text-anchor="middle" fill="black">125N</text>
+<rect x="247.4" y="646.8" width="37.36" height="20" fill="white"/>
+<text x="249.4" y="662.8" font-family="Helvetica,Arial,sans-serif" font-size="20" font-weight="bold" text-anchor="start" fill="black">330</text>
+<rect x="247.4" y="678.5" width="39.01" height="18" fill="white"/>
+<text x="249.4" y="692.9" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="normal" text-anchor="start" fill="black">ohm</text>
+<rect x="543.3" y="505.0" width="117.4" height="20" fill="white"/>
+<text x="602.0" y="521" font-family="Helvetica,Arial,sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="black">104 / 100 nF</text>
+<rect x="213" y="304.4" width="480.512" height="32" fill="white"/>
+<text x="215" y="330" font-family="Helvetica,Arial,sans-serif" font-size="32" font-weight="bold" text-anchor="start" fill="black">SAME HOLES YOU SOLDERED</text>
+<rect x="213" y="338.8" width="480.20799999999997" height="24" fill="white"/>
+<text x="215" y="358" font-family="Helvetica,Arial,sans-serif" font-size="24" font-weight="normal" text-anchor="start" fill="black">Crop of the 4 x 6 cm board: A-K, rows 03-12.</text>
+<rect x="213" y="369.8" width="518.896" height="24" fill="white"/>
+<text x="215" y="389" font-family="Helvetica,Arial,sans-serif" font-size="24" font-weight="normal" text-anchor="start" fill="black">Each hole is isolated until you deliberately join it.</text>
+<rect x="88" y="259.6" width="119.02300000000001" height="23" fill="white"/>
+<text x="90" y="278" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="normal" text-anchor="start" fill="black">Pixel 0 DIN</text>
+<rect x="88" y="689.6" width="78.12899999999999" height="23" fill="white"/>
+<text x="90" y="708" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="normal" text-anchor="start" fill="black">KB MO</text>
+<rect x="88" y="1169.6" width="58.970000000000006" height="23" fill="white"/>
+<text x="90" y="1188" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="normal" text-anchor="start" fill="black">KB G</text>
+<rect x="428" y="1379.6" width="206.032" height="23" fill="white"/>
+<text x="430" y="1398" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="normal" text-anchor="start" fill="black">Knob button ground</text>
+<rect x="98" y="1334.6" width="140.735" height="23" fill="white"/>
+<text x="100" y="1353" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="normal" text-anchor="start" fill="black">All pixel GND</text>
+<rect x="1198" y="289.6" width="142.046" height="23" fill="white"/>
+<text x="1200" y="308" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="normal" text-anchor="start" fill="black">KB RAW / 5V</text>
+<rect x="1198" y="529.6" width="117.758" height="23" fill="white"/>
+<text x="1200" y="548" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="normal" text-anchor="start" fill="black">All pixel 5V</text>
+<rect x="188" y="1458.8" width="724.12" height="24" fill="white"/>
+<text x="190" y="1478" font-family="Helvetica,Arial,sans-serif" font-size="24" font-weight="bold" text-anchor="start" fill="black">NOTCH points toward the column letters / higher row numbers.</text>
+<rect x="188" y="1496.6" width="771.027" height="23" fill="white"/>
+<text x="190" y="1515" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="normal" text-anchor="start" fill="black">Looking underneath mirrors left and right. Locate the holes from above first.</text>
+<rect x="188" y="1551.6" width="808.793" height="23" fill="white"/>
+<text x="190" y="1570" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="normal" text-anchor="start" fill="black">Solid line = insulated wire on top. Short dashed line = bent lead + solder below.</text>
+<rect x="188" y="1588.6" width="643.883" height="23" fill="white"/>
+<text x="190" y="1607" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="normal" text-anchor="start" fill="black">Small X = intentionally unused chip output; leave unconnected.</text>
+<rect x="1428" y="291.4" width="459.136" height="32" fill="white"/>
+<text x="1430" y="317" font-family="Helvetica,Arial,sans-serif" font-size="32" font-weight="bold" text-anchor="start" fill="black">WHAT EACH CHIP LEG DOES</text>
+<rect x="1428" y="337.6" width="641.859" height="23" fill="white"/>
+<text x="1430" y="356" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="normal" text-anchor="start" fill="black">SN74AHCT125N - the small chip translates only the LED data.</text>
+<rect x="1428" y="388.4" width="38.232" height="22" fill="white"/>
+<text x="1430" y="406" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="black">Pin</text>
+<rect x="1538" y="388.4" width="51.67400000000001" height="22" fill="white"/>
+<text x="1540" y="406" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="black">Hole</text>
+<rect x="1688" y="388.4" width="96.88400000000001" height="22" fill="white"/>
+<text x="1690" y="406" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="black">Function</text>
+<rect x="1918" y="388.4" width="118.88400000000001" height="22" fill="white"/>
+<text x="1920" y="406" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="black">Connect to</text>
+<rect x="1428" y="448.4" width="16.232" height="22" fill="white"/>
+<text x="1430" y="466" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="black">1</text>
+<rect x="1538" y="448.4" width="44.348" height="22" fill="white"/>
+<text x="1540" y="466" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="black">D10</text>
+<rect x="1688" y="448.4" width="54.138" height="22" fill="white"/>
+<text x="1690" y="466" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="black">/OE1</text>
+<rect x="1918" y="448.4" width="261.97200000000004" height="22" fill="white"/>
+<text x="1920" y="466" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="black">GND - enables channel 1</text>
+<rect x="1428" y="494.4" width="16.232" height="22" fill="white"/>
+<text x="1430" y="512" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="black">2</text>
+<rect x="1538" y="494.4" width="32.116" height="22" fill="white"/>
+<text x="1540" y="512" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="black">D9</text>
+<rect x="1688" y="494.4" width="92.0" height="22" fill="white"/>
+<text x="1690" y="512" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="black">1A input</text>
+<rect x="1918" y="494.4" width="249.69600000000003" height="22" fill="white"/>
+<text x="1920" y="512" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="black">KB2040 MO through C9</text>
+<rect x="1428" y="540.4" width="16.232" height="22" fill="white"/>
+<text x="1430" y="558" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="black">3</text>
+<rect x="1538" y="540.4" width="32.116" height="22" fill="white"/>
+<text x="1540" y="558" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="black">D8</text>
+<rect x="1688" y="540.4" width="105.442" height="22" fill="white"/>
+<text x="1690" y="558" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="black">1Y output</text>
+<rect x="1918" y="540.4" width="383.06" height="22" fill="white"/>
+<text x="1920" y="558" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="black">330 ohm resistor &gt; A12 &gt; pixel 0 DIN</text>
+<rect x="1428" y="586.4" width="16.232" height="22" fill="white"/>
+<text x="1430" y="604" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">4</text>
+<rect x="1538" y="586.4" width="32.116" height="22" fill="white"/>
+<text x="1540" y="604" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">D7</text>
+<rect x="1688" y="586.4" width="54.138" height="22" fill="white"/>
+<text x="1690" y="604" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">/OE2</text>
+<rect x="1918" y="586.4" width="275.458" height="22" fill="white"/>
+<text x="1920" y="604" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">5V - disables spare channel</text>
+<rect x="1428" y="632.4" width="16.232" height="22" fill="white"/>
+<text x="1430" y="650" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">5</text>
+<rect x="1538" y="632.4" width="32.116" height="22" fill="white"/>
+<text x="1540" y="650" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">D6</text>
+<rect x="1688" y="632.4" width="84.718" height="22" fill="white"/>
+<text x="1690" y="650" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">2A input</text>
+<rect x="1918" y="632.4" width="52.884" height="22" fill="white"/>
+<text x="1920" y="650" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">GND</text>
+<rect x="1428" y="678.4" width="16.232" height="22" fill="white"/>
+<text x="1430" y="696" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">6</text>
+<rect x="1538" y="678.4" width="32.116" height="22" fill="white"/>
+<text x="1540" y="696" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">D5</text>
+<rect x="1688" y="678.4" width="98.18199999999999" height="22" fill="white"/>
+<text x="1690" y="696" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">2Y output</text>
+<rect x="1918" y="678.4" width="118.972" height="22" fill="white"/>
+<text x="1920" y="696" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">Leave open</text>
+<rect x="1428" y="724.4" width="16.232" height="22" fill="white"/>
+<text x="1430" y="742" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="black">7</text>
+<rect x="1538" y="724.4" width="32.116" height="22" fill="white"/>
+<text x="1540" y="742" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="black">D4</text>
+<rect x="1688" y="724.4" width="52.884" height="22" fill="white"/>
+<text x="1690" y="742" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="black">GND</text>
+<rect x="1918" y="724.4" width="181.20999999999998" height="22" fill="white"/>
+<text x="1920" y="742" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="black">Common ground</text>
+<rect x="1428" y="770.4" width="16.232" height="22" fill="white"/>
+<text x="1430" y="788" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">8</text>
+<rect x="1538" y="770.4" width="33.348" height="22" fill="white"/>
+<text x="1540" y="788" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">G4</text>
+<rect x="1688" y="770.4" width="98.18199999999999" height="22" fill="white"/>
+<text x="1690" y="788" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">3Y output</text>
+<rect x="1918" y="770.4" width="118.972" height="22" fill="white"/>
+<text x="1920" y="788" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">Leave open</text>
+<rect x="1428" y="816.4" width="16.232" height="22" fill="white"/>
+<text x="1430" y="834" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">9</text>
+<rect x="1538" y="816.4" width="33.348" height="22" fill="white"/>
+<text x="1540" y="834" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">G5</text>
+<rect x="1688" y="816.4" width="84.718" height="22" fill="white"/>
+<text x="1690" y="834" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">3A input</text>
+<rect x="1918" y="816.4" width="52.884" height="22" fill="white"/>
+<text x="1920" y="834" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">GND</text>
+<rect x="1428" y="862.4" width="28.464000000000002" height="22" fill="white"/>
+<text x="1430" y="880" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">10</text>
+<rect x="1538" y="862.4" width="33.348" height="22" fill="white"/>
+<text x="1540" y="880" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">G6</text>
+<rect x="1688" y="862.4" width="54.138" height="22" fill="white"/>
+<text x="1690" y="880" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">/OE3</text>
+<rect x="1918" y="862.4" width="275.458" height="22" fill="white"/>
+<text x="1920" y="880" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">5V - disables spare channel</text>
+<rect x="1428" y="908.4" width="28.464000000000002" height="22" fill="white"/>
+<text x="1430" y="926" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">11</text>
+<rect x="1538" y="908.4" width="33.348" height="22" fill="white"/>
+<text x="1540" y="926" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">G7</text>
+<rect x="1688" y="908.4" width="98.18199999999999" height="22" fill="white"/>
+<text x="1690" y="926" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">4Y output</text>
+<rect x="1918" y="908.4" width="118.972" height="22" fill="white"/>
+<text x="1920" y="926" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">Leave open</text>
+<rect x="1428" y="954.4" width="28.464000000000002" height="22" fill="white"/>
+<text x="1430" y="972" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">12</text>
+<rect x="1538" y="954.4" width="33.348" height="22" fill="white"/>
+<text x="1540" y="972" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">G8</text>
+<rect x="1688" y="954.4" width="84.718" height="22" fill="white"/>
+<text x="1690" y="972" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">4A input</text>
+<rect x="1918" y="954.4" width="52.884" height="22" fill="white"/>
+<text x="1920" y="972" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">GND</text>
+<rect x="1428" y="1000.4" width="28.464000000000002" height="22" fill="white"/>
+<text x="1430" y="1018" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">13</text>
+<rect x="1538" y="1000.4" width="33.348" height="22" fill="white"/>
+<text x="1540" y="1018" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">G9</text>
+<rect x="1688" y="1000.4" width="54.138" height="22" fill="white"/>
+<text x="1690" y="1018" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">/OE4</text>
+<rect x="1918" y="1000.4" width="275.458" height="22" fill="white"/>
+<text x="1920" y="1018" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="black">5V - disables spare channel</text>
+<rect x="1428" y="1046.4" width="28.464000000000002" height="22" fill="white"/>
+<text x="1430" y="1064" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="black">14</text>
+<rect x="1538" y="1046.4" width="45.580000000000005" height="22" fill="white"/>
+<text x="1540" y="1064" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="black">G10</text>
+<rect x="1688" y="1046.4" width="50.44200000000001" height="22" fill="white"/>
+<text x="1690" y="1064" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="black">VCC</text>
+<rect x="1918" y="1046.4" width="237.464" height="22" fill="white"/>
+<text x="1920" y="1064" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="black">RAW / 5V through H10</text>
+<rect x="1428" y="1138.4" width="683.509" height="27" fill="white"/>
+<text x="1430" y="1160" font-family="Helvetica,Arial,sans-serif" font-size="27" font-weight="bold" text-anchor="start" fill="black">THE TWO COMPONENTS ALREADY ON THE BOARD</text>
+<rect x="1428" y="1182.6" width="672.587" height="23" fill="white"/>
+<text x="1430" y="1201" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="normal" text-anchor="start" fill="black">330 ohm resistor: B8 to B12. B8-C8-D8 and A12-B12 are bridges.</text>
+<rect x="1428" y="1219.6" width="737.769" height="23" fill="white"/>
+<text x="1430" y="1238" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="normal" text-anchor="start" fill="black">104 ceramic capacitor: D11 to G11. D11-D10 and G11-G10 are bridges.</text>
+<rect x="1428" y="1256.6" width="751.8679999999999" height="23" fill="white"/>
+<text x="1430" y="1275" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="normal" text-anchor="start" fill="black">The capacitor crosses power and ground; it does not short them together.</text>
+<rect x="1428" y="1323.4" width="598.027" height="27" fill="white"/>
+<text x="1430" y="1345" font-family="Helvetica,Arial,sans-serif" font-size="27" font-weight="bold" text-anchor="start" fill="black">ADDITIONS FOR THE COMPLETE KEYBOARD</text>
+<rect x="1428" y="1368.6" width="735.906" height="23" fill="white"/>
+<text x="1430" y="1387" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="normal" text-anchor="start" fill="black">100 uF capacitor near the start of the light chain: + to 5V; stripe to GND.</text>
+<rect x="1428" y="1405.6" width="742.231" height="23" fill="white"/>
+<text x="1430" y="1424" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="normal" text-anchor="start" fill="black">More lights: each needs 5V + GND, plus data from the preceding DOUT.</text>
+<rect x="1428" y="1442.6" width="774.8220000000001" height="23" fill="white"/>
+<text x="1430" y="1461" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="normal" text-anchor="start" fill="black">Joystick, touch and indicators share GND. Use a separate soldered junction</text>
+<rect x="1428" y="1479.6" width="802.9739999999999" height="23" fill="white"/>
+<text x="1430" y="1498" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="normal" text-anchor="start" fill="black">from the spare GND hole; the illustration does not assign new perfboard holes.</text>
+<rect x="188" y="1676.8" width="653.3100000000001" height="29" fill="white"/>
+<text x="190" y="1700" font-family="Helvetica,Arial,sans-serif" font-size="29" font-weight="bold" text-anchor="start" fill="black">HOW TO READ THE REST OF THE KEYBOARD</text>
+<rect x="188" y="1730.0" width="63.75" height="25" fill="white"/>
+<text x="190" y="1750" font-family="Helvetica,Arial,sans-serif" font-size="25" font-weight="bold" text-anchor="start" fill="black">Keys</text>
+<rect x="188" y="1771.6" width="361.903" height="23" fill="white"/>
+<text x="190" y="1790" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="normal" text-anchor="start" fill="black">A key closes a column-to-row path.</text>
+<rect x="188" y="1808.6" width="322.297" height="23" fill="white"/>
+<text x="190" y="1827" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="normal" text-anchor="start" fill="black">Diode black band faces its row.</text>
+<rect x="188" y="1845.6" width="336.396" height="23" fill="white"/>
+<text x="190" y="1864" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="normal" text-anchor="start" fill="black">Both Voice switches get a diode.</text>
+<rect x="878" y="1730.0" width="189.47500000000002" height="25" fill="white"/>
+<text x="880" y="1750" font-family="Helvetica,Arial,sans-serif" font-size="25" font-weight="bold" text-anchor="start" fill="black">Knob + joystick</text>
+<rect x="878" y="1771.6" width="356.17600000000004" height="23" fill="white"/>
+<text x="880" y="1790" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="normal" text-anchor="start" fill="black">Knob center of 3 terminals = GND.</text>
+<rect x="878" y="1808.6" width="377.31300000000005" height="23" fill="white"/>
+<text x="880" y="1827" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="normal" text-anchor="start" fill="black">Other side: two pushbutton contacts.</text>
+<rect x="878" y="1845.6" width="475.68399999999997" height="23" fill="white"/>
+<text x="880" y="1864" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="normal" text-anchor="start" fill="black">Joystick pads, from underside: X, 3V, Y, GND.</text>
+<rect x="1698" y="1730.0" width="79.0" height="25" fill="white"/>
+<text x="1700" y="1750" font-family="Helvetica,Arial,sans-serif" font-size="25" font-weight="bold" text-anchor="start" fill="black">Lights</text>
+<rect x="1698" y="1771.6" width="551.124" height="23" fill="white"/>
+<text x="1700" y="1790" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="normal" text-anchor="start" fill="black">All 5V pads share power; all GND pads share ground.</text>
+<rect x="1698" y="1808.6" width="492.98" height="23" fill="white"/>
+<text x="1700" y="1827" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="normal" text-anchor="start" fill="black">Only DATA chains: OUT of one &gt; IN of the next.</text>
+<rect x="1698" y="1845.6" width="530.7" height="23" fill="white"/>
+<text x="1700" y="1864" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="normal" text-anchor="start" fill="black">Pixel pads: underside, arrows left to right, 5V at top.</text>
+<rect x="188" y="1921.6" width="823.26" height="23" fill="white"/>
+<text x="190" y="1940" font-family="Helvetica,Arial,sans-serif" font-size="23" font-weight="bold" text-anchor="start" fill="black">References checked against this project and manufacturer documentation:</text>
+<rect x="188" y="1961.2" width="979.408" height="21" fill="white"/>
+<text x="190" y="1978" font-family="Helvetica,Arial,sans-serif" font-size="21" font-weight="normal" text-anchor="start" fill="black">KB2040: learn.adafruit.com/adafruit-kb2040/pinouts  |  Level shifter: ti.com/lit/ds/symlink/sn74ahct125.pdf</text>
+<rect x="188" y="1998.2" width="1182.037" height="21" fill="white"/>
+<text x="190" y="2015" font-family="Helvetica,Arial,sans-serif" font-size="21" font-weight="normal" text-anchor="start" fill="black">NeoPixels: adafruit.com/product/4776  |  Encoder: adafruit.com/product/377  |  Joystick: sparkfun.com/thumb-slide-joystick.html</text>
+<rect x="188" y="2035.2" width="1066.075" height="21" fill="white"/>
+<text x="190" y="2052" font-family="Helvetica,Arial,sans-serif" font-size="21" font-weight="normal" text-anchor="start" fill="black">Project source: data/wiring.json + wiring-guide/connections.json + downloads/firmware/code.py on codexmicro.diy.</text>
+<rect x="68" y="2135.2" width="747.568" height="21" fill="white"/>
+<text x="70" y="2152" font-family="Helvetica,Arial,sans-serif" font-size="21" font-weight="normal" text-anchor="start" fill="black">A3 / A4 here are PERFBOARD coordinates, not the analog pins on the KB2040.</text>
+<rect x="2511.84" y="2136.0" width="420.15999999999997" height="20" fill="white"/>
+<text x="2930" y="2152" font-family="Helvetica,Arial,sans-serif" font-size="20" font-weight="normal" text-anchor="end" fill="black">Complete intended wiring | 15 Sep 2026 | rev 1</text>
+<rect x="68" y="2169.8" width="1445.435" height="19" fill="white"/>
+<text x="70" y="2185" font-family="Helvetica,Arial,sans-serif" font-size="19" font-weight="normal" text-anchor="start" fill="black">Matches the website firmware and bench perfboard map. Component positions are spread out for clarity; this is not a case-fit drawing or confirmation of your soldered build.</text>
+</svg>
