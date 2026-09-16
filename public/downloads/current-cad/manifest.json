@@ -1,27 +1,35 @@
 [
   {
-    "file": "parts/07_two_layer_top_sample.step",
-    "name": "Print FIRST: two-key upper plate sample",
+    "file": "parts/07_upper_joint_sample_v5.step",
+    "name": "Print FIRST: upper joint sample v5",
     "quantity": 1,
-    "print_note": "Upper sample unchanged from v2: reuse it if printed. White/clear PETG, visible face DOWN, supports OFF. Pair with heat-set lower sample; M3 \u00d7 8 screws and M3 \u00d7 4 inserts.",
-    "source": "/downloads/baffle-tray-v4/files/PRINT_FIRST_two_key_top_sample.step",
-    "sha256": "cc16f0a73e1fc594aa161f06d1cb7c923a2103392311730ca26b892b8e9f9507"
+    "print_note": "Visible face DOWN, bosses UP. PETG, 0.15 mm layers, supports OFF. Install two M3 \u00d7 4 inserts in these upper bosses; use two existing M3 \u00d7 8 screws from underneath.",
+    "source": "/downloads/mounting-v5/files/PRINT_FIRST_upper_joint_sample.step",
+    "sha256": "21376e4719d1f933759c2bc6920d8aa07181086ae8883a7a4057c97fc240c582"
   },
   {
-    "file": "parts/07_heatset_baffle_sample_v4.step",
-    "name": "Print FIRST: lower sample for existing inserts",
+    "file": "parts/07_lower_joint_sample_v5.step",
+    "name": "Print FIRST: lower joint sample v5",
     "quantity": 1,
-    "print_note": "V4: 10 \u00d7 4 mm LED openings. Test a wired LED edge-first with the upper plate off. Black PETG, cups UP, supports OFF. Heat-set two M3 \u00d7 4 inserts into post tops, cool fully, then use two existing M3 \u00d7 8 screws. Test before full print.",
-    "source": "/downloads/baffle-tray-v4/files/PRINT_FIRST_two_key_baffle_sample.step",
-    "sha256": "162d920fb81c2a5e923f243dce9cedb35e986e59f0669db541a78dd61696b937"
+    "print_note": "Black PETG, cups UP, supports OFF. M3 \u00d7 8 screws enter upward through the short mounting shelves. Test the wired LED through the 10 \u00d7 4 mm slots.",
+    "source": "/downloads/mounting-v5/files/PRINT_FIRST_lower_joint_sample.step",
+    "sha256": "3cdcaa421a4d1b4a98590b5363b31003cc04fdddc7c9b4bbfb1b1f3916f2effc"
   },
   {
-    "file": "parts/04_flat_joystick_corner_v3_PRINT_FIRST.step",
-    "name": "Print FIRST: flat joystick corner v3",
+    "file": "parts/04_joystick_corner_v5.step",
+    "name": "Print FIRST: joystick corner v5",
     "quantity": 1,
-    "print_note": "One piece; flat underside down, supports facing UP. PETG, 0.10 mm layers, supports OFF for this corner. Read the v3 guide.",
-    "source": "/downloads/joystick-flat-v3/files/PRINT_FIRST_flat_joystick_corner_v3.step",
-    "sha256": "5379653b871a873f219a01ecfbd6515afaf33e0f161703fc8755c7f979189b60"
+    "print_note": "Flat visible face DOWN; PETG, 0.10 mm layers, supports OFF. Pair with the separate v5 adapter. Uses two M1.6 \u00d7 10 screws and exposed existing M1.6 nuts.",
+    "source": "/downloads/mounting-v5/files/PRINT_FIRST_joystick_corner.step",
+    "sha256": "0631dda3a6d93e6952de8426ddfea03750c54e0d0afe157d79071bdb11a7a320"
+  },
+  {
+    "file": "parts/04_joystick_adapter_v5.step",
+    "name": "Print FIRST / reuse: joystick adapter v5",
+    "quantity": 1,
+    "print_note": "PETG, 0.10 mm layers. Pegs DOWN, ear seats UP. Support UNDER the base between pegs; keep holes and seats clear. Remove supports, check it sits flat. Reuse this tested piece in final keyboard.",
+    "source": "/downloads/mounting-v5/files/PRINT_joystick_adapter.step",
+    "sha256": "2845a6c827432b919d35ca01710c57f59d4c1105141b0d58bdd0fb1c5462368e"
   },
   {
     "file": "parts/01_case.step",
@@ -32,20 +40,20 @@
     "sha256": "bf823457d97c4a411f99512a24816427bfea5f5d9fea7d8555a4701900f02f1b"
   },
   {
-    "file": "parts/02_two_layer_top_plate_WAIT.step",
-    "name": "02 Two-layer upper plate \u2014 WAIT",
+    "file": "parts/02_top_plate_v5_WAIT.step",
+    "name": "02 Upper plate v5 \u2014 WAIT",
     "quantity": 1,
-    "print_note": "Unchanged from baffle-tray-v2; reuse if already printed. Wait for baffle and joystick fit tests. Full plate underside DOWN, joystick seats UP; inspect shallow switch reliefs for local support.",
-    "source": "/downloads/baffle-tray-v4/files/WAIT_full_top_plate.step",
-    "sha256": "e8b52b1ea2aeca2aa0e2b6bdb24bf0a56a81cb03f2389916d881ccaca22f7da0"
+    "print_note": "New v5 plate required. Visible face DOWN, underside bosses UP, supports OFF. Test both mounts first. Four tray inserts are now underneath this plate; joystick supports are on the separate adapter.",
+    "source": "/downloads/mounting-v5/files/WAIT_full_top_plate.step",
+    "sha256": "a29900ed74842dd9bc887bf83d010a59f970ca84bc37dd7206ba8697d2f7f93c"
   },
   {
-    "file": "parts/07_heatset_six_light_tray_v4_WAIT.step",
-    "name": "07 Heat-set lower tray v4 \u2014 WAIT",
+    "file": "parts/07_light_tray_v5_WAIT.step",
+    "name": "07 Lower light tray v5 \u2014 WAIT",
     "quantity": 1,
-    "print_note": "V4: 10 \u00d7 4 mm LED openings. Test a wired LED edge-first with the upper plate off. Uses four existing M3 \u00d7 8 screws and four Adafruit M3 \u00d7 4 inserts. No long bolts or loose nuts. Black PETG, bottom DOWN, cups UP. Heat-set fit test first.",
-    "source": "/downloads/baffle-tray-v4/files/WAIT_six_light_baffle_tray.step",
-    "sha256": "a249973b663c2fb6bca3da639e23f5d6f0077c8ec38483d386bba6ad9e10683c"
+    "print_note": "New matching v5 lower tray. Black PETG, cups UP, supports OFF. Four existing M3 \u00d7 8 screws enter from below into the upper plate. Preserve 10 \u00d7 4 mm LED slots and wire slack. Test samples first.",
+    "source": "/downloads/mounting-v5/files/WAIT_lower_light_tray.step",
+    "sha256": "0785c1a5bd76f62cd825707df8920c74e9752b46e31694cd4e1f4e69ef60974a"
   },
   {
     "file": "parts/03_round_foot.step",
@@ -104,9 +112,9 @@
     "sha256": "27ef547fd4fa67591b36b8cb40cb407c8aa6eef50a14b0155e5c906bed18c628"
   },
   {
-    "file": "reference/tray_v4_assembly_NOT_PRINTABLE.step",
-    "name": "Tray v4 partial reference assembly \u2014 NOT PRINTABLE",
-    "source": "/downloads/baffle-tray-v4/files/reference_assembly_NOT_PRINTABLE.step",
-    "sha256": "0ff69c54c0d95f07d6658a2de0d019d9478268c660ba7e8a1c034cba7c30972c"
+    "file": "reference/mounting_v5_assembly_NOT_PRINTABLE.step",
+    "name": "Mounting v5 partial reference assembly \u2014 NOT PRINTABLE",
+    "source": "/downloads/mounting-v5/files/reference_assembly_NOT_PRINTABLE.step",
+    "sha256": "6ac0406b9572c14a95acc150d316ecb2d48a122dbb716764dc5995e7318b1b90"
   }
 ]

@@ -1,35 +1,46 @@
 [
   {
-    "name": "Print FIRST: two-key upper plate sample",
-    "id": "07_two_layer_top_sample",
+    "name": "Print FIRST: upper joint sample v5",
+    "id": "07_upper_joint_sample_v5",
     "quantity": 1,
-    "note": "Upper sample unchanged from v2: reuse it if printed. White/clear PETG, visible face DOWN, supports OFF. Pair with heat-set lower sample; M3 \u00d7 8 screws and M3 \u00d7 4 inserts.",
+    "note": "Visible face DOWN, bosses UP. PETG, 0.15 mm layers, supports OFF. Install two M3 × 4 inserts in these upper bosses; use two existing M3 × 8 screws from underneath.",
     "size": [
       48.0,
       26.950000762939453,
-      3.0
+      12.0
     ]
   },
   {
-    "name": "Print FIRST: lower sample for existing inserts",
-    "id": "07_heatset_baffle_sample_v4",
+    "name": "Print FIRST: lower joint sample v5",
+    "id": "07_lower_joint_sample_v5",
     "quantity": 1,
-    "note": "V4: 10 \u00d7 4 mm LED openings. Test a wired LED edge-first with the upper plate off. Black PETG, cups UP, supports OFF. Heat-set two M3 \u00d7 4 inserts into post tops, cool fully, then use two existing M3 \u00d7 8 screws. Test before full print.",
+    "note": "Black PETG, cups UP, supports OFF. M3 × 8 screws enter upward through the short mounting shelves. Test the wired LED through the 10 × 4 mm slots.",
     "size": [
-      39.99997329711914,
+      39.99994659423828,
       26.449996948242188,
       12.0
     ]
   },
   {
-    "name": "Print FIRST: flat joystick corner v3",
-    "id": "04_flat_joystick_corner_v3_PRINT_FIRST",
+    "name": "Print FIRST: joystick corner v5",
+    "id": "04_joystick_corner_v5",
     "quantity": 1,
-    "note": "One piece; flat underside down, supports facing UP. PETG, 0.10 mm layers, supports OFF for this corner. Read the v3 guide.",
+    "note": "Flat visible face DOWN; PETG, 0.10 mm layers, supports OFF. Pair with the separate v5 adapter. Uses two M1.6 × 10 screws and exposed existing M1.6 nuts.",
     "size": [
       28.700000762939453,
       28.700000762939453,
-      4.0
+      2.999999999999997
+    ]
+  },
+  {
+    "id": "04_joystick_adapter_v5",
+    "name": "Print FIRST / reuse: joystick adapter v5",
+    "quantity": 1,
+    "note": "PETG, 0.10 mm layers. Pegs DOWN, ear seats UP. Support UNDER the base between pegs; keep holes and seats clear. Remove supports, check it sits flat. Reuse this tested piece in final keyboard.",
+    "size": [
+      21.809999465942383,
+      24.520000457763672,
+      4.599999904632568
     ]
   },
   {
@@ -44,21 +55,21 @@
     ]
   },
   {
-    "name": "02 Two-layer upper plate \u2014 WAIT",
-    "id": "02_two_layer_top_plate_WAIT",
+    "name": "02 Upper plate v5 — WAIT",
+    "id": "02_top_plate_v5_WAIT",
     "quantity": 1,
-    "note": "Unchanged from baffle-tray-v2; reuse if already printed. Wait for baffle and joystick fit tests. Full plate underside DOWN, joystick seats UP; inspect shallow switch reliefs for local support.",
+    "note": "New v5 plate required. Visible face DOWN, underside bosses UP, supports OFF. Test both mounts first. Four tray inserts are now underneath this plate; joystick supports are on the separate adapter.",
     "size": [
       94.0,
       94.0,
-      4.0
+      12.0
     ]
   },
   {
-    "name": "07 Heat-set lower tray v4 \u2014 WAIT",
-    "id": "07_heatset_six_light_tray_v4_WAIT",
+    "name": "07 Lower light tray v5 — WAIT",
+    "id": "07_light_tray_v5_WAIT",
     "quantity": 1,
-    "note": "V4: 10 \u00d7 4 mm LED openings. Test a wired LED edge-first with the upper plate off. Uses four existing M3 \u00d7 8 screws and four Adafruit M3 \u00d7 4 inserts. No long bolts or loose nuts. Black PETG, bottom DOWN, cups UP. Heat-set fit test first.",
+    "note": "New matching v5 lower tray. Black PETG, cups UP, supports OFF. Four existing M3 × 8 screws enter from below into the upper plate. Preserve 10 × 4 mm LED slots and wire slack. Test samples first.",
     "size": [
       91.0,
       45.32499694824219,

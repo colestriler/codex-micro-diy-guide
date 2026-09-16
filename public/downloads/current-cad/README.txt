@@ -1,39 +1,35 @@
 CODEX MICRO — CURRENT STEP FILES
 
-Current revisions: flat joystick mount v3 + heat-set baffle tray v4.
-V4 restores 10 x 4 mm LED access openings in each compartment. Feed a light
-edge-first with the upper plate off, then turn it flat. Test solder/wire
-clearance on the sample first. Only the lower piece needs reprinting.
-The upper plate includes BOTH the flat joystick mount and the four tray holes.
-Its geometry and the upper fit sample are unchanged from baffle-tray-v2;
-their STEP exports are synchronized with the current kit.
+Current candidate: MOUNTING V5. Physical fit testing pending.
+Hidden upward M3 tray screws and separate pegged joystick adapter.
+Both upper and lower plates must be the new matching v5 pair.
+Keep the existing case, electronics and M3 hardware.
 
-START WITH THESE THREE FIT SAMPLES
-07_two_layer_top_sample.step — upper two-key sample; reuse the v2 sample.
-07_heatset_baffle_sample_v4.step — lower sample for M3 x 4 heat-set inserts.
-04_flat_joystick_corner_v3_PRINT_FIRST.step — flat seat + raised joystick tabs.
+PRINT FIRST — FOUR SMALL PIECES
+07_upper_joint_sample_v5: insert bosses belong to the UPPER sample.
+07_lower_joint_sample_v5: M3 x 8 screw heads underneath this lower sample.
+04_joystick_corner_v5: flat plate corner, locating/screw holes and wire slot.
+04_joystick_adapter_v5: separate base, two pegs and raised ear supports.
+The adapter can be reused in the final keyboard. Test inserts stay in sample.
 
-FULL PARTS — WAIT FOR SAMPLE FIT CHECKS
-02_two_layer_top_plate_WAIT.step — upper plate with both revised features.
-07_heatset_six_light_tray_v4_WAIT.step — uses four M3 x 8 screws and M3 x 4 inserts.
-The other current part files are included: case, foot, touch cap, knob,
-flat 1u / wide 2u keycaps, switch-fit coupon and stem-fit coupon.
-The case is the existing revision; no new KB2040 retention feature was added.
+AFTER BOTH FIT TESTS PASS
+02_top_plate_v5_WAIT: new full upper plate, visible face down for printing.
+07_light_tray_v5_WAIT: matching full lower tray, cups up.
+Four M3 x 8 screws + four Adafruit M3 x 4 inserts (4.2 mm OD), reused types.
+Joystick now needs TWO M1.6 x 10 screws; existing M1.6 nuts are reused.
+Prior 8 mm joystick screws are too short for full nut engagement in v5.
+
+The other current parts remain: case, foot, touch cap, knob, flat 1u and
+wide 2u caps, switch-fit and stem-fit coupons. No new KB2040 holder added.
 
 REFERENCE ONLY
-reference/tray_v4_assembly_NOT_PRINTABLE.step shows the current upper plate,
-lower tray, screws, inserts and approximate switch/LED envelopes.
-It is a partial assembly for understanding the tray, not a complete keyboard
-assembly or an additional print. The older full-keyboard assembly is excluded.
+reference/mounting_v5_assembly_NOT_PRINTABLE.step: upper, lower, adapter,
+reference joystick and hardware. Not a complete keyboard or printable part.
 
 UNITS / PRINTING
-All dimensions are millimeters. STEP is for CAD editing and inspection;
-files can retain assembled coordinates. Use the matching print-oriented STL
-from the website and follow each part's print orientation notes.
-Physical fit, heat-set grip and full assembly strength remain unverified.
-Print/check the samples before either WAIT full-size part.
+Millimeters. STEP preserves assembly coordinates; use matching bed-oriented
+STLs and the guide's support notes. Adapter prints pegs down with support
+under the base. No print-fit, structural or physical assembly claim is made.
 
-Guides and matching STLs: https://codexmicro.diy/#files
-Tray: https://codexmicro.diy/downloads/baffle-tray-v4/guide.html
-Joystick: https://codexmicro.diy/downloads/joystick-flat-v3/guide.html
-manifest.json records each source, quantity, print note and SHA-256.
+https://codexmicro.diy/downloads/mounting-v5/guide.html
+manifest.json records source files, quantities, print notes and SHA-256.

@@ -5,7 +5,7 @@
     "category": "Printed",
     "quantity": "1",
     "description": "Holds the electronics and supports the switch plate. Eight thin windows around its perimeter let the LEDs shine through.",
-    "spec": "110 \u00d7 110 \u00d7 25 mm; print open side up. Frosted clear PETG is suitable.",
+    "spec": "110 × 110 × 25 mm; print open side up. Frosted clear PETG is suitable.",
     "links": [
       {
         "label": "Buy clear PETG",
@@ -27,11 +27,11 @@
   },
   {
     "id": "plate",
-    "name": "Switch plate",
+    "name": "Switch plate v5",
     "category": "Printed",
     "quantity": "1",
-    "description": "Upper switch plate with flat joystick v3 mount and four tray holes. Unchanged from the two-layer v2 plate; now secured to heat-set inserts in the lower tray.",
-    "spec": "94 mm square; 3 mm main plate, 1.6 mm switch lands. Four additional 3.4 mm tray screw holes.",
+    "description": "Upper switch plate with four underside bosses for hidden tray screws. The joystick area is flat and accepts a separate keyed adapter; only the four corner case screws remain on the front.",
+    "spec": "94 × 94 mm; 3 mm main plate. Four 8 mm diameter bosses extend 9 mm below it. Two 4 mm joystick locating holes, two 2.4 mm screw holes and an aligned wire slot.",
     "links": [
       {
         "label": "Buy white PETG",
@@ -40,19 +40,19 @@
     ],
     "files": [
       {
-        "label": "Upper STL \u2014 WAIT",
-        "url": "/downloads/stl/02_two_layer_top_plate_WAIT.stl"
+        "label": "Upper STL — WAIT",
+        "url": "/downloads/stl/02_top_plate_v5_WAIT.stl"
       },
       {
-        "label": "STEP",
-        "url": "/downloads/step/02_two_layer_top_plate_WAIT.step"
+        "label": "Upper STEP",
+        "url": "/downloads/step/02_top_plate_v5_WAIT.step"
       },
       {
-        "label": "Two-layer fit guide",
-        "url": "/downloads/baffle-tray-v4/guide.html"
+        "label": "V5 assembly guide",
+        "url": "/downloads/mounting-v5/guide.html"
       }
     ],
-    "note": "Reuse the v2 upper plate if already printed. Full plate underside DOWN; inspect switch reliefs for local support. Uses four spare M3 \u00d7 8 screws with inserts in the new lower tray.",
+    "note": "Both full plates change in v5. Print the four small test pieces first. Upper visible face DOWN, bosses UP. Heat-set inserts go in the underside bosses, not the lower tray.",
     "material": "White PETG"
   },
   {
@@ -61,7 +61,7 @@
     "category": "Printed",
     "quantity": "1",
     "description": "Supports the case on the desk. Its underside has recessed screw seats and its top has pockets for optional steel weights.",
-    "spec": "84 mm diameter \u00d7 5 mm tall. Add adhesive rubber below.",
+    "spec": "84 mm diameter × 5 mm tall. Add adhesive rubber below.",
     "links": [
       {
         "label": "Buy white PETG",
@@ -83,11 +83,11 @@
   },
   {
     "id": "cradle",
-    "name": "Flat joystick test corner v3",
+    "name": "Removable joystick adapter v5",
     "category": "Printed",
-    "quantity": "1 test piece",
-    "description": "A small corner from the candidate full top plate. The flat body seat and two raised tab supports are printed together; two ordinary nuts are exposed underneath.",
-    "spec": "28.7 \u00d7 28.7 mm test; 3 mm base plus 0.5/1.0 mm tab seats. Straight 2.4 mm clearance holes. Same M1.6 \u00d7 8 screws and M1.6 nuts.",
+    "quantity": "1 adapter + 1 corner test",
+    "description": "A separate flat adapter supports the joystick and both mounting tabs. Two solid underside pegs locate it in the top plate; screws clamp through all three layers into exposed nuts.",
+    "spec": "21.81 × 24.52 mm footprint; 1.6 mm base, 0.5/1.0 mm raised ear seats. 3.6 mm pegs in 4 mm holes. M1.6 × 10 screws required.",
     "links": [
       {
         "label": "Buy black PETG",
@@ -96,20 +96,24 @@
     ],
     "files": [
       {
-        "label": "Print-first v3 STL",
-        "url": "/downloads/stl/04_flat_joystick_corner_v3_PRINT_FIRST.stl"
+        "label": "Adapter STL",
+        "url": "/downloads/stl/04_joystick_adapter_v5.stl"
       },
       {
-        "label": "Test corner STEP \u2014 v3",
-        "url": "/downloads/step/04_flat_joystick_corner_v3_PRINT_FIRST.step"
+        "label": "Adapter STEP",
+        "url": "/downloads/step/04_joystick_adapter_v5.step"
       },
       {
-        "label": "V3 flat-mount guide",
-        "url": "/downloads/joystick-flat-v3/guide.html"
+        "label": "Corner test STL",
+        "url": "/downloads/stl/04_joystick_corner_v5.stl"
+      },
+      {
+        "label": "V5 fit guide",
+        "url": "/downloads/mounting-v5/guide.html"
       }
     ],
-    "note": "One piece. Flat side down, supports up. Supports OFF for this corner. Physical fit pending.",
-    "material": "Clear PETG"
+    "note": "Print adapter pegs DOWN with support under its base. Test with the corner sample before printing the full plate. Reuse the tested adapter. No nut boxes or loose shims; physical fit pending.",
+    "material": "Black PETG"
   },
   {
     "id": "touch-cap",
@@ -142,7 +146,7 @@
     "name": "Dial knob",
     "category": "Printed",
     "quantity": "1",
-    "description": "Fits over the rotary encoder\u2019s D-shaped shaft, making it easy to turn and press.",
+    "description": "Fits over the rotary encoder’s D-shaped shaft, making it easy to turn and press.",
     "spec": "6.2 mm nominal D socket. Test fit and allow clearance for the encoder click.",
     "links": [
       {
@@ -165,11 +169,11 @@
   },
   {
     "id": "baffle",
-    "name": "Heat-set six-light tray v4 (test sample first)",
+    "name": "Lower light tray v5 (test samples first)",
     "category": "Printed",
     "quantity": "1 tray",
-    "description": "V4: each light compartment has a 10 \u00d7 4 mm bottom opening for edge-first LED access. One lower tray holds six light compartments. Existing M3 \u00d7 8 screws thread into M3 \u00d7 4 heat-set inserts in its four rigid posts. No loose nuts or flexible clips.",
-    "spec": "91 \u00d7 45.325 \u00d7 12 mm; black PETG. 3.9 mm starting pilots for Adafruit 4255 inserts; heat-set fit must be tested.",
+    "description": "Six light compartments with 10 × 4 mm access openings. Four short mounting shelves receive screws from below; the heat-set inserts now live in the upper plate.",
+    "spec": "91 × 45.325 × 12 mm; black PETG. M3 × 8 screws point upward through 3.4 mm clearance holes.",
     "links": [
       {
         "label": "Buy black PETG",
@@ -178,35 +182,27 @@
     ],
     "files": [
       {
-        "label": "Lower sample STL \u2014 print first",
-        "url": "/downloads/stl/07_heatset_baffle_sample_v4.stl"
+        "label": "Upper joint sample STL",
+        "url": "/downloads/stl/07_upper_joint_sample_v5.stl"
       },
       {
-        "label": "Lower sample STEP \u2014 print first",
-        "url": "/downloads/step/07_heatset_baffle_sample_v4.step"
+        "label": "Lower joint sample STL",
+        "url": "/downloads/stl/07_lower_joint_sample_v5.stl"
       },
       {
-        "label": "Upper sample STL \u2014 print first",
-        "url": "/downloads/stl/07_two_layer_top_sample.stl"
+        "label": "Full lower STL — WAIT",
+        "url": "/downloads/stl/07_light_tray_v5_WAIT.stl"
       },
       {
-        "label": "Upper sample STEP \u2014 print first",
-        "url": "/downloads/step/07_two_layer_top_sample.step"
+        "label": "Full lower STEP",
+        "url": "/downloads/step/07_light_tray_v5_WAIT.step"
       },
       {
-        "label": "Full tray STL \u2014 WAIT",
-        "url": "/downloads/stl/07_heatset_six_light_tray_v4_WAIT.stl"
-      },
-      {
-        "label": "Full tray STEP \u2014 WAIT",
-        "url": "/downloads/step/07_heatset_six_light_tray_v4_WAIT.step"
-      },
-      {
-        "label": "Assembly / print guide",
-        "url": "/downloads/baffle-tray-v4/guide.html"
+        "label": "V5 assembly guide",
+        "url": "/downloads/mounting-v5/guide.html"
       }
     ],
-    "note": "Test the actual soldered LED through the lower sample before installing inserts. Upper plate unchanged. Four spare screws and four inserts for final tray; two additional inserts consumed by sample. Upper plate unchanged from v2. LED pockets still need thin insulating adhesive and wiring slack.",
+    "note": "Use only with the matching v5 upper plate. New upper and lower samples required. Four tray inserts install in the upper plate; two extra inserts stay in the sample. LEDs need thin insulating tape and wiring slack.",
     "material": "Black PETG"
   },
   {
@@ -214,7 +210,7 @@
     "name": "Translucent agent keycap",
     "category": "Printed",
     "quantity": "6",
-    "description": "Lets each agent\u2019s status light show through while providing a normal mechanical key surface.",
+    "description": "Lets each agent’s status light show through while providing a normal mechanical key surface.",
     "spec": "Flat finger surface, rounded corners and 0.5 mm beveled rim. Standard MX cross socket. Print a stem-fit coupon first; purchased caps are an option.",
     "links": [
       {
@@ -236,7 +232,7 @@
         "url": "/downloads/step/08_keycap_1u.step"
       }
     ],
-    "note": "Print this part in clear PETG. Top UP; start with 0.10\u20130.12 mm layers on a 0.4 mm nozzle. Support the underside as needed and keep the sockets clear. Print a stem-fit coupon and one cap first.",
+    "note": "Print this part in clear PETG. Top UP; start with 0.10–0.12 mm layers on a 0.4 mm nozzle. Support the underside as needed and keep the sockets clear. Print a stem-fit coupon and one cap first.",
     "material": "Clear PETG"
   },
   {
@@ -266,7 +262,7 @@
         "url": "/downloads/step/08_keycap_1u.step"
       }
     ],
-    "note": "Print this part in white PETG. Top UP; start with 0.10\u20130.12 mm layers on a 0.4 mm nozzle. Support the underside as needed and keep the sockets clear. Print a stem-fit coupon and one cap first.",
+    "note": "Print this part in white PETG. Top UP; start with 0.10–0.12 mm layers on a 0.4 mm nozzle. Support the underside as needed and keep the sockets clear. Print a stem-fit coupon and one cap first.",
     "material": "White PETG"
   },
   {
@@ -292,7 +288,7 @@
         "url": "/downloads/step/09_keycap_2u_dual_stem.step"
       }
     ],
-    "note": "Print this part in white PETG. Top UP; start with 0.10\u20130.12 mm layers on a 0.4 mm nozzle. Support the underside as needed and keep the sockets clear. Print a stem-fit coupon and one cap first.",
+    "note": "Print this part in white PETG. Top UP; start with 0.10–0.12 mm layers on a 0.4 mm nozzle. Support the underside as needed and keep the sockets clear. Print a stem-fit coupon and one cap first.",
     "material": "White PETG"
   },
   {
@@ -353,10 +349,10 @@
     "category": "Electronics",
     "quantity": "1",
     "description": "The USB-C microcontroller reads every control and drives the LEDs. It runs the supplied CircuitPython prototype firmware.",
-    "spec": "35 \u00d7 17.8 \u00d7 4.9 mm envelope. USB only; no Bluetooth.",
+    "spec": "35 × 17.8 × 4.9 mm envelope. USB only; no Bluetooth.",
     "links": [
       {
-        "label": "Buy KB2040 \u00b7 Adafruit",
+        "label": "Buy KB2040 · Adafruit",
         "url": "https://www.adafruit.com/product/5302"
       }
     ],
@@ -372,7 +368,7 @@
     "spec": "Normal MX, 5-pin type; not Choc or Hall-effect. Seller pack: 35.",
     "links": [
       {
-        "label": "Buy switches \u00b7 Gateron",
+        "label": "Buy switches · Gateron",
         "url": "https://www.gateron.com/products/gateron-new-north-pole-yellow-20-switch-set"
       }
     ],
@@ -388,12 +384,12 @@
     "spec": "SparkFun COM-09426 / PSP1000 style. Power from 3.3 V; check pad orientation.",
     "links": [
       {
-        "label": "Buy joystick \u00b7 SparkFun",
+        "label": "Buy joystick · SparkFun",
         "url": "https://www.sparkfun.com/thumb-slide-joystick.html"
       }
     ],
     "files": [],
-    "note": "Supplier geometry is not fully dimensioned. Test the printed cradle against the actual part."
+    "note": "Test the actual joystick on the v5 removable adapter and corner sample. Confirm both tabs rest on their supports without bending and full travel is free."
   },
   {
     "id": "encoder",
@@ -404,7 +400,7 @@
     "spec": "Adafruit 377; 6 mm D shaft, M7 panel bushing. Nut and washer included.",
     "links": [
       {
-        "label": "Buy encoder \u00b7 Adafruit",
+        "label": "Buy encoder · Adafruit",
         "url": "https://www.adafruit.com/product/377"
       }
     ],
@@ -433,10 +429,10 @@
     "category": "Electronics",
     "quantity": "14",
     "description": "Individually addressable light boards: six illuminate agent keys and eight face outward through the case.",
-    "spec": "Adafruit 4776; 9.1 \u00d7 9.1 \u00d7 3.1 mm. Buy two packs of ten. GRBW firmware order.",
+    "spec": "Adafruit 4776; 9.1 × 9.1 × 3.1 mm. Buy two packs of ten. GRBW firmware order.",
     "links": [
       {
-        "label": "Buy RGBW boards \u00b7 Adafruit",
+        "label": "Buy RGBW boards · Adafruit",
         "url": "https://www.adafruit.com/product/4776"
       }
     ],
@@ -448,11 +444,11 @@
     "name": "74AHCT125 level shifter",
     "category": "Electronics",
     "quantity": "1",
-    "description": "Converts the controller\u2019s 3.3 V LED data signal into a reliable 5 V signal for the pixel chain.",
+    "description": "Converts the controller’s 3.3 V LED data signal into a reliable 5 V signal for the pixel chain.",
     "spec": "DIP package, 5 V supply. Follow the wiring diagram for unused gates and enable pins.",
     "links": [
       {
-        "label": "Buy level shifter \u00b7 Adafruit",
+        "label": "Buy level shifter · Adafruit",
         "url": "https://www.adafruit.com/product/1787"
       }
     ],
@@ -468,7 +464,7 @@
     "spec": "Band faces the matrix row. Buy two packs of ten.",
     "links": [
       {
-        "label": "Buy diodes \u00b7 Adafruit",
+        "label": "Buy diodes · Adafruit",
         "url": "https://www.adafruit.com/product/1641"
       }
     ],
@@ -481,10 +477,10 @@
     "category": "Electronics",
     "quantity": "As needed",
     "description": "Connects the switch matrix, controls, controller and light chain. Leave enough slack to lift the plate for service.",
-    "spec": "28 AWG for signals; use 24\u201326 AWG for the power trunk. Insulate crossings.",
+    "spec": "28 AWG for signals; use 24–26 AWG for the power trunk. Insulate crossings.",
     "links": [
       {
-        "label": "Buy 28 AWG ribbon \u00b7 Adafruit",
+        "label": "Buy 28 AWG ribbon · Adafruit",
         "url": "https://www.adafruit.com/product/3890"
       },
       {
@@ -501,7 +497,7 @@
     "category": "Electronics",
     "quantity": "1 disk",
     "description": "Senses a finger through the thin plastic touch cap. Solder its lead before attaching it beneath the cap.",
-    "spec": "13 mm copper disk; D10 with a 1 M\u03a9 resistor to ground.",
+    "spec": "13 mm copper disk; D10 with a 1 MΩ resistor to ground.",
     "links": [
       {
         "label": "Buy copper foil",
@@ -517,7 +513,7 @@
     "category": "Electronics",
     "quantity": "3",
     "description": "Shows which of the three prototype macro banks is selected. Each needs its own series resistor.",
-    "spec": "3 mm LED; 1 k\u03a9 resistor per LED.",
+    "spec": "3 mm LED; 1 kΩ resistor per LED.",
     "links": [
       {
         "label": "Find 3 mm LEDs",
@@ -533,7 +529,7 @@
     "category": "Electronics",
     "quantity": "1 small set",
     "description": "Limit current, stabilize the LED supply, and make the touch and data connections work correctly.",
-    "spec": "330 \u03a9 \u00d71; 1 M\u03a9 \u00d71; 1 k\u03a9 \u00d73; 100 nF \u00d71; 100 \u00b5F \u226510 V \u00d71.",
+    "spec": "330 Ω ×1; 1 MΩ ×1; 1 kΩ ×3; 100 nF ×1; 100 µF ≥10 V ×1.",
     "links": [
       {
         "label": "Shop component catalog",
@@ -549,7 +545,7 @@
     "category": "Electronics",
     "quantity": "1",
     "description": "Supports the level shifter and small passive components in the front bay of the case.",
-    "spec": "Trim to at most 25 \u00d7 20 mm. Insulate the underside.",
+    "spec": "Trim to at most 25 × 20 mm. Insulate the underside.",
     "links": [
       {
         "label": "Find perfboard",
@@ -564,11 +560,11 @@
     "name": "M3 heat-set insert",
     "category": "Hardware",
     "quantity": "10 installed (+2 for tray sample)",
-    "description": "Metal threads in printed plastic: four for the case, two for the foot and four for the new lower baffle tray. Two additional inserts stay in the test sample.",
-    "spec": "4.2 mm outside diameter \u00d7 4 mm long. Starting pilot: 3.9 mm. Test coupon first.",
+    "description": "Metal threads in printed plastic: four for the case, two for the foot and four underneath the v5 UPPER plate for the lower light tray. Two additional inserts stay in the upper test sample.",
+    "spec": "4.2 mm outside diameter × 4 mm long. Starting pilot: 3.9 mm. Test coupon first.",
     "links": [
       {
-        "label": "Buy inserts \u00b7 Adafruit",
+        "label": "Buy inserts · Adafruit",
         "url": "https://www.adafruit.com/product/4255"
       }
     ],
@@ -577,14 +573,14 @@
   },
   {
     "id": "screw",
-    "name": "M3 \u00d7 8 mm plate screw",
+    "name": "M3 × 8 mm plate screw",
     "category": "Hardware",
     "quantity": "4",
     "description": "Fastens the switch plate to the four corner inserts in the case.",
-    "spec": "M3 \u00d7 8 mm socket-head screw. Do not overtighten.",
+    "spec": "M3 × 8 mm socket-head screw. Do not overtighten.",
     "links": [
       {
-        "label": "Find M3 \u00d7 8 screws",
+        "label": "Find M3 × 8 screws",
         "url": "https://www.mcmaster.com/products/screws/thread-size~m3/length~8-mm/"
       }
     ],
@@ -593,7 +589,7 @@
   },
   {
     "id": "foot-screw",
-    "name": "Low-profile M3 \u00d7 8 mm screw",
+    "name": "Low-profile M3 × 8 mm screw",
     "category": "Hardware",
     "quantity": "2",
     "description": "Attaches the foot from underneath while keeping the head recessed.",
@@ -612,7 +608,7 @@
     "name": "Steel weight washer",
     "category": "Hardware",
     "quantity": "4 optional",
-    "description": "Adds a little weight so the keypad feels steadier on the desk. Tape the washers into the round foot\u2019s top pockets.",
+    "description": "Adds a little weight so the keypad feels steadier on the desk. Tape the washers into the round foot’s top pockets.",
     "spec": "M8 oversized washer, 316 stainless steel, 8.4 mm inside diameter, 24 mm outside diameter, nominal 2 mm thick.",
     "links": [
       {
@@ -625,7 +621,7 @@
       }
     ],
     "files": [],
-    "note": "One pack covers the four optional weights. McMaster specifies 1.8\u20132.2 mm thickness; check your printed pockets and allow room for the retaining tape before assembly."
+    "note": "One pack covers the four optional weights. McMaster specifies 1.8–2.2 mm thickness; check your printed pockets and allow room for the retaining tape before assembly."
   },
   {
     "id": "rubber",
@@ -633,7 +629,7 @@
     "category": "Hardware",
     "quantity": "4 pads or a strip",
     "description": "Keeps the keypad from sliding and protects the desk. Attach beneath the printed foot.",
-    "spec": "1\u20132 mm thick adhesive rubber. No TPU printing is required.",
+    "spec": "1–2 mm thick adhesive rubber. No TPU printing is required.",
     "links": [
       {
         "label": "Shop rubber foot material",
@@ -649,7 +645,7 @@
     "category": "Hardware",
     "quantity": "1",
     "description": "Powers the controller and LEDs and carries keyboard, mouse and serial data to the computer.",
-    "spec": "Must support data. Connector overmold must fit the 15 \u00d7 8 mm case tunnel.",
+    "spec": "Must support data. Connector overmold must fit the 15 × 8 mm case tunnel.",
     "links": [
       {
         "label": "Find a USB-C data cable",
@@ -677,11 +673,11 @@
   },
   {
     "id": "led-mounting-tape",
-    "name": "LED mounting tape \u2014 3M 9474LE",
+    "name": "LED mounting tape — 3M 9474LE",
     "category": "Hardware",
     "quantity": "1 pack of 5 sheets",
     "description": "Holds the mini LED boards in the printed tray pockets. Cut small pieces from a sheet; one pack is more than enough for this keyboard.",
-    "spec": "3M 9474LE with 300LSE adhesive and a polyester film carrier. 0.17 mm thick excluding the peel-off liners; sheets are 12 \u00d7 9.5 inches.",
+    "spec": "3M 9474LE with 300LSE adhesive and a polyester film carrier. 0.17 mm thick excluding the peel-off liners; sheets are 12 × 9.5 inches.",
     "links": [
       {
         "label": "Buy 3M 9474LE sheets on Amazon",
@@ -689,7 +685,7 @@
       }
     ],
     "files": [],
-    "note": "Use one layer within the tray\u2019s 0.2 mm adhesive allowance. Keep LED faces and wire openings clear. Strong permanent adhesive: dry-fit and test the light before sticking it down."
+    "note": "Use one layer within the tray’s 0.2 mm adhesive allowance. Keep LED faces and wire openings clear. Strong permanent adhesive: dry-fit and test the light before sticking it down."
   },
   {
     "id": "decals",
@@ -718,10 +714,10 @@
     "category": "Materials",
     "quantity": "About 150 g",
     "description": "Filament for the case and six agent keycaps. These are material allowances, not slicer estimates.",
-    "spec": "0.4 mm nozzle starting point; 0.20 mm layers, finer for caps. Verify your printer\u2019s filament diameter.",
+    "spec": "0.4 mm nozzle starting point; 0.20 mm layers, finer for caps. Verify your printer’s filament diameter.",
     "links": [
       {
-        "label": "Buy PETG \u00b7 choose Clear",
+        "label": "Buy PETG · choose Clear",
         "url": "https://shop.polymaker.com/products/petg"
       }
     ],
@@ -734,10 +730,10 @@
     "category": "Materials",
     "quantity": "About 100 g",
     "description": "Filament for the plate, command caps, knob and foot. These are material allowances, not slicer estimates.",
-    "spec": "0.4 mm nozzle starting point; 0.20 mm layers, finer for caps. Verify your printer\u2019s filament diameter.",
+    "spec": "0.4 mm nozzle starting point; 0.20 mm layers, finer for caps. Verify your printer’s filament diameter.",
     "links": [
       {
-        "label": "Buy PETG \u00b7 choose White",
+        "label": "Buy PETG · choose White",
         "url": "https://shop.polymaker.com/products/petg"
       }
     ],
@@ -750,10 +746,10 @@
     "category": "Materials",
     "quantity": "About 50 g",
     "description": "Filament for the light baffles, touch cap and joystick cradle. These are material allowances, not slicer estimates.",
-    "spec": "0.4 mm nozzle starting point; 0.20 mm layers, finer for caps. Verify your printer\u2019s filament diameter.",
+    "spec": "0.4 mm nozzle starting point; 0.20 mm layers, finer for caps. Verify your printer’s filament diameter.",
     "links": [
       {
-        "label": "Buy PETG \u00b7 choose Black",
+        "label": "Buy PETG · choose Black",
         "url": "https://shop.polymaker.com/products/petg"
       }
     ],
@@ -769,7 +765,7 @@
     "spec": "The supplied custom case is not a verified donor fit. Measure the board and revise mounts before printing.",
     "links": [
       {
-        "label": "View Creator Micro 2 \u00b7 Work Louder",
+        "label": "View Creator Micro 2 · Work Louder",
         "url": "https://worklouder.cc/creator-micro-2"
       },
       {
@@ -785,11 +781,11 @@
     "name": "Genuine Codex Micro",
     "category": "Native",
     "quantity": "1 alternative",
-    "description": "The original OpenAI \u00d7 Work Louder device. It has the native integration, factory light diffuser, battery and mechanical assembly.",
+    "description": "The original OpenAI × Work Louder device. It has the native integration, factory light diffuser, battery and mechanical assembly.",
     "spec": "Alternative to Creator Micro 2 Pro. It was listed out of stock during the original research.",
     "links": [
       {
-        "label": "View Codex Micro \u00b7 OpenAI",
+        "label": "View Codex Micro · OpenAI",
         "url": "https://openai.com/supply/co-lab/work-louder/"
       }
     ],
@@ -800,12 +796,12 @@
     "id": "pure-caps",
     "name": "Frosted MX Pure caps",
     "category": "Native",
-    "quantity": "6 \u00d7 1U",
+    "quantity": "6 × 1U",
     "description": "Optional frosted caps for a genuine Creator Micro 2 so the six agent lights remain visible.",
-    "spec": "Keep genuine electronics and diffuser. Check the seller\u2019s compatibility and shipping status.",
+    "spec": "Keep genuine electronics and diffuser. Check the seller’s compatibility and shipping status.",
     "links": [
       {
-        "label": "View MX Pure \u00b7 Work Louder",
+        "label": "View MX Pure · Work Louder",
         "url": "https://worklouder.cc/wrk-mx-pure"
       }
     ],
@@ -813,27 +809,27 @@
     "note": null
   },
   {
-    "id": "joystick-m16-screws",
-    "name": "Joystick M1.6 \u00d7 8 mm screws",
+    "id": "joystick-m16x10-screws-v5",
+    "name": "Joystick M1.6 × 10 mm screws — v5",
     "category": "Hardware",
     "quantity": "2",
-    "description": "New hardware for the fit-test holder: clamps the two mounting ears onto their supporting shims. Existing M3 case screws are too large.",
+    "description": "Two longer screws pass downward through the joystick tabs, separate adapter and top plate. The previous 8 mm screws are too short for full nut engagement in this stack.",
     "spec": "DIN 912; 0.35 mm pitch; 3 mm head diameter; 1.5 mm hex drive.",
     "links": [
       {
-        "label": "Buy Joystick M1.6 \u00d7 8 mm screws",
-        "url": "https://www.accu.co.uk/metric-cap-head-screws/3784-SSCF-M1-6-8-A2"
+        "label": "Buy M1.6 × 10 mm screws",
+        "url": "https://www.accu.co.uk/metric-cap-head-screws/3785-SSCF-M1-6-10-A2"
       }
     ],
     "files": [],
-    "note": "Check supplier availability and pack quantity before ordering. No new electronics required."
+    "note": "New length for v5; reuse the existing M1.6 nuts. Check seller availability and pack quantity. 1.5 mm hex key."
   },
   {
     "id": "joystick-m16-nuts",
     "name": "Joystick M1.6 hex nuts",
     "category": "Hardware",
     "quantity": "2",
-    "description": "Tightens against the flat underside of the v3 plate. Hold this exposed nut with small pliers while turning the screw from above.",
+    "description": "Tighten against the flat underside of the v5 upper plate. Hold these exposed nuts with small pliers while gently turning the M1.6 × 10 screws from above.",
     "spec": "DIN 934; 3.2 mm across flats; 1.3 mm thick.",
     "links": [
       {
@@ -846,11 +842,11 @@
   },
   {
     "id": "tray-screws",
-    "name": "Baffle tray screws \u2014 reuse M3 \u00d7 8 mm",
+    "name": "Baffle tray screws — reuse M3 × 8 mm",
     "category": "Hardware",
     "quantity": "4 spare (2 reused from sample)",
-    "description": "Four spare screws of the same type already bought for the case. Thread into heat-set inserts in the lower tray from above.",
-    "spec": "M3 \u00d7 8 mm under-head length; McMaster 91290A113 socket head. 2.5 mm hex key.",
+    "description": "Four spare case-type screws enter upward from underneath the lower tray and thread into inserts in the upper plate. No tray screw heads on the front.",
+    "spec": "M3 × 8 mm under-head length; McMaster 91290A113 socket head. 2.5 mm hex key.",
     "links": [
       {
         "label": "Existing screw: McMaster 91290A113",
@@ -858,6 +854,6 @@
       }
     ],
     "files": [],
-    "note": "Use spares from your existing pack; do not remove case screws. No M3 \u00d7 20 screws or loose tray nuts needed."
+    "note": "Use spares from your existing pack; do not remove case screws. No M3 × 20 screws or loose tray nuts needed."
   }
 ]

@@ -35,9 +35,11 @@ The printable keycaps were updated on September 13, 2026 with flat tops, rounded
 
 ## Current CAD downloads
 
-Download the [current STEP set](https://codexmicro.diy/downloads/current-cad/Codex-Micro-current-STEP.zip): 13 current part and fit-sample files, plus a partial tray reference assembly. The latest full upper plate combines the flat joystick v3 mount with the four holes for the heat-set baffle tray v4. The lower tray uses the existing M3 × 8 screws and M3 × 4 inserts. V4 enlarges every bottom opening from 6 × 2.2 mm to 10 × 4 mm, matching the original individual baffle opening size. Only the lower piece needs this reprint; test an already-wired LED through the sample edge-first with the upper plate removed. Flat single and wide keycaps are included.
+Download the [current STEP set](https://codexmicro.diy/downloads/current-cad/Codex-Micro-current-STEP.zip): 14 current parts and fit samples, plus a partial mounting reference assembly. **Mounting v5** puts the tray screws underneath and the heat-set inserts in bosses under the upper plate. The joystick sits on a separate adapter with locating pegs and raised tab supports. The 10 × 4 mm LED openings and flat keycaps are retained.
 
-Start with the upper/lower two-key samples and the joystick corner. The full plate and tray remain marked **WAIT** until their physical fit checks pass. The upper plate and upper sample geometry are unchanged from baffle-tray-v2. Retired mounts, shims, individual baffles and the old full-keyboard assembly are excluded from this STEP set; historical kits remain in the complete archive.
+Start with the four small prints: upper/lower tray-joint samples, joystick corner and adapter. Reuse the tested adapter in the finished keyboard. Both full plates are new matched v5 parts and remain **WAIT** until both fit tests pass. Reuse M3 × 8 tray screws and M3 × 4 inserts; the joystick needs two longer **M1.6 × 10 mm screws** with the existing nuts. [Interactive CAD and print guide](https://codexmicro.diy/downloads/mounting-v5/guide.html).
+
+Retired mounts, shims and individual baffles are excluded from the current STEP set; historical kits remain in the complete archive.
 
 Run `python3 scripts/package-current-cad.py` after updating a revision kit to synchronize the current exports, refresh the STEP bundle and rebuild the complete archive. The manifest records the source and hash of every included STEP file.
 

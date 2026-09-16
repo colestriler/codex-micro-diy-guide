@@ -53,23 +53,23 @@
       "labels": [
         {
           "entry": "case",
-          "text": "Clear case \u00b7 open side up"
+          "text": "Clear case · open side up"
         },
         {
           "entry": "plate",
-          "text": "Upper plate \u00b7 see current print guide"
+          "text": "Upper plate · see current print guide"
         },
         {
           "entry": "cup2",
-          "text": "Black baffle \u00b7 open side up"
+          "text": "Black baffle · open side up"
         },
         {
           "entry": "foot",
-          "text": "White foot \u00b7 bottom down"
+          "text": "White foot · bottom down"
         }
       ]
     },
-    "caption": "This older animation shows separate adhesive cups. The linked two-layer CAD guide shows the current screw-fastened tray and correct print orientations.",
+    "caption": "This older animation shows retired parts. The linked v5 CAD guide shows the hidden underside tray fasteners and removable joystick adapter.",
     "parts": [
       "case",
       "plate",
@@ -77,16 +77,16 @@
       "baffle"
     ],
     "how": [
-      "Print the two-key upper/lower baffle samples and separate flat-joystick corner first. After both fits pass, use the matching full top plate and one six-light tray. Follow their individual print orientations in the two-layer guide.",
+      "Print the v5 upper/lower joint samples, joystick corner and separate adapter first. After both fits pass, print the matching full upper plate and lower tray; reuse the tested adapter. Follow the v5 orientation notes.",
       "Remove supports and burrs gently. Preserve the switch-retaining edges and the eight thin optical windows around the case.",
-      "Test a USB plug in the 15 \u00d7 8 mm rear tunnel. Dry-fit the plate on its ledge and inspect the screw holes before adding hardware."
+      "Test a USB plug in the 15 × 8 mm rear tunnel. Dry-fit the plate on its ledge and inspect the screw holes before adding hardware."
     ],
     "why": "The plate sets the alignment of every control, while the case supports it and exposes the lights. Cleaning the mating surfaces now prevents a burr from tilting the plate or stopping a switch from latching. The thin windows let the perimeter lights show through.",
     "check": "The plate rests flat without force, the USB plug has clearance, and the optical windows are intact.",
     "links": [
       {
-        "label": "Two-layer baffle tray: CAD and assembly",
-        "url": "/downloads/baffle-tray-v4/guide.html"
+        "label": "Mounting v5: CAD, hardware and fit guide",
+        "url": "/downloads/mounting-v5/guide.html"
       },
       {
         "label": "Printing settings and materials",
@@ -114,11 +114,11 @@
       "labels": [
         {
           "entry": "insert0",
-          "text": "4 top inserts \u00b7 enter from above"
+          "text": "4 top inserts · enter from above"
         },
         {
           "entry": "bottominsert-25",
-          "text": "2 foot inserts \u00b7 enter from below"
+          "text": "2 foot inserts · enter from below"
         }
       ]
     },
@@ -129,12 +129,13 @@
       "stem-coupon"
     ],
     "how": [
-      "Practice on the insert coupon first. Use the specified M3 heat-set inserts with 4 mm bodies and the insert maker\u2019s installation guidance.",
+      "Practice on the insert coupon first. Use the specified M3 heat-set inserts with 4 mm bodies and the insert maker’s installation guidance.",
       "With the case empty, heat-set four inserts into the tops of the corner posts. Turn the case over for the two underside foot mounts. Keep each insert square to its seat.",
+      "For the v5 light tray, heat-set four additional inserts into bosses under the UPPER plate, flush with the boss ends. Test two in the upper joint sample first. These are separate from the case inserts shown in this older animation.",
       "Let the inserts cool completely before threading in screws. Keep the iron away from the thin light windows."
     ],
-    "why": "The brass insert provides a reusable metal thread. Heat softens the surrounding plastic so it forms around the insert\u2019s outer texture; cooling locks it in place. A tilted or loose insert can pull a screw sideways and stress the case.",
-    "check": "All six inserts are straight and stable after cooling. A screw starts by hand without forcing it.",
+    "why": "The brass insert provides a reusable metal thread. Heat softens the surrounding plastic so it forms around the insert’s outer texture; cooling locks it in place. A tilted or loose insert can pull a screw sideways and stress the case.",
+    "check": "Six case/foot inserts and four upper-plate tray inserts are straight and stable after cooling. Screws start by hand without forcing.",
     "links": []
   },
   {
@@ -184,14 +185,14 @@
     "how": [
       "Work with the plate outside the case. Clip in all 13 normal MX switches from above, including both switches underneath the wide Voice cap.",
       "Mount the encoder from below, with its washer and M7 nut above the plate. Tighten gently and trial the printed dial; it needs clearance to turn and press.",
-      "Print and test the flat v3 joystick corner first. The body sits on the plate and its ears rest on two raised supports. Fit the same M1.6 \u00d7 8 mm screws through the tabs and plate, then hold exposed nuts underneath with pliers while gently tightening. Check full movement and case clearance. Use the v3 guide; this animation shows legacy geometry."
+      "Test the v5 joystick corner and adapter first. Seat the adapter pegs in the upper plate, then set the joystick on its base and raised ear supports. Pass two M1.6 × 10 screws downward through tabs, adapter and plate; hold exposed nuts underneath with pliers. Tighten gently and check full travel. This animation shows legacy geometry; use the v5 guide."
     ],
     "why": "The plate keeps the controls aligned and absorbs the force of pressing keys. Doing this as a separate subassembly gives you access to both sides. The wide cap uses two switches for support, so leaving one out changes both its feel and alignment.",
     "check": "Every switch latches, the dial rotates and clicks, and the joystick travels freely without its leads pulling on it.",
     "links": [
       {
-        "label": "Flat joystick v3: print-first guide",
-        "url": "/downloads/joystick-flat-v3/guide.html"
+        "label": "Mounting v5: CAD, hardware and fit guide",
+        "url": "/downloads/mounting-v5/guide.html"
       },
       {
         "label": "Joystick orientation reference",
@@ -212,9 +213,9 @@
       "controller"
     ],
     "how": [
-      "Label rows R1\u2013R4 and columns C1\u2013C4 while looking down at the plate with USB at the rear. Keep those labels when you flip the plate over.",
+      "Label rows R1–R4 and columns C1–C4 while looking down at the plate with USB at the rear. Keep those labels when you flip the plate over.",
       "Connect one terminal of each switch to its column. Connect its other terminal to the unbanded end of a diode; connect the banded end to the row. Fit one diode per switch, including both wide-key switches.",
-      "Run rows to D2\u2013D5 and columns to D6\u2013D9. Insulate crossing wires and exposed joints. The encoder, joystick and touch pad have their own connections and are not matrix switches."
+      "Run rows to D2–D5 and columns to D6–D9. Insulate crossing wires and exposed joints. The encoder, joystick and touch pad have their own connections and are not matrix switches."
     ],
     "why": "The controller scans combinations of four rows and four columns to identify a pressed switch using eight pins. Each diode makes the connection one-way, preventing unintended paths through other pressed keys. The firmware combines the two wide-key positions into one Voice action.",
     "check": "All 13 diode bands face their rows. There is no continuity between unrelated row/column wires when no key is pressed.",
@@ -255,15 +256,15 @@
       "labels": [
         {
           "entry": "cup2",
-          "text": "LEDs 0\u20135 \u00b7 one board per baffle"
+          "text": "LEDs 0–5 · one board per baffle"
         },
         {
           "entry": "perimeter1",
-          "text": "LEDs 6\u201313 \u00b7 face the case windows"
+          "text": "LEDs 6–13 · face the case windows"
         }
       ]
     },
-    "caption": "Older animation: individual adhesive cups. Use the linked v3 CAD guide for the one-piece tray with existing M3 \u00d7 8 screws and heat-set inserts.",
+    "caption": "Older animation: individual adhesive cups. Use the linked v3 CAD guide for the one-piece tray with existing M3 × 8 screws and heat-set inserts.",
     "parts": [
       "baffle",
       "rgbw-led",
@@ -274,17 +275,17 @@
       "insert"
     ],
     "how": [
-      "Install four Adafruit M3 \u00d7 4 inserts flush into the empty lower tray post tops, then let them cool fully. First test two inserts in the small sample. The matching upper plate is unchanged from tray v2.",
-      "After the two-key fit test passes, install pixels 0\u20135 facing upward in the six tray pockets. Secure each LED with one layer of 3M 9474LE tape (0.17 mm excluding liners), within the 0.2 mm adhesive allowance. Keep rear pads clear of other metal. Dry-fit and test the lights first: this tape forms a strong permanent bond. Route LED leads through floor slots and switch wires through wall notches. Leave slack to lower the tray after undoing four M3 \u00d7 8 screws from above. Check real solder/pin clearance and test one light before wiring all six.",
-      "Place pixels 6\u201313 in the eight inner-wall pockets, facing outward through the thin case windows.",
+      "Test the v5 upper/lower joint samples first. Install four M3 × 4 inserts in the underside bosses of the full UPPER plate and cool fully. Screws enter upward from under the lower tray; both full plates must be the new v5 pair.",
+      "After the two-key fit test passes, install pixels 0–5 facing upward in the six tray pockets. Secure each LED with one layer of 3M 9474LE tape (0.17 mm excluding liners), within the 0.2 mm adhesive allowance. Keep rear pads clear of other metal. Dry-fit and test the lights first: this tape forms a strong permanent bond. Route LED leads through floor slots and switch wires through wall notches. Leave slack to lower the tray after undoing four M3 × 8 screws from underneath, with the case open. Check real solder/pin clearance and test one light before wiring all six.",
+      "Place pixels 6–13 in the eight inner-wall pockets, facing outward through the thin case windows.",
       "Connect DOUT on each pixel to DIN on the next, in that order. Share the power and ground buses. Use the level shifter, resistors and capacitors shown in the full connection map; do not connect MOSI straight to the pixel chain."
     ],
-    "why": "Each pixel consumes its own color data and passes the remaining data along the chain, so physical order determines which key lights up. Opaque baffles keep one key\u2019s light from spilling into the next. Translucent caps spread the light across the key surface.",
+    "why": "Each pixel consumes its own color data and passes the remaining data along the chain, so physical order determines which key lights up. Opaque baffles keep one key’s light from spilling into the next. Translucent caps spread the light across the key surface.",
     "check": "Six boards point up, eight point outward, every DOUT feeds the next DIN, and no solder pad touches a switch pin.",
     "links": [
       {
-        "label": "Two-layer baffle tray: CAD and assembly",
-        "url": "/downloads/baffle-tray-v4/guide.html"
+        "label": "Mounting v5: CAD, hardware and fit guide",
+        "url": "/downloads/mounting-v5/guide.html"
       },
       {
         "label": "Full connection map",
@@ -333,12 +334,12 @@
       "passives"
     ],
     "how": [
-      "Cut a 13 mm copper disk. Solder a flexible lead before placing it against the inside of the touch cap\u2019s thin top skin; this keeps soldering heat away from the printed part.",
-      "Fit the cap from below and secure it by its flange. Connect the electrode to D10, with a 1 M\u03a9 resistor from D10 to ground.",
-      "Fit three 3 mm indicator LEDs. Connect SCK, MISO and A3 through one 1 k\u03a9 resistor each to the corresponding LED anode; join their cathodes to ground."
+      "Cut a 13 mm copper disk. Solder a flexible lead before placing it against the inside of the touch cap’s thin top skin; this keeps soldering heat away from the printed part.",
+      "Fit the cap from below and secure it by its flange. Connect the electrode to D10, with a 1 MΩ resistor from D10 to ground.",
+      "Fit three 3 mm indicator LEDs. Connect SCK, MISO and A3 through one 1 kΩ resistor each to the corresponding LED anode; join their cathodes to ground."
     ],
     "why": "Your finger changes the capacitance near the copper electrode, letting the controller detect touch through the thin plastic. The three separate indicators communicate the selected layer. Each indicator needs its own resistor to limit current.",
-    "check": "The electrode rests against the cap\u2019s inner skin, its lead stays insulated, and each indicator has its own resistor and correct polarity.",
+    "check": "The electrode rests against the cap’s inner skin, its lead stays insulated, and each indicator has its own resistor and correct polarity.",
     "links": [
       {
         "label": "Touch and indicator connections",
@@ -366,11 +367,11 @@
       "labels": [
         {
           "entry": "controller",
-          "text": "KB2040 \u00b7 USB faces the rear tunnel"
+          "text": "KB2040 · USB faces the rear tunnel"
         },
         {
           "entry": "support",
-          "text": "25 \u00d7 20 mm support circuit bay"
+          "text": "25 × 20 mm support circuit bay"
         }
       ]
     },
@@ -385,7 +386,7 @@
     "how": [
       "Seat the KB2040 between the rear guide rails, with USB facing the cable tunnel. Use approximately 1.6 mm insulating foam tape beneath it.",
       "Solder leads directly to the board pads, keeping the assembly low. Tall pin headers consume the space needed by the plate and switches.",
-      "Build and insulate the level-shifter/passive circuit on perfboard no larger than 25 \u00d7 20 mm, then secure it in the front bay. Follow the full wiring map for every connection; the block in the model only represents its envelope."
+      "Build and insulate the level-shifter/passive circuit on perfboard no larger than 25 × 20 mm, then secure it in the front bay. Follow the full wiring map for every connection; the block in the model only represents its envelope."
     ],
     "why": "The KB2040 reads the controls, drives the light data and talks to the computer over USB. The support circuit adapts its light-data signal. Insulation prevents accidental contact, and low wiring leaves enough vertical clearance for the plate to close.",
     "check": "The plug reaches the USB socket, the boards are secure and insulated, and the plate can approach its ledge without contacting tall components.",
@@ -417,7 +418,7 @@
       "Use fused RAW for the light circuit and 3V for the joystick, with all grounds joined. Keep the supplied 15% LED brightness limit. Connect a USB data cable only after the unpowered checks pass.",
       "Install CircuitPython and the included firmware files using the Firmware & colors section. Test all 13 switches, both wide-key halves, encoder/button, joystick axes, touch, three indicators and all 14 pixels before closing the case."
     ],
-    "why": "An open assembly makes a reversed diode, broken connection or incorrectly ordered pixel easier to find and repair. Separate power domains keep the joystick\u2019s analog signals within the controller\u2019s 3.3 V range. A data-capable cable carries both USB power and the keyboard connection.",
+    "why": "An open assembly makes a reversed diode, broken connection or incorrectly ordered pixel easier to find and repair. Separate power domains keep the joystick’s analog signals within the controller’s 3.3 V range. A data-capable cable carries both USB power and the keyboard connection.",
     "check": "Every input and light passes the final-check list while the plate is accessible. The custom firmware provides the documented DIY behavior; native Codex integration still requires compatible genuine electronics.",
     "links": [
       {
@@ -456,11 +457,11 @@
       "labels": [
         {
           "entry": "screw0",
-          "text": "Four M3 \u00d7 8 plate screws"
+          "text": "Four M3 × 8 plate screws"
         },
         {
           "entry": "wide",
-          "text": "Wide cap \u00b7 align both stems"
+          "text": "Wide cap · align both stems"
         },
         {
           "entry": "foot",
@@ -483,8 +484,8 @@
     ],
     "how": [
       "Disconnect USB. Lower the tested plate assembly onto the case ledge, guiding the wire slack away from switch pins, baffles and screw posts. Stop if it meets resistance; never pull it down with the screws.",
-      "Fasten the plate gently and evenly with four M3 \u00d7 8 mm screws. Fit six clear agent caps, five white single caps, the white wide cap over both stems, and the dial. Add the legends after confirming free movement.",
-      "Optionally tape four steel washers (24 mm outside diameter, at most 2 mm thick) into the foot pockets. Attach the foot with two low-profile M3 \u00d7 8 mm screws and add adhesive rubber pads. Reconnect USB and repeat the functional checks."
+      "Fasten the plate gently and evenly with four M3 × 8 mm screws. Fit six clear agent caps, five white single caps, the white wide cap over both stems, and the dial. Add the legends after confirming free movement.",
+      "Optionally tape four steel washers (24 mm outside diameter, at most 2 mm thick) into the foot pockets. Attach the foot with two low-profile M3 × 8 mm screws and add adhesive rubber pads. Reconnect USB and repeat the functional checks."
     ],
     "why": "Service slack lets the plate lift for future repairs without pulling on solder joints. Even fastening keeps the plate flat. The foot adds stability, optional weights reduce sliding, and rubber protects the desk. Rechecking after closure catches a wire or control that moved during assembly.",
     "check": "No wire is pinched, every key returns freely, the dial still clicks, the joystick moves, and the finished device passes the same tests it passed while open.",
